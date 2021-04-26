@@ -1,0 +1,30 @@
+{
+  "common": {
+    "ok": "OK!",
+    "cancel": "Cancel",
+    "back": "Back"
+  },
+  "errors": {
+    "invalidEmail": "Invalid email address."
+  },
+  "welcomeScreen": {
+    "readyForLaunch": "Ready for launch.",
+    "welcome": "Welcome",
+    "welcomeLong": "We can’t wait to share our wine with you. Please confirm your age below.",
+    "over": "I am over 21 years",
+    "under": "I am under 21 years"
+  },
+  "demoScreen": {
+    "howTo": "HOW TO",
+    "title": "What’s In This Stack?",
+    "tagLine": "Congratulations, you’ve got a very advanced React Native app template here.  Take advantage of this boilerplate!",
+    "welcome": "Welcome"
+  },
+  "demoListScreen": {
+    "title": "Demo List"
+  },
+  "storybook": {
+    "placeholder": "Placeholder",
+    "field": "Field"
+  }
+}
