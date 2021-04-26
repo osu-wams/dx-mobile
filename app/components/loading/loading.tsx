@@ -1,5 +1,5 @@
 import React from 'react'
-import { useWindowDimensions, View, Animated, Easing } from 'react-native'
+import { useWindowDimensions, View, Animated, Easing, Text } from 'react-native'
 // import { LogoCircular } from '../logo-circular/logo-circular'
 import { presets } from './loading.presets'
 import { LoadingProps } from './loading.props'
@@ -27,7 +27,7 @@ export function Loading(props: LoadingProps) {
   return (
     <View testID="Loading" style={style}>
       <Animated.View style={{ transform: [{ rotate: spin }] }}>
-        <h2>Logo</h2>
+        <Text style={{ fontSize: 45 }}>Logo</Text>
       </Animated.View>
     </View>
   )
