@@ -1,8 +1,8 @@
-import 'dotenv/config'
+import 'dotenv/config';
 
 export default {
   name: 'My Oregon State',
-  slug: 'My Oregon State',
+  slug: 'MyOregonState',
   version: '1.0.0',
   orientation: 'portrait',
   icon: './assets/icon.png',
@@ -40,4 +40,14 @@ export default {
       'svg',
     ],
   },
-}
+  scheme: 'dx-mobile',
+  android: {
+    intentFilters: [
+      {
+        action: 'VIEW',
+        data: [{ scheme: 'dx-mobile' }],
+        category: ['BROWSABLE', 'DEFAULT'],
+      },
+    ],
+  },
+};
