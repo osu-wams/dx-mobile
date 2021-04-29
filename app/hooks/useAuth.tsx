@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useRecoilState } from 'recoil';
-import getAuth from '../services/auth';
+import getAuth, { startAuthSession } from '../services/auth';
 import { authState } from '../state/auth';
 
 export const useAuth = () => {
@@ -13,6 +13,13 @@ export const useAuth = () => {
         setAuth(auth);
       } else {
         // redirect to saml auth?
+        const establishedSession = await startAuthSession();
+        if (establishedSession) {
+          // great
+          console.log('established');
+        } else {
+          console.error('broken');
+        }
       }
     })();
   }, []);
