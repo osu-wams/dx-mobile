@@ -10,9 +10,7 @@
   "welcomeScreen": {
     "readyForLaunch": "Ready for launch.",
     "welcome": "Welcome",
-    "welcomeLong": "We can’t wait to share our wine with you. Please confirm your age below.",
-    "over": "I am over 21 years",
-    "under": "I am under 21 years"
+    "welcomeLong": "Welcome this is a long welcome message."
   },
   "demoScreen": {
     "howTo": "HOW TO",
