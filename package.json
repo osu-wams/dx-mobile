@@ -30,7 +30,11 @@
     "web": "expo start --web",
     "eject": "expo eject"
   },
+  "peerDependencies": {
+    "axios":"^0.21.1"
+  },
   "dependencies": {
+    "@osu-wams/hooks": "1.0.116",
     "@prismicio/client": "^4.0.0",
     "@react-native-async-storage/async-storage": "^1.15.4",
     "@react-native-community/masked-view": "0.1.10",
@@ -48,6 +52,7 @@
     "react": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
     "react-native-gesture-handler": "~1.10.2",
+    "react-native-get-random-values": "^1.7.0",
     "react-native-keychain": "6.2.0",
     "react-native-safe-area-context": "3.2.0",
     "react-native-screens": "~3.0.0",
@@ -55,7 +60,7 @@
     "react-native-svg": "12.1.0",
     "react-native-unimodules": "~0.13.3",
     "react-native-webview": "11.2.3",
-    "react-query": "^3.13.4",
+    "react-query": "3.16.0",
     "reactotron-react-native": "5.0.0",
     "recoil": "^0.2.0",
     "validate.js": "0.13.1"

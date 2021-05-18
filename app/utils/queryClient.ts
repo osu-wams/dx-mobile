@@ -11,7 +11,7 @@ queryClient.setDefaultOptions({
 
 export default queryClient;
 
-export const authQueryClient = (queryClient: QueryClient, { apiUrl, jwt }: Auth) => {
+export const updateQueryClientOptions = (queryClient: QueryClient, { apiUrl, jwt }: Auth) => {
   queryClient.setDefaultOptions({
     queries: {
       enabled: true,

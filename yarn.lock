@@ -2498,6 +2498,34 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
+"@osu-wams/hooks@1.0.116":
+  version "1.0.116"
+  resolved "https://npm.pkg.github.com/download/@osu-wams/hooks/1.0.116/15b05880c5fe959e477a96043f5bdbf0b4a419c7bc7265c28e45918f6e8c2c39#a577558f01de472d4ab7b38dc5eafd40a84b6966"
+  integrity sha512-9kVmi0wkaIlwgZ5iQTOKBVMKDtfIXQ1Br+1YZvT/w01TzEd9B4f0AkcJ/Hp4kh9Q5wtTT13m3tycuhxqBNwrkw==
+  dependencies:
+    "@osu-wams/lib" "^0.1.78"
+    "@osu-wams/utils" "^0.0.10"
+    axios "^0.21.1"
+    fuse.js "^6.4.6"
+    nanoid "^3.1.22"
+    react-query "3.16.0"
+    recoil "0.2.0"
+    stacktrace-js "^2.0.2"
+
+"@osu-wams/lib@^0.1.78":
+  version "0.1.78"
+  resolved "https://npm.pkg.github.com/download/@osu-wams/lib/0.1.78/5af7a3e563c74e41c6fe5c34c822e70aa1f2708369bdb05a56c986ede5b324f5#83b2f8871881f7dc99fd14b21619c49ae7b17315"
+  integrity sha512-tLjXVZqPE6zArqt1Eht/Vw4c/Z9fczQoX+tHy+46b+YGWsOw+XY4j/qOtuTFKKdNxejg5QAeBv3F4bIjOj4FGg==
+
+"@osu-wams/utils@^0.0.10":
+  version "0.0.10"
+  resolved "https://npm.pkg.github.com/download/@osu-wams/utils/0.0.10/3a7a7772fd2f56b7256c00a35fe0371476fcc7a8ab5f596fea0e407e1241b91d#a983ff5b2e6b999efe5fd8aeab4a5ff97ef94de9"
+  integrity sha512-iJXdM+3lto2SYNnQdf7ASvpeQdZ6DhgqGplMN7FdYgRH2NbY7CXMwfEGRLqzmW/DJkv6UkwbJzwvY7kF8U4iTg==
+  dependencies:
+    "@osu-wams/lib" "^0.1.78"
+    date-fns "^2.21.1"
+    libphonenumber-js "^1.9.17"
+
 "@popperjs/core@^2.4.4", "@popperjs/core@^2.5.4":
   version "2.9.2"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
@@ -6886,6 +6914,11 @@ date-fns@^1.27.2:
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-1.30.1.tgz#2e71bf0b119153dbb4cc4e88d9ea5acfb50dc05c"
   integrity sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==
 
+date-fns@^2.21.1:
+  version "2.21.3"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.21.3.tgz#8f5f6889d7a96bbcc1f0ea50239b397a83357f9b"
+  integrity sha512-HeYdzCaFflc1i4tGbj7JKMjM4cKGYoyxwcIIkHzNgCkX8xXDNJDZXgDDVchIWpN4eQc3lH37WarduXFZJOtxfw==
+
 dayjs@^1.8.15:
   version "1.10.4"
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.10.4.tgz#8e544a9b8683f61783f570980a8a80eaf54ab1e2"
@@ -8362,6 +8395,11 @@ fancy-log@^1.3.2:
     parse-node-version "^1.0.0"
     time-stamp "^1.0.0"
 
+fast-base64-decode@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/fast-base64-decode/-/fast-base64-decode-1.0.0.tgz#b434a0dd7d92b12b43f26819300d2dafb83ee418"
+  integrity sha512-qwaScUgUGBYeDNRnbc/KyllVU88Jk1pRHPStuF/lO7B0/RTRLj7U0lkdTAutlBblY08rwZDff6tNU9cjv6j//Q==
+
 fast-deep-equal@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-1.1.0.tgz#c053477817c86b51daa853c81e059b733d023614"
@@ -9070,6 +9108,11 @@ fuse.js@^3.4.6, fuse.js@^3.6.1:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-3.6.1.tgz#7de85fdd6e1b3377c23ce010892656385fd9b10c"
   integrity sha512-hT9yh/tiinkmirKrlv4KWOjztdoZo1mx9Qh4KvWqC7isoXwdUY3PNWUxceF4/qO9R6riA2C29jdTOeQOIROjgw==
+
+fuse.js@^6.4.6:
+  version "6.4.6"
+  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-6.4.6.tgz#62f216c110e5aa22486aff20be7896d19a059b79"
+  integrity sha512-/gYxR/0VpXmWSfZOIPS3rWwU8SHgsRTwWuXhyb2O6s7aRuVtHtxCkR33bNYu3wyLyNx/Wpv0vU7FZy8Vj53VNw==
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -11942,6 +11985,11 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
+libphonenumber-js@^1.9.17:
+  version "1.9.17"
+  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.9.17.tgz#fef2e6fd7a981be69ba358c24495725ee8daf331"
+  integrity sha512-ElJki901OynMg1l+evooPH1VyHrECuLqpgc12z2BkK25dFU5lUKTuMHEYV2jXxvtns/PIuJax56cBeoSK7ANow==
+
 lines-and-columns@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
@@ -13119,6 +13167,11 @@ nanoid@^3.1.15:
   version "3.1.22"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.22.tgz#b35f8fb7d151990a8aebd5aa5015c03cf726f844"
   integrity sha512-/2ZUaJX2ANuLtTvqTlgqBQNJoQO398KyJgZloL0PZkC0dpysjncRUPsFe3DUPzz/y3h+u7C46np8RMuvF3jsSQ==
+
+nanoid@^3.1.22:
+  version "3.1.23"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.23.tgz#f744086ce7c2bc47ee0a8472574d5c78e4183a81"
+  integrity sha512-FiB0kzdP0FFVGDKlRLEQ1BgDzU87dy5NnzjeW9YZNt+/c3+q82EQDUwniSAUxp/F0gFNI1ZhKU1FqYsMuqZVnw==
 
 nanomatch@^1.2.9:
   version "1.2.13"
@@ -15095,6 +15148,13 @@ react-native-gesture-handler@~1.10.2:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
+react-native-get-random-values@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/react-native-get-random-values/-/react-native-get-random-values-1.7.0.tgz#86d9d1960828b606392dba4540bf760605448530"
+  integrity sha512-zDhmpWUekGRFb9I+MQkxllHcqXN9HBSsgPwBQfrZ1KZYpzDspWLZ6/yLMMZrtq4pVqNR7C7N96L3SuLpXv1nhQ==
+  dependencies:
+    fast-base64-decode "^1.0.0"
+
 react-native-iphone-x-helper@^1.3.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
@@ -15269,10 +15329,10 @@ react-powerplug@1.0.0:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-react-query@^3.13.4:
-  version "3.13.6"
-  resolved "https://registry.yarnpkg.com/react-query/-/react-query-3.13.6.tgz#59d9a17b5f78ea674010bc69525dd1b189e2177b"
-  integrity sha512-PIj4WsDycyTs4oVa8hZ09t1MXy77N1ik9lGTO7tHAPg2A1v+9wHMLqD2/Nrp4ALL32Diw4R2gq/Fq9StxOh+gg==
+react-query@3.16.0:
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/react-query/-/react-query-3.16.0.tgz#8de1556aabb3d200d0f8eeb74ce2b0b3dd0a0a51"
+  integrity sha512-YOvI8mO9WG+r4XsyJinjlDMiV5IewUWUcTv2J7z6bIP3KOFvgT6k6HM8vQouz4hPnme7Ktq9j5e7LarUqgJXFQ==
   dependencies:
     "@babel/runtime" "^7.5.5"
     broadcast-channel "^3.4.1"
@@ -15548,7 +15608,7 @@ rechoir@^0.6.2:
   dependencies:
     resolve "^1.1.6"
 
-recoil@^0.2.0:
+recoil@0.2.0, recoil@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/recoil/-/recoil-0.2.0.tgz#69344b5bec3129272560d8d9d6001ada3ee4d80c"
   integrity sha512-VOJfYVQ3VgmfS7L5tV9QdOR+AJhvll8yGr1+3nJPCqADulImuScGZ2sJtejPps3zfTu/o98y5kO4lje8Tx6XHw==
@@ -16581,6 +16641,11 @@ source-map-url@^0.4.0:
   resolved "https://registry.yarnpkg.com/source-map-url/-/source-map-url-0.4.1.tgz#0af66605a745a5a2f91cf1bbf8a7afbc283dec56"
   integrity sha512-cPiFOTLUKvJFIg4SKVScy4ilPPW6rFgMgfuZJPNoDuMs3nC1HbMUycBoJw77xFIp6z1UJQJOfx6C9GMH80DiTw==
 
+source-map@0.5.6:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
+  integrity sha1-dc449SvwczxafwwRjYEzSiu19BI=
+
 source-map@^0.5.0, source-map@^0.5.6, source-map@^0.5.7:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
@@ -16700,6 +16765,13 @@ stable@^0.1.8:
   resolved "https://registry.yarnpkg.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
   integrity sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==
 
+stack-generator@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/stack-generator/-/stack-generator-2.0.5.tgz#fb00e5b4ee97de603e0773ea78ce944d81596c36"
+  integrity sha512-/t1ebrbHkrLrDuNMdeAcsvynWgoH/i4o8EGGfX7dEYDoTXOYVAkEpFdtshlvabzc6JlJ8Kf9YdFEoz7JkzGN9Q==
+  dependencies:
+    stackframe "^1.1.1"
+
 stack-trace@0.0.10:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/stack-trace/-/stack-trace-0.0.10.tgz#547c70b347e8d32b4e108ea1a2a159e5fdde19c0"
@@ -16723,6 +16795,23 @@ stackframe@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/stackframe/-/stackframe-1.2.0.tgz#52429492d63c62eb989804c11552e3d22e779303"
   integrity sha512-GrdeshiRmS1YLMYgzF16olf2jJ/IzxXY9lhKOskuVziubpTYcYqyOwYeJKzQkwy7uN0fYSsbsC4RQaXf9LCrYA==
+
+stacktrace-gps@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/stacktrace-gps/-/stacktrace-gps-3.0.4.tgz#7688dc2fc09ffb3a13165ebe0dbcaf41bcf0c69a"
+  integrity sha512-qIr8x41yZVSldqdqe6jciXEaSCKw1U8XTXpjDuy0ki/apyTn/r3w9hDAAQOhZdxvsC93H+WwwEu5cq5VemzYeg==
+  dependencies:
+    source-map "0.5.6"
+    stackframe "^1.1.1"
+
+stacktrace-js@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/stacktrace-js/-/stacktrace-js-2.0.2.tgz#4ca93ea9f494752d55709a081d400fdaebee897b"
+  integrity sha512-Je5vBeY4S1r/RnLydLl0TBTi3F2qdfWmYsGvtfZgEI+SCprPppaIhQf5nGcal4gI4cGpCV/duLcAzT1np6sQqg==
+  dependencies:
+    error-stack-parser "^2.0.6"
+    stack-generator "^2.0.5"
+    stacktrace-gps "^3.0.4"
 
 stacktrace-parser@^0.1.3:
   version "0.1.10"

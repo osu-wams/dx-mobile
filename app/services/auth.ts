@@ -1,8 +1,12 @@
+import axios from 'axios';
 import * as WebBrowser from 'expo-web-browser';
 import Constants from 'expo-constants';
 import env from '../config/env';
 import { Auth } from '../types';
 import { secureStorage } from '../utils/storage';
+
+axios.defaults.baseURL = env.BASE_URL;
+axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 const persistToken = async (o: { type: string; url?: string }): Promise<boolean> => {
   const matches = o?.url?.match('^.*token=(.*)$');
@@ -44,9 +48,13 @@ export const fetchToken = async (): Promise<Auth | undefined> => {
         Authorization: auth.refresh,
       },
     });
+    if (!response.ok) return undefined;
     const json = await response.json();
     __DEV__ &&
       console.debug('Auth service has existing REFRESH token, fetched new JWT token', json);
+
+    axios.defaults.headers.common.Authorization = json.token;
+
     return { ...auth, jwt: json.token };
   }
   __DEV__ &&
