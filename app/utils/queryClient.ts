@@ -1,4 +1,7 @@
+import axios, { AxiosResponse } from 'axios';
 import { QueryClient } from 'react-query';
+import { Resetter } from 'recoil';
+import { clearAuth } from '../services/auth';
 import { Auth } from '../types';
 
 const queryClient = new QueryClient();
@@ -11,27 +14,31 @@ queryClient.setDefaultOptions({
 
 export default queryClient;
 
-export const updateQueryClientOptions = (queryClient: QueryClient, { apiUrl, jwt }: Auth) => {
+export const updateQueryClientOptions = (
+  queryClient: QueryClient,
+  { baseUrl, jwt }: Auth,
+  resetAuthState: Resetter,
+) => {
   queryClient.setDefaultOptions({
     queries: {
       enabled: true,
       queryFn: async ({ queryKey }) => {
-        const url = `${apiUrl}${queryKey}`;
+        const url = `${baseUrl}${queryKey}`;
         __DEV__ && console.debug(`queryClient fetching ${url} with JWT: ${jwt}`);
-        const response = await fetch(url, {
+        const response: AxiosResponse = await axios.get(url, {
           headers: {
             Authorization: jwt,
           },
         });
-        const data = await response.json();
-        if (response.ok) return data;
-        if (response.status === 401) {
-          __DEV__ &&
-            console.error(`Removing JWT token, caught error ${response.status} : ${data.error}`);
-          // TODO: Remove REFRESH from storage and cause user to go through full SAML cycle?
-          // TODO: Fetch a new JWT and try again? (utils/auth#fetchToken)
+        return response.data;
+      },
+      onError: async (err: any) => {
+        console.error('onError handler', err.config);
+        if (err.message.indexOf('401')) {
+          await clearAuth();
+          resetAuthState();
+          queryClient.clear();
         }
-        throw new Error(data.error);
       },
       retry: false,
     },

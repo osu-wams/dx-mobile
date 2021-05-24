@@ -12,7 +12,7 @@
 import './i18n';
 import './utils/ignore-warnings';
 import 'react-native-get-random-values';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { NavigationContainerRef } from '@react-navigation/native';
 import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context';
 import { initFonts } from './theme/fonts'; // expo
@@ -27,14 +27,16 @@ import {
 import { ToggleStorybook } from '../storybook/toggle-storybook';
 import { QueryClientProvider } from 'react-query';
 import useAuth from './hooks/useAuth';
-import { RecoilRoot } from 'recoil';
+import { RecoilRoot, useResetRecoilState, useRecoilState } from 'recoil';
 
 // This puts screens in a native ViewController or Activity. If you want fully native
 // stack navigation, use `createNativeStackNavigator` in place of `createStackNavigator`:
 // https://github.com/kmagiera/react-native-screens#using-native-stack-navigator
 import { enableScreens } from 'react-native-screens';
 import { Loading } from './components/loading/loading';
+import { Login } from './components/login/login';
 import queryClient, { updateQueryClientOptions } from './utils/queryClient';
+import { authState, applicationState } from './state';
 
 enableScreens();
 
@@ -45,8 +47,9 @@ export const NAVIGATION_PERSISTENCE_KEY = 'NAVIGATION_STATE';
  */
 function Main() {
   const navigationRef = useRef<NavigationContainerRef>();
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [appState, setAppState] = useRecoilState(applicationState);
   const auth = useAuth();
+  const resetAuthState = useResetRecoilState(authState);
 
   setRootNavigation(navigationRef);
   useBackButtonHandler(navigationRef, canExit);
@@ -65,17 +68,16 @@ function Main() {
 
   useEffect(() => {
     if (auth?.jwt) {
-      updateQueryClientOptions(queryClient, auth);
+      updateQueryClientOptions(queryClient, auth, resetAuthState);
       queryClient.clear();
-      setTimeout(() => setIsLoaded(true), 2500);
+      setTimeout(() => setAppState({ STATE: 'LOADED' }), 2500);
     }
   }, [auth]);
 
-  // Before we show the app, we have to wait for our state to be ready.
-  // In the meantime, don't render anything. This will be the background
-  // color set in native by rootView's background color. You can replace
-  // with your own loading component if you wish.
-  if (!isLoaded) return <Loading />;
+  if (auth.isAuthenticated && appState.STATE !== 'LOADED') return <Loading />;
+  if (appState.STATE === 'BOOT' || (!auth.isAuthenticated && appState.STATE === 'LOADED')) {
+    return <Login />;
+  }
 
   // otherwise, we're ready to render the app
   return (

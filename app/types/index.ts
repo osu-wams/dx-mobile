@@ -1,5 +1,7 @@
+export type ApplicationStates = 'BOOT' | 'LOGIN' | 'LOADED';
 export interface Auth {
-  apiUrl: string
-  jwt?: string
-  refresh?: string
+  baseUrl: string;
+  isAuthenticated?: boolean;
+  jwt?: string;
+  refresh?: string;
 }
