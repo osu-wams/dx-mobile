@@ -6,7 +6,7 @@ import { useQuery } from 'react-query';
 import { usePerson } from '@osu-wams/hooks';
 
 export const WelcomeScreen = function WelcomeScreen() {
-  const { data } = useQuery('/resources');
+  const { isSuccess, data } = useQuery('/api/resources');
   const person = usePerson();
 
   return (
@@ -16,7 +16,7 @@ export const WelcomeScreen = function WelcomeScreen() {
       <Screen style={NORMAL_PADDING} backgroundColor={color.transparent}>
         <Text style={SUBHEADER} tx="welcomeScreen.welcome" />
         <Text style={LARGE_CONTENT} tx="welcomeScreen.welcomeLong" />
-        <Text>{JSON.stringify(data)}</Text>
+        <Text>{isSuccess && JSON.stringify(data)}</Text>
       </Screen>
     </View>
   );
