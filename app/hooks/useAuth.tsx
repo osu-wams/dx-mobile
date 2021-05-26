@@ -7,6 +7,7 @@ export const useAuth = () => {
   const [auth, setAuth] = useRecoilState(authState);
   const appState = useRecoilValue(applicationState);
   const resetAuthState = useResetRecoilState(authState);
+  const resetAppState = useResetRecoilState(applicationState);
 
   const getAuth = async (): Promise<void> => {
     try {
@@ -46,6 +47,7 @@ export const useAuth = () => {
           await getAuth();
         } else {
           resetAuthState();
+          resetAppState();
         }
       }
     })();
