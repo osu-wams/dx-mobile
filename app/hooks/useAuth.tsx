@@ -1,35 +1,55 @@
 import { useEffect } from 'react';
-import { useRecoilState } from 'recoil';
+import { useRecoilState, useRecoilValue, useResetRecoilState } from 'recoil';
 import { fetchToken, startAuthSession } from '../services/auth';
-import { authState } from '../state/auth';
+import { authState, applicationState } from '../state';
 
 export const useAuth = () => {
   const [auth, setAuth] = useRecoilState(authState);
+  const appState = useRecoilValue(applicationState);
+  const resetAuthState = useResetRecoilState(authState);
 
-  const getAuth = async (): Promise<boolean> => {
-    const auth = await fetchToken();
-    if (auth) {
-      __DEV__ && console.log('getAuth', auth);
-      setAuth(auth);
-      return true;
+  const getAuth = async (): Promise<void> => {
+    try {
+      const auth = await fetchToken();
+      if (auth) {
+        __DEV__ && console.log('getAuth', auth);
+        setAuth((previous) => ({ ...previous, ...auth, isAuthenticated: true }));
+      } else {
+        resetAuthState();
+      }
+    } catch {
+      resetAuthState();
     }
-    return false;
   };
 
   useEffect(() => {
     (async () => {
-      const auth = await getAuth();
-      if (!auth) {
-        const establishedSession = await startAuthSession();
-        if (establishedSession) {
-          __DEV__ && console.log('New SAML session established.');
+      if (appState.STATE === 'BOOT') {
+        const { isAuthenticated, jwt } = auth;
+        if (!isAuthenticated) {
+          const freshToken = await fetchToken();
+          if (freshToken) {
+            setAuth((previous) => ({ ...previous, ...freshToken, isAuthenticated: true }));
+          }
+        } else if (!jwt) {
           await getAuth();
-        } else {
-          __DEV__ && console.error('New SAML session failed.');
         }
       }
     })();
-  }, []);
+  }, [auth, appState.STATE]);
+
+  useEffect(() => {
+    (async () => {
+      if (appState.STATE === 'LOGIN') {
+        const startedSession = await startAuthSession();
+        if (startedSession) {
+          await getAuth();
+        } else {
+          resetAuthState();
+        }
+      }
+    })();
+  }, [appState.STATE]);
 
   return auth;
 };
