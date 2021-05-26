@@ -24,7 +24,7 @@ export const useAuth = () => {
 
   useEffect(() => {
     (async () => {
-      if (appState.STATE === 'LOADED') {
+      if (appState.STATE === 'BOOT') {
         const { isAuthenticated, jwt } = auth;
         if (!isAuthenticated) {
           const freshToken = await fetchToken();
