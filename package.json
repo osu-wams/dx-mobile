@@ -31,7 +31,10 @@
     "eject": "expo eject"
   },
   "peerDependencies": {
-    "axios":"^0.21.1"
+    "axios": "^0.21.1"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   },
   "dependencies": {
     "@osu-wams/hooks": "1.0.116",
@@ -63,6 +66,7 @@
     "react-query": "3.16.0",
     "reactotron-react-native": "5.0.0",
     "recoil": "^0.2.0",
+    "styled-components": "^5.3.0",
     "validate.js": "0.13.1"
   },
   "devDependencies": {
