@@ -1,8 +1,8 @@
 import React from 'react';
-import { useWindowDimensions, View, Animated, Easing, Text } from 'react-native';
-// import { LogoCircular } from '../logo-circular/logo-circular'
+import { useWindowDimensions, View, Animated, Easing } from 'react-native';
 import { presets } from './loading.presets';
 import { LoadingProps } from './loading.props';
+import Crest from './crest.svg';
 
 export function Loading(props: LoadingProps) {
   const { height, width } = useWindowDimensions();
@@ -17,7 +17,7 @@ export function Loading(props: LoadingProps) {
   Animated.loop(
     Animated.timing(spinValue, {
       toValue: 1,
-      duration: 9000,
+      duration: 3000,
       easing: Easing.linear,
       useNativeDriver: true,
     }),
@@ -27,7 +27,7 @@ export function Loading(props: LoadingProps) {
   return (
     <View testID="Loading" style={style}>
       <Animated.View style={{ transform: [{ rotate: spin }] }}>
-        <Text style={{ fontSize: 45 }}>Logo</Text>
+        <Crest width={220} height={390} fill="black" viewBox={'0 0 62 79'} />
       </Animated.View>
     </View>
   );

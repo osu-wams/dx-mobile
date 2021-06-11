@@ -1,7 +1,9 @@
 import React from 'react';
-import { useWindowDimensions, View, Text } from 'react-native';
+import { useWindowDimensions, View } from 'react-native';
 import { useSetRecoilState } from 'recoil';
 import { applicationState } from '../../state';
+import { Button } from '../button/button';
+import { INTRO_BUTTON_TEXT } from '../button/buttons.styles';
 import { presets } from './login.presets';
 import { LoginProps } from './login.props';
 
@@ -17,9 +19,12 @@ export function Login(props: LoginProps) {
 
   return (
     <View testID="Login" style={style}>
-      <Text style={{ fontSize: 45 }} onPress={() => setAppState({ STATE: 'LOGIN' })}>
-        Login
-      </Text>
+      <Button
+        text="Login"
+        textStyle={INTRO_BUTTON_TEXT}
+        preset="primary"
+        onPress={() => setAppState({ STATE: 'LOGIN' })}
+      />
     </View>
   );
 }
