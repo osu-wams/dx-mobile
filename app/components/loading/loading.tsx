@@ -2,7 +2,7 @@ import React from 'react';
 import { useWindowDimensions, View, Animated, Easing } from 'react-native';
 import { presets } from './loading.presets';
 import { LoadingProps } from './loading.props';
-import Crest from './crest.svg';
+import Crest from './crest';
 
 export function Loading(props: LoadingProps) {
   const { height, width } = useWindowDimensions();
