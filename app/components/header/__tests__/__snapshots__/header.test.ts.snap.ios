@@ -141,7 +141,7 @@ exports[`Storyshots Header Behavior 1`] = `
                     style={
                       Object {
                         "color": "#ffffff",
-                        "fontFamily": "EBGaramond",
+                        "fontFamily": "Verdana",
                         "fontSize": 15,
                         "textAlign": "center",
                       }
@@ -303,7 +303,7 @@ exports[`Storyshots Header Behavior 1`] = `
                     style={
                       Object {
                         "color": "#ffffff",
-                        "fontFamily": "EBGaramond",
+                        "fontFamily": "Verdana",
                         "fontSize": 15,
                         "textAlign": "center",
                       }
@@ -440,7 +440,7 @@ exports[`Storyshots Header Behavior 1`] = `
                     style={
                       Object {
                         "color": "#ffffff",
-                        "fontFamily": "EBGaramond",
+                        "fontFamily": "Verdana",
                         "fontSize": 15,
                         "textAlign": "center",
                       }

@@ -108,7 +108,7 @@ exports[`Storyshots TextField Labelling 1`] = `
                 style={
                   Object {
                     "color": "#414042",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 13,
                   }
                 }
@@ -124,7 +124,7 @@ exports[`Storyshots TextField Labelling 1`] = `
                   Object {
                     "backgroundColor": "#ffffff",
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 18,
                     "minHeight": 44,
                   }
@@ -224,7 +224,7 @@ exports[`Storyshots TextField Labelling 1`] = `
                 style={
                   Object {
                     "color": "#414042",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 13,
                   }
                 }
@@ -240,7 +240,7 @@ exports[`Storyshots TextField Labelling 1`] = `
                   Object {
                     "backgroundColor": "#ffffff",
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 18,
                     "minHeight": 44,
                   }
@@ -354,7 +354,7 @@ exports[`Storyshots TextField Ref Forwarding 1`] = `
                 style={
                   Object {
                     "color": "#414042",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 13,
                   }
                 }
@@ -373,7 +373,7 @@ exports[`Storyshots TextField Ref Forwarding 1`] = `
                     "borderRadius": 4,
                     "borderWidth": 10,
                     "color": "white",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 18,
                     "minHeight": 44,
                     "padding": 40,
@@ -387,7 +387,7 @@ exports[`Storyshots TextField Ref Forwarding 1`] = `
               style={
                 Object {
                   "color": "#414042",
-                  "fontFamily": "EBGaramond",
+                  "fontFamily": "Verdana",
                   "fontSize": 9,
                 }
               }
@@ -512,7 +512,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
                 style={
                   Object {
                     "color": "#414042",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 13,
                   }
                 }
@@ -527,7 +527,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
                   Object {
                     "backgroundColor": "#ffffff",
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 18,
                     "minHeight": 44,
                   }
@@ -548,7 +548,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
                 style={
                   Object {
                     "color": "#414042",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 13,
                   }
                 }
@@ -563,7 +563,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
                   Object {
                     "backgroundColor": "#ffffff",
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 18,
                     "minHeight": 44,
                   }
@@ -663,7 +663,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
                 style={
                   Object {
                     "color": "#414042",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 13,
                   }
                 }
@@ -681,7 +681,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
                     "borderRadius": 4,
                     "borderWidth": 10,
                     "color": "white",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 18,
                     "minHeight": 44,
                     "padding": 40,
@@ -695,7 +695,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
               style={
                 Object {
                   "color": "#414042",
-                  "fontFamily": "EBGaramond",
+                  "fontFamily": "Verdana",
                   "fontSize": 9,
                 }
               }
@@ -795,7 +795,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
                 style={
                   Object {
                     "color": "#414042",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 13,
                   }
                 }
@@ -813,7 +813,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
                     "borderRadius": 4,
                     "borderWidth": 10,
                     "color": "white",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 18,
                     "minHeight": 44,
                     "padding": 40,
@@ -827,7 +827,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
               style={
                 Object {
                   "color": "#414042",
-                  "fontFamily": "EBGaramond",
+                  "fontFamily": "Verdana",
                   "fontSize": 9,
                 }
               }

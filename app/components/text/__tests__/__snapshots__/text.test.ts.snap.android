@@ -109,7 +109,7 @@ exports[`Storyshots Text Passing Content 1`] = `
                 style={
                   Object {
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -209,7 +209,7 @@ exports[`Storyshots Text Passing Content 1`] = `
                 style={
                   Object {
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -220,7 +220,7 @@ exports[`Storyshots Text Passing Content 1`] = `
                 style={
                   Object {
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -320,7 +320,7 @@ exports[`Storyshots Text Passing Content 1`] = `
                 style={
                   Object {
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -420,7 +420,7 @@ exports[`Storyshots Text Passing Content 1`] = `
                 style={
                   Object {
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -431,7 +431,7 @@ exports[`Storyshots Text Passing Content 1`] = `
                   style={
                     Object {
                       "color": "#ffffff",
-                      "fontFamily": "EBGaramond",
+                      "fontFamily": "Verdana",
                       "fontSize": 15,
                       "fontWeight": "bold",
                     }
@@ -559,7 +559,7 @@ exports[`Storyshots Text Style Presets 1`] = `
                 style={
                   Object {
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -570,7 +570,7 @@ exports[`Storyshots Text Style Presets 1`] = `
                 style={
                   Object {
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                     "paddingTop": 10,
                   }
@@ -588,7 +588,7 @@ exports[`Storyshots Text Style Presets 1`] = `
                 style={
                   Object {
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                     "paddingTop": 10,
                   }
@@ -600,7 +600,7 @@ exports[`Storyshots Text Style Presets 1`] = `
                 style={
                   Object {
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -700,7 +700,7 @@ exports[`Storyshots Text Style Presets 1`] = `
                 style={
                   Object {
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                     "fontWeight": "bold",
                   }
@@ -801,7 +801,7 @@ exports[`Storyshots Text Style Presets 1`] = `
                 style={
                   Object {
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 24,
                     "fontWeight": "bold",
                   }
@@ -932,7 +932,7 @@ exports[`Storyshots Text Styling 1`] = `
                 style={
                   Object {
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -943,7 +943,7 @@ exports[`Storyshots Text Styling 1`] = `
                   style={
                     Object {
                       "color": "#ffffff",
-                      "fontFamily": "EBGaramond",
+                      "fontFamily": "Verdana",
                       "fontSize": 15,
                       "fontWeight": "bold",
                     }

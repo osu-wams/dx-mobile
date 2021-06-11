@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Login Style Presets 1`] = `
+exports[`Storyshots Login Login Button 1`] = `
 <View
   onLayout={[Function]}
   style={
@@ -86,7 +86,7 @@ exports[`Storyshots Login Style Presets 1`] = `
                 }
               }
             >
-              The login component
+              A component used to initiate a SAML authentication login process.
             </Text>
           </View>
           <View
@@ -111,16 +111,43 @@ exports[`Storyshots Login Style Presets 1`] = `
               }
               testID="Login"
             >
-              <Text
-                onPress={[Function]}
+              <View
+                accessible={true}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Object {
-                    "fontSize": 45,
+                    "alignItems": "center",
+                    "backgroundColor": "#f58238",
+                    "borderRadius": 4,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "paddingHorizontal": 8,
+                    "paddingVertical": 8,
                   }
                 }
               >
-                Login
-              </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#ffffff",
+                      "fontFamily": "Verdana",
+                      "fontSize": 32,
+                      "fontWeight": "bold",
+                      "letterSpacing": 1,
+                      "paddingHorizontal": 12,
+                    }
+                  }
+                >
+                  Login
+                </Text>
+              </View>
             </View>
           </View>
         </View>

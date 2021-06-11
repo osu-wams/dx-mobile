@@ -123,7 +123,7 @@ exports[`Storyshots Button Style Presets 1`] = `
                 style={
                   Object {
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 9,
                     "paddingHorizontal": 12,
                   }
@@ -238,7 +238,7 @@ exports[`Storyshots Button Style Presets 1`] = `
                 style={
                   Object {
                     "color": "#ffffff",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 9,
                     "paddingHorizontal": 12,
                   }
@@ -353,7 +353,7 @@ exports[`Storyshots Button Style Presets 1`] = `
                 style={
                   Object {
                     "color": "#a511dc",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 20,
                     "paddingHorizontal": 12,
                   }

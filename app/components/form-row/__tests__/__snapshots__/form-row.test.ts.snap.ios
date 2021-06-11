@@ -118,7 +118,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 13,
                   }
                 }
@@ -140,7 +140,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -162,7 +162,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 9,
                   }
                 }
@@ -185,7 +185,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -286,7 +286,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -308,7 +308,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -331,7 +331,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -465,7 +465,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -476,7 +476,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -578,7 +578,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -681,7 +681,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -692,7 +692,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -794,7 +794,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -895,7 +895,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -996,7 +996,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
@@ -1127,7 +1127,7 @@ exports[`Storyshots FormRow Styling 1`] = `
                 style={
                   Object {
                     "color": "#000000",
-                    "fontFamily": "EBGaramond",
+                    "fontFamily": "Verdana",
                     "fontSize": 15,
                   }
                 }
