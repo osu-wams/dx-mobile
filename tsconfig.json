@@ -12,21 +12,17 @@
     "noUnusedLocals": true,
     "sourceMap": true,
     "target": "esnext",
-    "lib": [
-      "esnext"
-    ],
+    "lib": ["esnext"],
     "skipLibCheck": true
   },
-  "exclude": [
-    "node_modules"
-  ],
+  "exclude": ["node_modules"],
   "include": [
     "App.js",
     "app",
     "test",
     "storybook",
     "metro.config.js",
-    "jest.config.js",
+    "jest.*.js",
     "app.config.js"
   ],
   "extends": "expo/tsconfig.base"
