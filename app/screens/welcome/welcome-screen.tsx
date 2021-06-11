@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Screen, Text, Wallpaper } from '../../components';
+import { Screen, Text, Wallpaper, ResourceCard } from '../../components';
 import { color, SUBHEADER, LARGE_CONTENT, NORMAL_PADDING, FULL } from '../../theme';
 import { useQuery } from 'react-query';
 import { usePerson } from '@osu-wams/hooks';
@@ -16,7 +16,9 @@ export const WelcomeScreen = function WelcomeScreen() {
       <Screen style={NORMAL_PADDING} backgroundColor={color.transparent}>
         <Text style={SUBHEADER} tx="welcomeScreen.welcome" />
         <Text style={LARGE_CONTENT} tx="welcomeScreen.welcomeLong" />
-        <Text>{isSuccess && JSON.stringify(data)}</Text>
+
+        <ResourceCard categ="Featured"></ResourceCard>
+        <ResourceCard categ="Academic"></ResourceCard>
       </Screen>
     </View>
   );
