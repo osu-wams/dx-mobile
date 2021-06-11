@@ -19,11 +19,14 @@
   "include": [
     "App.js",
     "app",
-    "test",
+    "mocks",
     "storybook",
     "metro.config.js",
+    "jest.*.ts",
     "jest.*.js",
-    "app.config.js"
+    "app.config.js",
+    "babel.config.js",
+    "jest.setup.js"
   ],
   "extends": "expo/tsconfig.base"
 }
