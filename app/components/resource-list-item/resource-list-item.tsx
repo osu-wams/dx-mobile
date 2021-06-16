@@ -1,20 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { View, StyleSheet, Linking, Modal, Alert, Pressable, Image } from 'react-native';
-import { fal, IconDefinition } from '@fortawesome/pro-light-svg-icons';
+import { View, StyleSheet, Linking, Modal, Alert, Pressable } from 'react-native';
 import { faExclamationCircle as faExclamationCircleSolid } from '@fortawesome/pro-solid-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { findIconDefinition, library } from '@fortawesome/fontawesome-svg-core';
 import { TouchableHighlight } from 'react-native-gesture-handler';
 import { Helpers } from '@osu-wams/utils';
+import { Color } from '@osu-wams/theme';
 import { palette } from '../../theme/palette';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import boxSync from '../../../assets/logo-box-sync.png';
-import canvasLogo from '../../../assets/logo-canvas.png';
-import gDrive from '../../../assets/logo-drive.png';
-import gMail from '../../../assets/logo-gmail.png';
-import zoom from '../../../assets/logo-zoom.png';
 import { ResourceListItemProps } from './resource-list-item.props';
-import { Text } from '..';
+import { Icon, Text } from '..';
 
 const styles = StyleSheet.create({
   button: {
@@ -24,10 +16,7 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   buttonClose: {
-    backgroundColor: '#2196F3',
-  },
-  buttonOpen: {
-    backgroundColor: '#F194FF',
+    backgroundColor: Color['roguewave-400'],
   },
   cardListItem: {
     flexDirection: 'row',
@@ -38,10 +27,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     marginTop: 22,
-  },
-  imageIcon: {
-    height: 26,
-    width: 26,
   },
   modalText: {
     marginBottom: 15,
@@ -54,12 +39,12 @@ const styles = StyleSheet.create({
   },
   modalView: {
     alignItems: 'center',
-    backgroundColor: palette.white,
+    backgroundColor: Color.white,
     borderRadius: 20,
     elevation: 15,
     margin: 20,
     padding: 35,
-    shadowColor: palette.black,
+    shadowColor: Color.black,
     shadowOffset: {
       width: 0,
       height: 2,
@@ -67,46 +52,20 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 14,
   },
+  resourceIcon: {
+    marginLeft: 5,
+    marginTop: 2,
+  },
+  resourceTitle: {
+    fontSize: 18,
+    marginLeft: 12,
+  },
   textStyle: {
-    color: palette.white,
+    color: Color.white,
     fontWeight: 'bold',
     textAlign: 'center',
   },
 });
-
-library.add(fal, fab);
-
-const logoMapping = {
-  'logo-box-sync': boxSync,
-  'logo-canvas': canvasLogo,
-  'logo-drive': gDrive,
-  'logo-gmail': gMail,
-  'logo-zoom': zoom,
-};
-
-const IconLookup = (iconName, color) => {
-  if (iconName) {
-    const iconSplit = iconName.split('.');
-    if (iconSplit[0] === 'fal' || iconSplit[0] === 'fab') {
-      const lookupIconDefinition: IconDefinition = findIconDefinition({
-        prefix: iconSplit[0],
-        iconName: iconSplit[1],
-      });
-      return <FontAwesomeIcon icon={lookupIconDefinition} color={color} size={26} />;
-    } else if (iconSplit[0] === 'osu') {
-      return (
-        <Image
-          source={logoMapping[iconSplit[1]]}
-          accessibilityLabel={iconSplit[1]}
-          style={styles.imageIcon}
-        />
-      );
-    } else {
-      return <FontAwesomeIcon icon={fal.faCube} color={color} size={26} />;
-    }
-  }
-  return <FontAwesomeIcon icon={fal.faCube} color={color} size={26} />;
-};
 
 export const ResourceListItem = (props: ResourceListItemProps) => {
   const { title, link, itSystem, iconName } = props.resource;
@@ -141,7 +100,7 @@ export const ResourceListItem = (props: ResourceListItemProps) => {
   return (
     <TouchableHighlight
       activeOpacity={0.6}
-      underlayColor="#ddddd"
+      underlayColor={Color['neutral-800']}
       onPress={() => {
         if (itSystemStatus.details && itSystemStatus.details.status !== 1) {
           setModalVisible(true);
@@ -151,14 +110,14 @@ export const ResourceListItem = (props: ResourceListItemProps) => {
       }}
     >
       <View style={styles.cardListItem}>
-        {IconLookup(iconName, palette.black)}
-        <Text style={{ marginLeft: 12, fontSize: 18 }}>{title}</Text>
+        <Icon iconName={iconName} color={palette.black} />
+        <Text style={styles.resourceTitle}>{title}</Text>
         {itSystemStatus.details && itSystemStatus.details.status !== 1 && (
-          <FontAwesomeIcon
+          <Icon
             icon={faExclamationCircleSolid}
-            size={20}
             color="#ffdd54"
-            style={{ marginLeft: 5, marginTop: 2 }}
+            style={styles.resourceIcon}
+            size={18}
           />
         )}
         <Modal
@@ -173,7 +132,12 @@ export const ResourceListItem = (props: ResourceListItemProps) => {
           <View style={styles.centeredView}>
             <View style={styles.modalView}>
               {itSystemStatus.details && itSystemStatus.details.status !== 1 && (
-                <FontAwesomeIcon icon={faExclamationCircleSolid} size={24} color="#ffdd54" />
+                <Icon
+                  icon={faExclamationCircleSolid}
+                  color="#ffdd54"
+                  style={styles.resourceIcon}
+                  size={18}
+                />
               )}
               <Text style={styles.modalTitleText}>This resource may be unavailable.</Text>
               <Text style={styles.modalText}>
