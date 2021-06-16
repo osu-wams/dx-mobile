@@ -16,11 +16,9 @@ const StorybookUI = getStorybookUI({
 });
 
 export function StorybookUIRoot() {
-  useEffect(() => {
-    (async () => {
-      await initFonts(); // expo only
-    })();
-  }, []);
+  const [fontsLoaded] = initFonts();
+
+  if (!fontsLoaded) return null;
 
   return <StorybookUI />;
 }

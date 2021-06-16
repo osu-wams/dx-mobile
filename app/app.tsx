@@ -50,6 +50,7 @@ function Main() {
   const [appState, setAppState] = useRecoilState(applicationState);
   const auth = useAuth();
   const resetAuthState = useResetRecoilState(authState);
+  const [fontsLoaded] = initFonts();
 
   setRootNavigation(navigationRef);
   useBackButtonHandler(navigationRef, canExit);
@@ -57,14 +58,6 @@ function Main() {
     storage,
     NAVIGATION_PERSISTENCE_KEY,
   );
-
-  // Kick off initial async loading actions, like loading fonts and RootStore
-  useEffect(() => {
-    // eslint-disable-next-line @typescript-eslint/no-extra-semi
-    (async () => {
-      await initFonts(); // expo
-    })();
-  }, []);
 
   useEffect(() => {
     if (auth?.jwt) {
@@ -74,15 +67,15 @@ function Main() {
     }
   }, [auth]);
 
-  if (auth.isAuthenticated && appState.STATE !== 'LOADED') return <Loading />;
+  if ((auth.isAuthenticated && appState.STATE !== 'LOADED') || !fontsLoaded) return <Loading />;
   if (appState.STATE === 'BOOT' || (!auth.isAuthenticated && appState.STATE === 'LOADED')) {
     return <Login />;
   }
 
   // otherwise, we're ready to render the app
   return (
-    <ToggleStorybook>
-      <QueryClientProvider client={queryClient} contextSharing={true}>
+    <QueryClientProvider client={queryClient} contextSharing={true}>
+      <ToggleStorybook>
         <SafeAreaProvider initialMetrics={initialWindowMetrics}>
           <RootNavigator
             ref={navigationRef}
@@ -90,8 +83,8 @@ function Main() {
             onStateChange={onNavigationStateChange}
           />
         </SafeAreaProvider>
-      </QueryClientProvider>
-    </ToggleStorybook>
+      </ToggleStorybook>
+    </QueryClientProvider>
   );
 }
 
