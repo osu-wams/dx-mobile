@@ -22,389 +22,448 @@ exports[`Storyshots Switch Behaviour 1`] = `
       }
     }
   >
-    <RCTScrollView>
+    <RCTScrollView
+      data={
+        Array [
+          Array [
+            <UseCase
+              text="The Toggle Switch"
+              usage="Use the switch to represent on/off states."
+            >
+              <Toggle
+                initial={false}
+              >
+                [Function]
+              </Toggle>
+            </UseCase>,
+            <UseCase
+              text="value = true"
+              usage="This is permanently on."
+            >
+              <Switch
+                value={true}
+              />
+            </UseCase>,
+            <UseCase
+              text="value = false"
+              usage="This is permanantly off."
+            >
+              <Switch
+                value={false}
+              />
+            </UseCase>,
+          ],
+        ]
+      }
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
+    >
       <View>
         <View
-          style={
-            Object {
-              "backgroundColor": "#eee",
-            }
-          }
+          onLayout={[Function]}
+          style={null}
         >
           <View
             style={
               Object {
-                "borderBottomColor": "#e6e6e6",
-                "borderBottomWidth": 1,
-                "paddingBottom": 10,
-                "paddingHorizontal": 10,
-                "paddingTop": 20,
+                "backgroundColor": "#eee",
               }
             }
           >
             <View
               style={
                 Object {
-                  "borderTopColor": "#e6e6e6",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#666",
-                    "fontSize": 10,
-                    "paddingBottom": 2,
-                    "paddingHorizontal": 4,
-                  }
-                }
-              >
-                Use Case
-              </Text>
-            </View>
-            <View
-              style={Object {}}
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#3d3d3d",
-                    "fontWeight": "600",
-                  }
-                }
-              >
-                The Toggle Switch
-              </Text>
-            </View>
-            <Text
-              style={
-                Object {
-                  "color": "#666",
-                  "fontSize": 10,
-                  "paddingTop": 0,
-                }
-              }
-            >
-              Use the switch to represent on/off states.
-            </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "backgroundColor": "#fff",
-                "padding": 10,
-              }
-            }
-          >
-            <View
-              accessible={true}
-              focusable={true}
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                Object {
-                  "backgroundColor": "#f8e4d2",
-                  "borderColor": "rgba(0, 0, 0, 0.1)",
-                  "borderRadius": 22.5,
-                  "borderWidth": 1,
-                  "height": 32,
-                  "width": 56,
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
                 }
               }
             >
               <View
                 style={
                   Object {
-                    "backgroundColor": "#414042",
-                    "borderColor": "rgba(0, 0, 0, 0.1)",
-                    "borderRadius": 15,
-                    "borderWidth": 1,
-                    "elevation": 2,
-                    "height": 30,
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
                     "position": "absolute",
-                    "shadowColor": "rgba(0, 0, 0, 0.1)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 1,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 2,
-                    "transform": Array [
-                      Object {
-                        "translateX": -0.5,
-                      },
-                    ],
-                    "width": 30,
+                    "right": 0,
+                    "top": 0,
                   }
                 }
-              />
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#eee",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "borderBottomColor": "#e6e6e6",
-                "borderBottomWidth": 1,
-                "paddingBottom": 10,
-                "paddingHorizontal": 10,
-                "paddingTop": 20,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "borderTopColor": "#e6e6e6",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-            >
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  The Toggle Switch
+                </Text>
+              </View>
               <Text
                 style={
                   Object {
                     "color": "#666",
                     "fontSize": 10,
-                    "paddingBottom": 2,
-                    "paddingHorizontal": 4,
+                    "paddingTop": 0,
                   }
                 }
               >
-                Use Case
+                Use the switch to represent on/off states.
               </Text>
             </View>
             <View
-              style={Object {}}
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#3d3d3d",
-                    "fontWeight": "600",
-                  }
-                }
-              >
-                value = true
-              </Text>
-            </View>
-            <Text
               style={
                 Object {
-                  "color": "#666",
-                  "fontSize": 10,
-                  "paddingTop": 0,
+                  "backgroundColor": "#fff",
+                  "padding": 10,
                 }
               }
             >
-              This is permanently on.
-            </Text>
+              <View
+                accessible={true}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#f8e4d2",
+                    "borderColor": "rgba(0, 0, 0, 0.1)",
+                    "borderRadius": 22.5,
+                    "borderWidth": 1,
+                    "height": 32,
+                    "width": 56,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#414042",
+                      "borderColor": "rgba(0, 0, 0, 0.1)",
+                      "borderRadius": 15,
+                      "borderWidth": 1,
+                      "elevation": 2,
+                      "height": 30,
+                      "position": "absolute",
+                      "shadowColor": "rgba(0, 0, 0, 0.1)",
+                      "shadowOffset": Object {
+                        "height": 2,
+                        "width": 1,
+                      },
+                      "shadowOpacity": 1,
+                      "shadowRadius": 2,
+                      "transform": Array [
+                        Object {
+                          "translateX": -0.5,
+                        },
+                      ],
+                      "width": 30,
+                    }
+                  }
+                />
+              </View>
+            </View>
           </View>
           <View
             style={
               Object {
-                "backgroundColor": "#fff",
-                "padding": 10,
+                "backgroundColor": "#eee",
               }
             }
           >
             <View
-              accessible={true}
-              focusable={true}
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
               style={
                 Object {
-                  "backgroundColor": "#f37121",
-                  "borderColor": "#f37121",
-                  "borderRadius": 22.5,
-                  "borderWidth": 1,
-                  "height": 32,
-                  "width": 56,
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
                 }
               }
             >
               <View
                 style={
                   Object {
-                    "backgroundColor": "#414042",
-                    "borderColor": "rgba(0, 0, 0, 0.1)",
-                    "borderRadius": 15,
-                    "borderWidth": 1,
-                    "elevation": 2,
-                    "height": 30,
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
                     "position": "absolute",
-                    "shadowColor": "rgba(0, 0, 0, 0.1)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 1,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 2,
-                    "transform": Array [
-                      Object {
-                        "translateX": 24,
-                      },
-                    ],
-                    "width": 30,
+                    "right": 0,
+                    "top": 0,
                   }
                 }
-              />
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#eee",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "borderBottomColor": "#e6e6e6",
-                "borderBottomWidth": 1,
-                "paddingBottom": 10,
-                "paddingHorizontal": 10,
-                "paddingTop": 20,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "borderTopColor": "#e6e6e6",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-            >
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  value = true
+                </Text>
+              </View>
               <Text
                 style={
                   Object {
                     "color": "#666",
                     "fontSize": 10,
-                    "paddingBottom": 2,
-                    "paddingHorizontal": 4,
+                    "paddingTop": 0,
                   }
                 }
               >
-                Use Case
+                This is permanently on.
               </Text>
             </View>
             <View
-              style={Object {}}
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#3d3d3d",
-                    "fontWeight": "600",
-                  }
-                }
-              >
-                value = false
-              </Text>
-            </View>
-            <Text
               style={
                 Object {
-                  "color": "#666",
-                  "fontSize": 10,
-                  "paddingTop": 0,
+                  "backgroundColor": "#fff",
+                  "padding": 10,
                 }
               }
             >
-              This is permanantly off.
-            </Text>
+              <View
+                accessible={true}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#f37121",
+                    "borderColor": "#f37121",
+                    "borderRadius": 22.5,
+                    "borderWidth": 1,
+                    "height": 32,
+                    "width": 56,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#414042",
+                      "borderColor": "rgba(0, 0, 0, 0.1)",
+                      "borderRadius": 15,
+                      "borderWidth": 1,
+                      "elevation": 2,
+                      "height": 30,
+                      "position": "absolute",
+                      "shadowColor": "rgba(0, 0, 0, 0.1)",
+                      "shadowOffset": Object {
+                        "height": 2,
+                        "width": 1,
+                      },
+                      "shadowOpacity": 1,
+                      "shadowRadius": 2,
+                      "transform": Array [
+                        Object {
+                          "translateX": 24,
+                        },
+                      ],
+                      "width": 30,
+                    }
+                  }
+                />
+              </View>
+            </View>
           </View>
           <View
             style={
               Object {
-                "backgroundColor": "#fff",
-                "padding": 10,
+                "backgroundColor": "#eee",
               }
             }
           >
             <View
-              accessible={true}
-              focusable={true}
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
               style={
                 Object {
-                  "backgroundColor": "#f8e4d2",
-                  "borderColor": "rgba(0, 0, 0, 0.1)",
-                  "borderRadius": 22.5,
-                  "borderWidth": 1,
-                  "height": 32,
-                  "width": 56,
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
                 }
               }
             >
               <View
                 style={
                   Object {
-                    "backgroundColor": "#414042",
-                    "borderColor": "rgba(0, 0, 0, 0.1)",
-                    "borderRadius": 15,
-                    "borderWidth": 1,
-                    "elevation": 2,
-                    "height": 30,
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
                     "position": "absolute",
-                    "shadowColor": "rgba(0, 0, 0, 0.1)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 1,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 2,
-                    "transform": Array [
-                      Object {
-                        "translateX": -0.5,
-                      },
-                    ],
-                    "width": 30,
+                    "right": 0,
+                    "top": 0,
                   }
                 }
-              />
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  value = false
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#666",
+                    "fontSize": 10,
+                    "paddingTop": 0,
+                  }
+                }
+              >
+                This is permanantly off.
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "padding": 10,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#f8e4d2",
+                    "borderColor": "rgba(0, 0, 0, 0.1)",
+                    "borderRadius": 22.5,
+                    "borderWidth": 1,
+                    "height": 32,
+                    "width": 56,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#414042",
+                      "borderColor": "rgba(0, 0, 0, 0.1)",
+                      "borderRadius": 15,
+                      "borderWidth": 1,
+                      "elevation": 2,
+                      "height": 30,
+                      "position": "absolute",
+                      "shadowColor": "rgba(0, 0, 0, 0.1)",
+                      "shadowOffset": Object {
+                        "height": 2,
+                        "width": 1,
+                      },
+                      "shadowOpacity": 1,
+                      "shadowRadius": 2,
+                      "transform": Array [
+                        Object {
+                          "translateX": -0.5,
+                        },
+                      ],
+                      "width": 30,
+                    }
+                  }
+                />
+              </View>
             </View>
           </View>
         </View>
@@ -436,264 +495,317 @@ exports[`Storyshots Switch Styling 1`] = `
       }
     }
   >
-    <RCTScrollView>
+    <RCTScrollView
+      data={
+        Array [
+          Array [
+            <UseCase
+              text="Custom Styling"
+              usage="Promise me this won't happen."
+            >
+              <Toggle
+                initial={false}
+              >
+                [Function]
+              </Toggle>
+            </UseCase>,
+            <UseCase
+              text="Style array"
+              usage="This either."
+            >
+              <Toggle
+                initial={false}
+              >
+                [Function]
+              </Toggle>
+            </UseCase>,
+          ],
+        ]
+      }
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
+    >
       <View>
         <View
-          style={
-            Object {
-              "backgroundColor": "#eee",
-            }
-          }
+          onLayout={[Function]}
+          style={null}
         >
           <View
             style={
               Object {
-                "borderBottomColor": "#e6e6e6",
-                "borderBottomWidth": 1,
-                "paddingBottom": 10,
-                "paddingHorizontal": 10,
-                "paddingTop": 20,
+                "backgroundColor": "#eee",
               }
             }
           >
             <View
               style={
                 Object {
-                  "borderTopColor": "#e6e6e6",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
                 }
               }
             >
+              <View
+                style={
+                  Object {
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  Custom Styling
+                </Text>
+              </View>
               <Text
                 style={
                   Object {
                     "color": "#666",
                     "fontSize": 10,
-                    "paddingBottom": 2,
-                    "paddingHorizontal": 4,
+                    "paddingTop": 0,
                   }
                 }
               >
-                Use Case
+                Promise me this won't happen.
               </Text>
             </View>
             <View
-              style={Object {}}
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#3d3d3d",
-                    "fontWeight": "600",
-                  }
-                }
-              >
-                Custom Styling
-              </Text>
-            </View>
-            <Text
               style={
                 Object {
-                  "color": "#666",
-                  "fontSize": 10,
-                  "paddingTop": 0,
+                  "backgroundColor": "#fff",
+                  "padding": 10,
                 }
               }
             >
-              Promise me this won't happen.
-            </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "backgroundColor": "#fff",
-                "padding": 10,
-              }
-            }
-          >
-            <View>
-              <View
-                accessible={true}
-                focusable={true}
-                onClick={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "red",
-                    "borderColor": "maroon",
-                    "borderRadius": 22.5,
-                    "borderWidth": 1,
-                    "height": 32,
-                    "width": 56,
-                  }
-                }
-              >
+              <View>
                 <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "pink",
-                      "borderColor": "rgba(0, 0, 0, 0.1)",
-                      "borderRadius": 15,
+                      "backgroundColor": "red",
+                      "borderColor": "maroon",
+                      "borderRadius": 22.5,
                       "borderWidth": 1,
-                      "elevation": 2,
-                      "height": 30,
-                      "position": "absolute",
-                      "shadowColor": "rgba(0, 0, 0, 0.1)",
-                      "shadowOffset": Object {
-                        "height": 2,
-                        "width": 1,
-                      },
-                      "shadowOpacity": 1,
-                      "shadowRadius": 2,
-                      "transform": Array [
-                        Object {
-                          "translateX": -0.5,
-                        },
-                      ],
-                      "width": 30,
+                      "height": 32,
+                      "width": 56,
                     }
                   }
-                />
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "pink",
+                        "borderColor": "rgba(0, 0, 0, 0.1)",
+                        "borderRadius": 15,
+                        "borderWidth": 1,
+                        "elevation": 2,
+                        "height": 30,
+                        "position": "absolute",
+                        "shadowColor": "rgba(0, 0, 0, 0.1)",
+                        "shadowOffset": Object {
+                          "height": 2,
+                          "width": 1,
+                        },
+                        "shadowOpacity": 1,
+                        "shadowRadius": 2,
+                        "transform": Array [
+                          Object {
+                            "translateX": -0.5,
+                          },
+                        ],
+                        "width": 30,
+                      }
+                    }
+                  />
+                </View>
               </View>
             </View>
           </View>
-        </View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#eee",
-            }
-          }
-        >
           <View
             style={
               Object {
-                "borderBottomColor": "#e6e6e6",
-                "borderBottomWidth": 1,
-                "paddingBottom": 10,
-                "paddingHorizontal": 10,
-                "paddingTop": 20,
+                "backgroundColor": "#eee",
               }
             }
           >
             <View
               style={
                 Object {
-                  "borderTopColor": "#e6e6e6",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
                 }
               }
             >
+              <View
+                style={
+                  Object {
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  Style array
+                </Text>
+              </View>
               <Text
                 style={
                   Object {
                     "color": "#666",
                     "fontSize": 10,
-                    "paddingBottom": 2,
-                    "paddingHorizontal": 4,
+                    "paddingTop": 0,
                   }
                 }
               >
-                Use Case
+                This either.
               </Text>
             </View>
             <View
-              style={Object {}}
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#3d3d3d",
-                    "fontWeight": "600",
-                  }
-                }
-              >
-                Style array
-              </Text>
-            </View>
-            <Text
               style={
                 Object {
-                  "color": "#666",
-                  "fontSize": 10,
-                  "paddingTop": 0,
+                  "backgroundColor": "#fff",
+                  "padding": 10,
                 }
               }
             >
-              This either.
-            </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "backgroundColor": "#fff",
-                "padding": 10,
-              }
-            }
-          >
-            <View>
-              <View
-                accessible={true}
-                focusable={true}
-                onClick={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#686868",
-                    "borderColor": "rgba(0, 0, 0, 0.1)",
-                    "borderRadius": 0,
-                    "borderWidth": 1,
-                    "height": 80,
-                    "width": 56,
-                  }
-                }
-              >
+              <View>
                 <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
-                      "backgroundColor": "#b1008e",
-                      "borderColor": "#686868",
+                      "backgroundColor": "#686868",
+                      "borderColor": "rgba(0, 0, 0, 0.1)",
                       "borderRadius": 0,
                       "borderWidth": 1,
-                      "elevation": 2,
                       "height": 80,
-                      "position": "absolute",
-                      "shadowColor": "rgba(0, 0, 0, 0.1)",
-                      "shadowOffset": Object {
-                        "height": 2,
-                        "width": 1,
-                      },
-                      "shadowOpacity": 1,
-                      "shadowRadius": 2,
-                      "transform": Array [
-                        Object {
-                          "translateX": -0.5,
-                        },
-                      ],
-                      "width": 30,
+                      "width": 56,
                     }
                   }
-                />
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#b1008e",
+                        "borderColor": "#686868",
+                        "borderRadius": 0,
+                        "borderWidth": 1,
+                        "elevation": 2,
+                        "height": 80,
+                        "position": "absolute",
+                        "shadowColor": "rgba(0, 0, 0, 0.1)",
+                        "shadowOffset": Object {
+                          "height": 2,
+                          "width": 1,
+                        },
+                        "shadowOpacity": 1,
+                        "shadowRadius": 2,
+                        "transform": Array [
+                          Object {
+                            "translateX": -0.5,
+                          },
+                        ],
+                        "width": 30,
+                      }
+                    }
+                  />
+                </View>
               </View>
             </View>
           </View>

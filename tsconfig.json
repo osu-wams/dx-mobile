@@ -19,6 +19,7 @@
   "include": [
     "App.js",
     "app",
+    "assets",
     "mocks",
     "storybook",
     "metro.config.js",

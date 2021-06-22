@@ -1,16 +1,20 @@
-import * as React from "react"
-import { ScrollView, View, ViewStyle } from "react-native"
+import * as React from 'react';
+import { FlatList, View, ViewStyle } from 'react-native';
 
 export interface StoryProps {
-  children?: React.ReactNode
+  children?: React.ReactNode;
 }
 
-const ROOT: ViewStyle = { flex: 1 }
+const ROOT: ViewStyle = { flex: 1 };
 
 export function Story(props: StoryProps) {
   return (
     <View style={ROOT}>
-      <ScrollView>{props.children}</ScrollView>
+      <FlatList
+        data={[props.children]}
+        renderItem={({ item }) => <>{item}</>}
+        keyExtractor={(item, index) => `item-${index}`}
+      />
     </View>
-  )
+  );
 }

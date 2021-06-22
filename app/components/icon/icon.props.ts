@@ -1,21 +1,12 @@
-import { ImageStyle, ViewStyle } from "react-native"
-import { IconTypes } from "./icons"
+import { IconDefinition } from '@fortawesome/pro-light-svg-icons';
+import { FontAwesomeIconStyle } from '@fortawesome/react-native-fontawesome';
+import { ImageStyle, ViewStyle } from 'react-native';
 
 export interface IconProps {
-  /**
-   * Style overrides for the icon image
-   */
-  style?: ImageStyle
-
-  /**
-   * Style overrides for the icon container
-   */
-
-  containerStyle?: ViewStyle
-
-  /**
-   * The name of the icon
-   */
-
-  icon?: IconTypes
+  color: string;
+  icon?: IconDefinition;
+  size?: number;
+  iconName?: string;
+  style?: ImageStyle | FontAwesomeIconStyle;
+  containerStyle?: ViewStyle;
 }

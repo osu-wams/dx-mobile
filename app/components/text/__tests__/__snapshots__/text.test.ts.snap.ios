@@ -22,430 +22,541 @@ exports[`Storyshots Text Passing Content 1`] = `
       }
     }
   >
-    <RCTScrollView>
+    <RCTScrollView
+      data={
+        Array [
+          Array [
+            <UseCase
+              text="text"
+              usage="Used when you want to pass a value but don't want to open a child."
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#000000",
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text
+                  text="Heyo!"
+                />
+              </View>
+            </UseCase>,
+            <UseCase
+              text="tx"
+              usage="Used for looking up i18n keys."
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#000000",
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text
+                  tx="common.ok"
+                />
+                <Text
+                  tx="common.cancel"
+                />
+              </View>
+            </UseCase>,
+            <UseCase
+              text="children"
+              usage="Used like you would normally use a React Native <Text> component."
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#000000",
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text>
+                  Passing strings as children.
+                </Text>
+              </View>
+            </UseCase>,
+            <UseCase
+              text="nested children"
+              usage="You can embed them and change styles too."
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#000000",
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text>
+                   
+                  Hello 
+                  <Text
+                    preset="bold"
+                  >
+                    bolded
+                  </Text>
+                   World.
+                </Text>
+              </View>
+            </UseCase>,
+          ],
+        ]
+      }
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
+    >
       <View>
         <View
-          style={
-            Object {
-              "backgroundColor": "#eee",
-            }
-          }
+          onLayout={[Function]}
+          style={null}
         >
           <View
             style={
               Object {
-                "borderBottomColor": "#e6e6e6",
-                "borderBottomWidth": 1,
-                "paddingBottom": 10,
-                "paddingHorizontal": 10,
-                "paddingTop": 20,
+                "backgroundColor": "#eee",
               }
             }
           >
             <View
               style={
                 Object {
-                  "borderTopColor": "#e6e6e6",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
                 }
               }
             >
-              <Text
+              <View
                 style={
                   Object {
-                    "color": "#666",
-                    "fontSize": 10,
-                    "paddingBottom": 2,
-                    "paddingHorizontal": 4,
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
                   }
                 }
               >
-                Use Case
-              </Text>
-            </View>
-            <View
-              style={Object {}}
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#3d3d3d",
-                    "fontWeight": "600",
-                  }
-                }
-              >
-                text
-              </Text>
-            </View>
-            <Text
-              style={
-                Object {
-                  "color": "#666",
-                  "fontSize": 10,
-                  "paddingTop": 0,
-                }
-              }
-            >
-              Used when you want to pass a value but don't want to open a child.
-            </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "backgroundColor": "#fff",
-                "padding": 10,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#000000",
-                  "flex": 1,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#ffffff",
-                    "fontFamily": "Verdana",
-                    "fontSize": 15,
-                  }
-                }
-              >
-                Heyo!
-              </Text>
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#eee",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "borderBottomColor": "#e6e6e6",
-                "borderBottomWidth": 1,
-                "paddingBottom": 10,
-                "paddingHorizontal": 10,
-                "paddingTop": 20,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "borderTopColor": "#e6e6e6",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#666",
-                    "fontSize": 10,
-                    "paddingBottom": 2,
-                    "paddingHorizontal": 4,
-                  }
-                }
-              >
-                Use Case
-              </Text>
-            </View>
-            <View
-              style={Object {}}
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#3d3d3d",
-                    "fontWeight": "600",
-                  }
-                }
-              >
-                tx
-              </Text>
-            </View>
-            <Text
-              style={
-                Object {
-                  "color": "#666",
-                  "fontSize": 10,
-                  "paddingTop": 0,
-                }
-              }
-            >
-              Used for looking up i18n keys.
-            </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "backgroundColor": "#fff",
-                "padding": 10,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#000000",
-                  "flex": 1,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#ffffff",
-                    "fontFamily": "Verdana",
-                    "fontSize": 15,
-                  }
-                }
-              >
-                OK!
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#ffffff",
-                    "fontFamily": "Verdana",
-                    "fontSize": 15,
-                  }
-                }
-              >
-                Cancel
-              </Text>
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#eee",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "borderBottomColor": "#e6e6e6",
-                "borderBottomWidth": 1,
-                "paddingBottom": 10,
-                "paddingHorizontal": 10,
-                "paddingTop": 20,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "borderTopColor": "#e6e6e6",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#666",
-                    "fontSize": 10,
-                    "paddingBottom": 2,
-                    "paddingHorizontal": 4,
-                  }
-                }
-              >
-                Use Case
-              </Text>
-            </View>
-            <View
-              style={Object {}}
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#3d3d3d",
-                    "fontWeight": "600",
-                  }
-                }
-              >
-                children
-              </Text>
-            </View>
-            <Text
-              style={
-                Object {
-                  "color": "#666",
-                  "fontSize": 10,
-                  "paddingTop": 0,
-                }
-              }
-            >
-              Used like you would normally use a React Native &lt;Text&gt; component.
-            </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "backgroundColor": "#fff",
-                "padding": 10,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#000000",
-                  "flex": 1,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#ffffff",
-                    "fontFamily": "Verdana",
-                    "fontSize": 15,
-                  }
-                }
-              >
-                Passing strings as children.
-              </Text>
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#eee",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "borderBottomColor": "#e6e6e6",
-                "borderBottomWidth": 1,
-                "paddingBottom": 10,
-                "paddingHorizontal": 10,
-                "paddingTop": 20,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "borderTopColor": "#e6e6e6",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#666",
-                    "fontSize": 10,
-                    "paddingBottom": 2,
-                    "paddingHorizontal": 4,
-                  }
-                }
-              >
-                Use Case
-              </Text>
-            </View>
-            <View
-              style={Object {}}
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#3d3d3d",
-                    "fontWeight": "600",
-                  }
-                }
-              >
-                nested children
-              </Text>
-            </View>
-            <Text
-              style={
-                Object {
-                  "color": "#666",
-                  "fontSize": 10,
-                  "paddingTop": 0,
-                }
-              }
-            >
-              You can embed them and change styles too.
-            </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "backgroundColor": "#fff",
-                "padding": 10,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#000000",
-                  "flex": 1,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#ffffff",
-                    "fontFamily": "Verdana",
-                    "fontSize": 15,
-                  }
-                }
-              >
-                 
-                Hello 
                 <Text
                   style={
                     Object {
-                      "color": "#ffffff",
-                      "fontFamily": "Verdana",
-                      "fontSize": 15,
-                      "fontWeight": "bold",
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
                     }
                   }
                 >
-                  bolded
+                  Use Case
                 </Text>
-                 World.
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  text
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#666",
+                    "fontSize": 10,
+                    "paddingTop": 0,
+                  }
+                }
+              >
+                Used when you want to pass a value but don't want to open a child.
               </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "padding": 10,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#000000",
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "OpenSans",
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                  Heyo!
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "#eee",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  tx
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#666",
+                    "fontSize": 10,
+                    "paddingTop": 0,
+                  }
+                }
+              >
+                Used for looking up i18n keys.
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "padding": 10,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#000000",
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "OpenSans",
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                  OK!
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "OpenSans",
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                  Cancel
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "#eee",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  children
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#666",
+                    "fontSize": 10,
+                    "paddingTop": 0,
+                  }
+                }
+              >
+                Used like you would normally use a React Native &lt;Text&gt; component.
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "padding": 10,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#000000",
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "OpenSans",
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                  Passing strings as children.
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "#eee",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  nested children
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#666",
+                    "fontSize": 10,
+                    "paddingTop": 0,
+                  }
+                }
+              >
+                You can embed them and change styles too.
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "padding": 10,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#000000",
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "OpenSans",
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                   
+                  Hello 
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                        "fontWeight": "bold",
+                      }
+                    }
+                  >
+                    bolded
+                  </Text>
+                   World.
+                </Text>
+              </View>
             </View>
           </View>
         </View>
@@ -477,348 +588,463 @@ exports[`Storyshots Text Style Presets 1`] = `
       }
     }
   >
-    <RCTScrollView>
+    <RCTScrollView
+      data={
+        Array [
+          Array [
+            <UseCase
+              text="default"
+              usage="Used for normal body text."
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#000000",
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text>
+                  Hello!
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "paddingTop": 10,
+                    }
+                  }
+                >
+                  Check out
+                  
+
+                  my
+                  
+
+                  line height
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "paddingTop": 10,
+                    }
+                  }
+                >
+                  The quick brown fox jumped over the slow lazy dog.
+                </Text>
+                <Text>
+                  $123,456,789.00
+                </Text>
+              </View>
+            </UseCase>,
+            <UseCase
+              text="bold"
+              usage="Used for bolded body text."
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#000000",
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text
+                  preset="bold"
+                >
+                  Osnap! I'm puffy.
+                </Text>
+              </View>
+            </UseCase>,
+            <UseCase
+              text="header"
+              usage="Used for major section headers."
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#000000",
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text
+                  preset="header"
+                >
+                  Behold!
+                </Text>
+              </View>
+            </UseCase>,
+          ],
+        ]
+      }
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
+    >
       <View>
         <View
-          style={
-            Object {
-              "backgroundColor": "#eee",
-            }
-          }
+          onLayout={[Function]}
+          style={null}
         >
           <View
             style={
               Object {
-                "borderBottomColor": "#e6e6e6",
-                "borderBottomWidth": 1,
-                "paddingBottom": 10,
-                "paddingHorizontal": 10,
-                "paddingTop": 20,
+                "backgroundColor": "#eee",
               }
             }
           >
             <View
               style={
                 Object {
-                  "borderTopColor": "#e6e6e6",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
                 }
               }
             >
+              <View
+                style={
+                  Object {
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  default
+                </Text>
+              </View>
               <Text
                 style={
                   Object {
                     "color": "#666",
                     "fontSize": 10,
-                    "paddingBottom": 2,
-                    "paddingHorizontal": 4,
+                    "paddingTop": 0,
                   }
                 }
               >
-                Use Case
+                Used for normal body text.
               </Text>
             </View>
             <View
-              style={Object {}}
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#3d3d3d",
-                    "fontWeight": "600",
-                  }
-                }
-              >
-                default
-              </Text>
-            </View>
-            <Text
               style={
                 Object {
-                  "color": "#666",
-                  "fontSize": 10,
-                  "paddingTop": 0,
+                  "backgroundColor": "#fff",
+                  "padding": 10,
                 }
               }
             >
-              Used for normal body text.
-            </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "backgroundColor": "#fff",
-                "padding": 10,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#000000",
-                  "flex": 1,
-                }
-              }
-            >
-              <Text
+              <View
                 style={
                   Object {
-                    "color": "#ffffff",
-                    "fontFamily": "Verdana",
-                    "fontSize": 15,
+                    "backgroundColor": "#000000",
+                    "flex": 1,
                   }
                 }
               >
-                Hello!
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#ffffff",
-                    "fontFamily": "Verdana",
-                    "fontSize": 15,
-                    "paddingTop": 10,
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "OpenSans",
+                      "fontSize": 15,
+                    }
                   }
-                }
-              >
-                Check out
-                
+                >
+                  Hello!
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "OpenSans",
+                      "fontSize": 15,
+                      "paddingTop": 10,
+                    }
+                  }
+                >
+                  Check out
+                  
 
-                my
-                
+                  my
+                  
 
-                line height
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#ffffff",
-                    "fontFamily": "Verdana",
-                    "fontSize": 15,
-                    "paddingTop": 10,
+                  line height
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "OpenSans",
+                      "fontSize": 15,
+                      "paddingTop": 10,
+                    }
                   }
-                }
-              >
-                The quick brown fox jumped over the slow lazy dog.
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#ffffff",
-                    "fontFamily": "Verdana",
-                    "fontSize": 15,
+                >
+                  The quick brown fox jumped over the slow lazy dog.
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "OpenSans",
+                      "fontSize": 15,
+                    }
                   }
-                }
-              >
-                $123,456,789.00
-              </Text>
+                >
+                  $123,456,789.00
+                </Text>
+              </View>
             </View>
           </View>
-        </View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#eee",
-            }
-          }
-        >
           <View
             style={
               Object {
-                "borderBottomColor": "#e6e6e6",
-                "borderBottomWidth": 1,
-                "paddingBottom": 10,
-                "paddingHorizontal": 10,
-                "paddingTop": 20,
+                "backgroundColor": "#eee",
               }
             }
           >
             <View
               style={
                 Object {
-                  "borderTopColor": "#e6e6e6",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
                 }
               }
             >
+              <View
+                style={
+                  Object {
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  bold
+                </Text>
+              </View>
               <Text
                 style={
                   Object {
                     "color": "#666",
                     "fontSize": 10,
-                    "paddingBottom": 2,
-                    "paddingHorizontal": 4,
+                    "paddingTop": 0,
                   }
                 }
               >
-                Use Case
+                Used for bolded body text.
               </Text>
             </View>
             <View
-              style={Object {}}
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#3d3d3d",
-                    "fontWeight": "600",
-                  }
-                }
-              >
-                bold
-              </Text>
-            </View>
-            <Text
               style={
                 Object {
-                  "color": "#666",
-                  "fontSize": 10,
-                  "paddingTop": 0,
+                  "backgroundColor": "#fff",
+                  "padding": 10,
                 }
               }
             >
-              Used for bolded body text.
-            </Text>
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#000000",
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "OpenSans",
+                      "fontSize": 15,
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  Osnap! I'm puffy.
+                </Text>
+              </View>
+            </View>
           </View>
           <View
             style={
               Object {
-                "backgroundColor": "#fff",
-                "padding": 10,
+                "backgroundColor": "#eee",
               }
             }
           >
             <View
               style={
                 Object {
-                  "backgroundColor": "#000000",
-                  "flex": 1,
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
                 }
               }
             >
-              <Text
+              <View
                 style={
                   Object {
-                    "color": "#ffffff",
-                    "fontFamily": "Verdana",
-                    "fontSize": 15,
-                    "fontWeight": "bold",
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
                   }
                 }
               >
-                Osnap! I'm puffy.
-              </Text>
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#eee",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "borderBottomColor": "#e6e6e6",
-                "borderBottomWidth": 1,
-                "paddingBottom": 10,
-                "paddingHorizontal": 10,
-                "paddingTop": 20,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "borderTopColor": "#e6e6e6",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-            >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  header
+                </Text>
+              </View>
               <Text
                 style={
                   Object {
                     "color": "#666",
                     "fontSize": 10,
-                    "paddingBottom": 2,
-                    "paddingHorizontal": 4,
+                    "paddingTop": 0,
                   }
                 }
               >
-                Use Case
+                Used for major section headers.
               </Text>
             </View>
             <View
-              style={Object {}}
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "padding": 10,
+                }
+              }
             >
-              <Text
+              <View
                 style={
                   Object {
-                    "color": "#3d3d3d",
-                    "fontWeight": "600",
+                    "backgroundColor": "#000000",
+                    "flex": 1,
                   }
                 }
               >
-                header
-              </Text>
-            </View>
-            <Text
-              style={
-                Object {
-                  "color": "#666",
-                  "fontSize": 10,
-                  "paddingTop": 0,
-                }
-              }
-            >
-              Used for major section headers.
-            </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "backgroundColor": "#fff",
-                "padding": 10,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "backgroundColor": "#000000",
-                  "flex": 1,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#ffffff",
-                    "fontFamily": "Verdana",
-                    "fontSize": 24,
-                    "fontWeight": "bold",
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "OpenSans",
+                      "fontSize": 24,
+                      "fontWeight": "bold",
+                    }
                   }
-                }
-              >
-                Behold!
-              </Text>
+                >
+                  Behold!
+                </Text>
+              </View>
             </View>
           </View>
         </View>
@@ -850,85 +1076,12 @@ exports[`Storyshots Text Styling 1`] = `
       }
     }
   >
-    <RCTScrollView>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#eee",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "borderBottomColor": "#e6e6e6",
-                "borderBottomWidth": 1,
-                "paddingBottom": 10,
-                "paddingHorizontal": 10,
-                "paddingTop": 20,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "borderTopColor": "#e6e6e6",
-                  "borderTopWidth": 1,
-                  "flexDirection": "row",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#666",
-                    "fontSize": 10,
-                    "paddingBottom": 2,
-                    "paddingHorizontal": 4,
-                  }
-                }
-              >
-                Use Case
-              </Text>
-            </View>
-            <View
-              style={Object {}}
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "#3d3d3d",
-                    "fontWeight": "600",
-                  }
-                }
-              >
-                Style array
-              </Text>
-            </View>
-            <Text
-              style={
-                Object {
-                  "color": "#666",
-                  "fontSize": 10,
-                  "paddingTop": 0,
-                }
-              }
-            >
-              Text with style array
-            </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "backgroundColor": "#fff",
-                "padding": 10,
-              }
-            }
+    <RCTScrollView
+      data={
+        Array [
+          <UseCase
+            text="Style array"
+            usage="Text with style array"
           >
             <View
               style={
@@ -943,31 +1096,164 @@ exports[`Storyshots Text Styling 1`] = `
                 ]
               }
             >
-              <Text
-                style={
-                  Object {
-                    "color": "#ffffff",
-                    "fontFamily": "Verdana",
-                    "fontSize": 15,
-                  }
-                }
-              >
+              <Text>
                  
                 Hello 
                 <Text
-                  style={
-                    Object {
-                      "color": "#ffffff",
-                      "fontFamily": "Verdana",
-                      "fontSize": 15,
-                      "fontWeight": "bold",
-                    }
-                  }
+                  preset="bold"
                 >
                   bolded
                 </Text>
                  World.
               </Text>
+            </View>
+          </UseCase>,
+        ]
+      }
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
+    >
+      <View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#eee",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  Style array
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#666",
+                    "fontSize": 10,
+                    "paddingTop": 0,
+                  }
+                }
+              >
+                Text with style array
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "padding": 10,
+                }
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#000000",
+                      "flex": 1,
+                    },
+                    Object {
+                      "backgroundColor": "#7fff00",
+                    },
+                  ]
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "OpenSans",
+                      "fontSize": 15,
+                    }
+                  }
+                >
+                   
+                  Hello 
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                        "fontWeight": "bold",
+                      }
+                    }
+                  >
+                    bolded
+                  </Text>
+                   World.
+                </Text>
+              </View>
             </View>
           </View>
         </View>

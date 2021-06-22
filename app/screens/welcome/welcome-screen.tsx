@@ -1,12 +1,12 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Screen, Text, Wallpaper, ResourceCard } from '../../components';
+import { Screen, Text, Wallpaper } from '../../components';
+import { ResourceCard } from '../../features';
 import { color, SUBHEADER, LARGE_CONTENT, NORMAL_PADDING, FULL } from '../../theme';
-import { useQuery } from 'react-query';
-import { usePerson } from '@osu-wams/hooks';
+import { usePerson, useResources } from '@osu-wams/hooks';
 
 export const WelcomeScreen = function WelcomeScreen() {
-  const { isSuccess, data } = useQuery('/api/resources');
+  const resources = useResources();
   const person = usePerson();
 
   return (
@@ -16,9 +16,12 @@ export const WelcomeScreen = function WelcomeScreen() {
       <Screen style={NORMAL_PADDING} backgroundColor={color.transparent}>
         <Text style={SUBHEADER} tx="welcomeScreen.welcome" />
         <Text style={LARGE_CONTENT} tx="welcomeScreen.welcomeLong" />
-
-        <ResourceCard categ="Featured"></ResourceCard>
-        <ResourceCard categ="Academic"></ResourceCard>
+        {resources.isSuccess && (
+          <>
+            <ResourceCard categ="Featured"></ResourceCard>
+            <ResourceCard categ="Academic"></ResourceCard>
+          </>
+        )}
       </Screen>
     </View>
   );
