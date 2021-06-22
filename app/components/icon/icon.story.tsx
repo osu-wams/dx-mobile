@@ -3,7 +3,7 @@ import { ImageStyle } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import { StoryScreen, Story, UseCase } from '../../../storybook/views';
 import { Icon } from './icon';
-import { Color } from '../../../.yalc/@osu-wams/theme/dist';
+import { Color } from '@osu-wams/theme';
 import { FontAwesomeIconStyle } from '@fortawesome/react-native-fontawesome';
 
 declare let module;
