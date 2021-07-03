@@ -42,10 +42,16 @@ export const startAuthSession = async (): Promise<boolean> => {
   }
 };
 
+export const authOrEnv = async (): Promise<Auth> => {
+  const auth = await secureStorage.load<Auth>(env.AUTH_STORE_KEY);
+  if (auth && auth.refresh) return auth;
+  return { baseUrl: env.BASE_URL, refresh: env.AUTH_REFRESH_JWT };
+};
+
 export const fetchToken = async (): Promise<Auth | undefined> => {
   try {
-    const auth = await secureStorage.load<Auth>(env.AUTH_STORE_KEY);
-    if (auth && auth.refresh) {
+    const auth = await authOrEnv();
+    if (auth.refresh) {
       const response: AxiosResponse = await axios.get(`${env.API_URL}/user/token`, {
         headers: {
           Authorization: auth.refresh,
