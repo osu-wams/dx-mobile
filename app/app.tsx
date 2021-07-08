@@ -55,9 +55,11 @@ function Main() {
   const auth = useAuth();
   const resetAuthState = useResetRecoilState(authState);
   const [fontsLoaded] = initFonts();
-  const user = useRecoilValue<Types.UserState>(userState);
-  const [theme, setTheme] = useRecoilState<string>(themeState);
+  const [theme, setTheme] = useRecoilState<string>(State.themeState);
+  const user = useRecoilValue<Types.UserState>(State.userState);
 
+  // TODO: This depends on a browser, see ticket MMA-8 for work to be done
+  // useUserState(() => ({}));
   setRootNavigation(navigationRef);
   useBackButtonHandler(navigationRef, canExit);
   const { initialNavigationState, onNavigationStateChange } = useNavigationPersistence(
@@ -108,7 +110,9 @@ function Main() {
 export function App() {
   return (
     <RecoilRoot>
-      <Main />
+      <QueryClientProvider client={queryClient} contextSharing={true}>
+        <Main />
+      </QueryClientProvider>
     </RecoilRoot>
   );
 }
