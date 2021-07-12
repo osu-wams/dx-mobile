@@ -27,7 +27,8 @@ import {
 import { ToggleStorybook } from '../storybook/toggle-storybook';
 import { QueryClientProvider } from 'react-query';
 import useAuth from './hooks/useAuth';
-import { RecoilRoot, useResetRecoilState, useRecoilState } from 'recoil';
+import { RecoilRoot, useResetRecoilState, useRecoilState, useRecoilValue } from 'recoil';
+import { Types } from '@osu-wams/lib';
 
 // This puts screens in a native ViewController or Activity. If you want fully native
 // stack navigation, use `createNativeStackNavigator` in place of `createStackNavigator`:
@@ -37,10 +38,13 @@ import { Loading } from './components/loading/loading';
 import { Login } from './components/login/login';
 import queryClient, { updateQueryClientOptions } from './utils/queryClient';
 import { authState, applicationState } from './state';
-
+import { ThemeProvider } from 'styled-components/native';
+import { themesLookup } from '@osu-wams/theme';
+import { State } from '@osu-wams/hooks';
 enableScreens();
 
 export const NAVIGATION_PERSISTENCE_KEY = 'NAVIGATION_STATE';
+const { userState, themeState } = State;
 
 /**
  * This is the root component of our app.
@@ -51,6 +55,8 @@ function Main() {
   const auth = useAuth();
   const resetAuthState = useResetRecoilState(authState);
   const [fontsLoaded] = initFonts();
+  const user = useRecoilValue<Types.UserState>(userState);
+  const [theme, setTheme] = useRecoilState<string>(themeState);
 
   setRootNavigation(navigationRef);
   useBackButtonHandler(navigationRef, canExit);
@@ -67,6 +73,13 @@ function Main() {
     }
   }, [auth]);
 
+  /**
+   * Targets Theme.tsx shared user state modifications
+   */
+  useEffect(() => {
+    setTheme(user.data?.theme || theme);
+  }, [theme, user.data.theme]);
+
   if ((auth.isAuthenticated && appState.STATE !== 'LOADED') || !fontsLoaded) return <Loading />;
   if (appState.STATE === 'BOOT' || (!auth.isAuthenticated && appState.STATE === 'LOADED')) {
     return <Login />;
@@ -75,15 +88,17 @@ function Main() {
   // otherwise, we're ready to render the app
   return (
     <QueryClientProvider client={queryClient} contextSharing={true}>
-      <ToggleStorybook>
-        <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-          <RootNavigator
-            ref={navigationRef}
-            initialState={initialNavigationState}
-            onStateChange={onNavigationStateChange}
-          />
-        </SafeAreaProvider>
-      </ToggleStorybook>
+      <ThemeProvider theme={themesLookup[theme]}>
+        <ToggleStorybook>
+          <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+            <RootNavigator
+              ref={navigationRef}
+              initialState={initialNavigationState}
+              onStateChange={onNavigationStateChange}
+            />
+          </SafeAreaProvider>
+        </ToggleStorybook>
+      </ThemeProvider>
     </QueryClientProvider>
   );
 }
