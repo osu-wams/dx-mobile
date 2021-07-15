@@ -1,33 +1,41 @@
-import * as React from "react"
-import { ViewStyle, TextStyle, Alert } from "react-native"
-import { storiesOf } from "@storybook/react-native"
-import { StoryScreen, Story, UseCase } from "../../../storybook/views"
-import { Button } from "./button"
+import * as React from 'react';
+import { ViewStyle, TextStyle, Alert } from 'react-native';
+import { storiesOf } from '@storybook/react-native';
+import { StoryScreen, Story, UseCase } from '../../../storybook/views';
+import { Button, CloseButton, ButtonLink } from './button';
 
-declare let module
+declare let module;
 
-const buttonStyleArray: ViewStyle[] = [{ paddingVertical: 100 }, { borderRadius: 0 }]
+const buttonStyleArray: ViewStyle[] = [{ width: 120 }, { borderRadius: 80 }];
 
-const buttonTextStyleArray: TextStyle[] = [{ fontSize: 20 }, { color: "#a511dc" }]
+const buttonTextStyleArray: TextStyle[] = [
+  { fontSize: 20, fontWeight: '800' },
+  { color: '#0ffeda' },
+];
 
-storiesOf("Button", module)
+storiesOf('Button', module)
   .addDecorator((fn) => <StoryScreen>{fn()}</StoryScreen>)
-  .add("Style Presets", () => (
+  .add('Basic Usage', () => (
     <Story>
       <UseCase text="Primary" usage="The primary button.">
-        <Button text="Click It" preset="primary" onPress={() => Alert.alert("pressed")} />
+        <Button onPress={() => Alert.alert('pressed')} text="Button" />
       </UseCase>
       <UseCase text="Disabled" usage="The disabled behaviour of the primary button.">
-        <Button text="Click It" preset="primary" onPress={() => Alert.alert("pressed")} disabled />
+        <Button onPress={() => Alert.alert('pressed')} disabled text="Button" />
       </UseCase>
       <UseCase text="Array Style" usage="Button with array style">
         <Button
-          text="Click It"
-          preset="primary"
-          onPress={() => Alert.alert("pressed")}
+          onPress={() => Alert.alert('pressed')}
           style={buttonStyleArray}
           textStyle={buttonTextStyleArray}
+          text="Button"
         />
       </UseCase>
+      <UseCase text="Close Button" usage="A close button.">
+        <CloseButton onPress={() => Alert.alert('pressed')} />
+      </UseCase>
+      <UseCase text="Link Button" usage="A link button.">
+        <ButtonLink onPress={() => Alert.alert('pressed')} text="Link" />
+      </UseCase>
     </Story>
-  ))
+  ));
