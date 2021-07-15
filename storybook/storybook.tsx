@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { getStorybookUI, configure } from '@storybook/react-native';
 import { initFonts } from '../app/theme/fonts';
 
