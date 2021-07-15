@@ -82,7 +82,8 @@ function Main() {
     setTheme(user.data?.theme || theme);
   }, [theme, user.data.theme]);
 
-  if ((auth.isAuthenticated && appState.STATE !== 'LOADED') || !fontsLoaded) return <Loading />;
+  if (!fontsLoaded) return null;
+  if (auth.isAuthenticated && appState.STATE !== 'LOADED') return <Loading />;
   if (appState.STATE === 'BOOT' || (!auth.isAuthenticated && appState.STATE === 'LOADED')) {
     return (
       <ThemeProvider theme={themesLookup[theme]}>
@@ -93,19 +94,17 @@ function Main() {
 
   // otherwise, we're ready to render the app
   return (
-    <QueryClientProvider client={queryClient} contextSharing={true}>
-      <ThemeProvider theme={themesLookup[theme]}>
-        <ToggleStorybook>
-          <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-            <RootNavigator
-              ref={navigationRef}
-              initialState={initialNavigationState}
-              onStateChange={onNavigationStateChange}
-            />
-          </SafeAreaProvider>
-        </ToggleStorybook>
-      </ThemeProvider>
-    </QueryClientProvider>
+    <ThemeProvider theme={themesLookup[theme]}>
+      <ToggleStorybook>
+        <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+          <RootNavigator
+            ref={navigationRef}
+            initialState={initialNavigationState}
+            onStateChange={onNavigationStateChange}
+          />
+        </SafeAreaProvider>
+      </ToggleStorybook>
+    </ThemeProvider>
   );
 }
 
