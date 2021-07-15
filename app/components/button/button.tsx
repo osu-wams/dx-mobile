@@ -74,21 +74,25 @@ export const CloseButton = (props) => (
   </CloseButtonBase>
 );
 
+const ButtonLinkIcon = styled(Icon)<ButtonProps>(({ fg }) => ({
+  color: fg || 'white',
+  marginLeft: 5,
+}));
+
+const ButtonLinkBase = styled(ButtonBase)<ButtonProps>({
+  flex: 1,
+  flexDirection: 'row',
+  justifyContent: 'center',
+});
+
 export const ButtonLink = (props) => {
   const { text, fg, textStyle, ...rest } = props;
   return (
-    <ButtonBase
-      {...rest}
-      style={{
-        flex: 1,
-        flexDirection: 'row',
-        justifyContent: 'center',
-      }}
-    >
+    <ButtonLinkBase {...rest}>
       <ButtonText fg={fg} style={textStyle}>
         {text}
       </ButtonText>
-      <Icon icon={faLink} color={fg || 'white'} style={{ marginLeft: 5 }} />
-    </ButtonBase>
+      <ButtonLinkIcon icon={faLink} />
+    </ButtonLinkBase>
   );
 };
