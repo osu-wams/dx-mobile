@@ -84,7 +84,11 @@ function Main() {
 
   if ((auth.isAuthenticated && appState.STATE !== 'LOADED') || !fontsLoaded) return <Loading />;
   if (appState.STATE === 'BOOT' || (!auth.isAuthenticated && appState.STATE === 'LOADED')) {
-    return <Login />;
+    return (
+      <ThemeProvider theme={themesLookup[theme]}>
+        <Login />
+      </ThemeProvider>
+    );
   }
 
   // otherwise, we're ready to render the app
