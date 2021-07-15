@@ -84,12 +84,7 @@ export const DemoScreen = () => {
         <BulletItem
           text={`To run Storybook, press ${platformCommand} or shake the device to show the developer menu, then select "Toggle Storybook"`}
         />
-        <Button
-          style={DEMO}
-          textStyle={DEMO_TEXT}
-          tx="demoScreen.welcome"
-          onPress={() => navigation.navigate('welcome')}
-        />
+        <Button style={DEMO} onPress={() => navigation.navigate('welcome')} />
       </Screen>
     </View>
   );
