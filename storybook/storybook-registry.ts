@@ -9,5 +9,7 @@ require('../app/components/icon/icon.story');
 require('../app/components/header/header.story');
 require('../app/components/loading/loading.story');
 require('../app/components/login/login.story');
+require('../app/components/card/card.story');
 require('../app/components/resource-list-item/resource-list-item.story');
 require('../app/features/resources/resource-card.story');
+require('../app/components/info-button/info-button.story');
