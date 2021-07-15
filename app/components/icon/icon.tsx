@@ -1,50 +1,128 @@
 import * as React from 'react';
-import { fal, IconDefinition } from '@fortawesome/pro-light-svg-icons';
+import { fal, IconDefinition, IconName, IconPrefix } from '@fortawesome/pro-light-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { View, Image, ImageStyle } from 'react-native';
-import { IconProps } from './icon.props';
+import { View, Image, ImageStyle, ViewStyle } from 'react-native';
+import { IconProps, CounterProps } from './icon.props';
 import { icons } from './icons';
 import { findIconDefinition, library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon, FontAwesomeIconStyle } from '@fortawesome/react-native-fontawesome';
 import { merge } from 'ramda';
+import styled from 'styled-components/native';
+import { Text } from '../text/text';
 
 library.add(fal, fab);
 
-const ROOT: ImageStyle = {
-  height: 26,
+const IconCounter = styled.View<CounterProps>(
+  ({ theme }) => ({
+    position: 'absolute',
+    backgroundColor: theme.ui.icon.counter.background,
+    paddingTop: 0,
+    paddingBottom: 0,
+    paddingLeft: 6,
+    paddingRight: 6,
+    borderRadius: 11,
+    height: 18,
+  }),
+  ({ top }) =>
+    !top
+      ? {
+          bottom: -8,
+          right: -8,
+        }
+      : {
+          top: -8,
+          left: -8,
+        },
+);
+
+const IconCounterText = styled(Text)(({ theme }) => ({
+  alignSelf: 'center',
+  color: theme.ui.icon.counter.color,
+  fontSize: 12,
+}));
+
+const ContainerRootStyle: ViewStyle = {
+  marginRight: 10,
+};
+
+type IconStyle = ImageStyle | FontAwesomeIconStyle;
+
+const IconRootStyle: ImageStyle = {
+  height: 16,
   resizeMode: 'contain',
-  width: 26,
+  width: 16,
 };
 
-const IconLookup = (icon, iconName, color, style, size = 26) => {
-  if (icon) {
-    return <FontAwesomeIcon icon={icon} color={color} size={size} style={style} />;
+export const StyledIcon = styled(FontAwesomeIcon)<IconProps>(
+  ({ theme, color, bg }) => ({
+    color: color || theme.ui.icon.color,
+    backgroundColor: bg || theme.ui.icon.background,
+  }),
+  ({ bg }) =>
+    bg && {
+      padding: 8,
+      borderRadius: '50%',
+    },
+  ({ fontSize }) =>
+    fontSize && {
+      fontSize: fontSize,
+    },
+);
+
+const renderIcon = (props: {
+  icon: any;
+  iconName: string;
+  color: string;
+  style: IconStyle;
+  size: number;
+}) => {
+  const { iconName, icon, ...others } = props;
+  if (icon) return <StyledIcon icon={icon} {...others} />;
+  if (!iconName) return <StyledIcon icon={fal.faCube} {...others} />;
+
+  const iconSplit = iconName.split('.');
+  if (iconSplit.length === 1) {
+    return (
+      <Image
+        source={icons[iconName]}
+        accessibilityLabel={iconName}
+        style={props.style as ImageStyle}
+      />
+    );
   }
-  if (iconName) {
-    const iconSplit = iconName.split('.');
-    if (iconSplit.length === 1) {
-      return <Image source={icons[iconName]} accessibilityLabel={iconName} style={style} />;
-    }
-    if (iconSplit[0] === 'fal' || iconSplit[0] === 'fab') {
-      const lookupIconDefinition: IconDefinition = findIconDefinition({
-        prefix: iconSplit[0],
-        iconName: iconSplit[1],
-      });
+  switch (iconSplit[0].toLowerCase()) {
+    case 'osu':
       return (
-        <FontAwesomeIcon icon={lookupIconDefinition} color={color} size={size} style={style} />
+        <Image
+          source={icons[iconSplit[1]]}
+          accessibilityLabel={iconSplit[1]}
+          style={props.style as ImageStyle}
+        />
       );
-    } else if (iconSplit[0] === 'osu') {
-      return <Image source={icons[iconSplit[1]]} accessibilityLabel={iconSplit[1]} style={style} />;
-    } else {
-      return <FontAwesomeIcon icon={fal.faCube} color={color} size={size} style={style} />;
+    case 'fal':
+    case 'fab': {
+      const lookupIconDefinition: IconDefinition = findIconDefinition({
+        prefix: iconSplit[0] as IconPrefix,
+        iconName: iconSplit[1] as IconName,
+      });
+      return <StyledIcon icon={lookupIconDefinition} {...others} />;
     }
+
+    default:
+      return <StyledIcon icon={fal.faCube} {...others} />;
   }
-  return <FontAwesomeIcon icon={fal.faCube} color={color} size={size} style={style} />;
 };
 
-export function Icon(props: IconProps) {
-  const { style: styleOverride, iconName, containerStyle, color, icon, size } = props;
-  const style: ImageStyle | FontAwesomeIconStyle = merge(ROOT, styleOverride);
-
-  return <View style={containerStyle}>{IconLookup(icon, iconName, color, style, size)}</View>;
+export function Icon(props: IconProps & CounterProps) {
+  const { style, iconName, containerStyle, color, icon, size, top, count } = props;
+  return (
+    <View style={merge(ContainerRootStyle, containerStyle)}>
+      {renderIcon({ icon, iconName, color, style: merge(IconRootStyle, style), size })}
+      {count !== undefined && (
+        <IconCounter top={top}>
+          <IconCounterText>{count}</IconCounterText>
+        </IconCounter>
+      )}
+    </View>
+  );
 }
