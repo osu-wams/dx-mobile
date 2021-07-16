@@ -133,13 +133,6 @@
   },
   "jest": {
     "preset": "jest-expo",
-    "setupFiles": [
-      "<rootDir>/node_modules/react-native/jest/setup.js",
-      "<rootDir>/jest.setup.js"
-    ],
-    "setupFilesAfterEnv": [
-      "<rootDir>/jest.setupAfterEnv.ts"
-    ],
     "testPathIgnorePatterns": [
       "/node_modules/",
       "/e2e"
@@ -156,7 +149,12 @@
         "testPathIgnorePatterns": [
           "/node_modules/",
           "/e2e"
-        ]
+        ],
+        "setupFiles": [
+          "<rootDir>/node_modules/react-native/jest/setup.js",
+          "<rootDir>/jest.setup.js"
+        ],
+        "setupFilesAfterEnv": ["<rootDir>/jest.setupAfterEnv.js"]
       },
       {
         "preset": "jest-expo/android",
@@ -166,7 +164,12 @@
         "testPathIgnorePatterns": [
           "/node_modules/",
           "/e2e"
-        ]
+        ],
+        "setupFiles": [
+          "<rootDir>/node_modules/react-native/jest/setup.js",
+          "<rootDir>/jest.setup.js"
+        ],
+        "setupFilesAfterEnv": ["<rootDir>/jest.setupAfterEnv.js"]
       }
     ]
   },
