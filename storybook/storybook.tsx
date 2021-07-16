@@ -1,12 +1,11 @@
+// import 'storybook-addon-ondevice-styled-theme/register';
 import React from 'react';
 import { getStorybookUI, configure } from '@storybook/react-native';
-import { initFonts } from '../app/theme/fonts';
+import * as stories from './storybook-registry';
 
 declare let module;
 
-configure(() => {
-  require('./storybook-registry');
-}, module);
+configure(() => stories, module);
 
 const StorybookUI = getStorybookUI({
   port: 9001,
@@ -15,10 +14,6 @@ const StorybookUI = getStorybookUI({
   asyncStorage: require('@react-native-async-storage/async-storage').default || null,
 });
 
-export function StorybookUIRoot() {
-  const [fontsLoaded] = initFonts();
-
-  if (!fontsLoaded) return null;
-
+export const StorybookUIRoot = () => {
   return <StorybookUI />;
-}
+};
