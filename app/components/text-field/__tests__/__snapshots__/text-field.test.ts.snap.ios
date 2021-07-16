@@ -294,12 +294,12 @@ exports[`Storyshots TextField Labelling 1`] = `
                     }
                   }
                 >
-                  Field
+                  storybook.field.test
                 </Text>
                 <TextInput
                   allowFontScaling={true}
                   onChangeText={[Function]}
-                  placeholder="Placeholder"
+                  placeholder="storybook.placeholder.test"
                   rejectResponderTermination={true}
                   style={
                     Object {

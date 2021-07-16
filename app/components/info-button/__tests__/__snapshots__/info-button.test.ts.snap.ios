@@ -1,13 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Login Login Button 1`] = `
+exports[`Storyshots InfoButton Names 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "backgroundColor": "#f0f0f0",
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "backgroundColor": "#f0f0f0",
+        "flex": 1,
+      },
+      Object {
+        "paddingBottom": 0,
+      },
+    ]
   }
 >
   <View
@@ -21,10 +26,28 @@ exports[`Storyshots Login Login Button 1`] = `
       data={
         Array [
           <UseCase
-            text="Default"
-            usage="A component used to initiate a SAML authentication login process."
+            initialState={
+              Array [
+                Object {
+                  "atom": RecoilState {
+                    "key": "infoButtonState",
+                  },
+                  "state": Array [
+                    Object {
+                      "content": "Info button body content goes here.",
+                      "id": "123",
+                      "title": "Information Button Title",
+                    },
+                  ],
+                },
+              ]
+            }
+            text="Information Button"
+            usage="A regular information button."
           >
-            <Login />
+            <InfoButton
+              infoButtonId="123"
+            />
           </UseCase>,
         ]
       }
@@ -42,7 +65,7 @@ exports[`Storyshots Login Login Button 1`] = `
       onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
-      removeClippedSubviews={true}
+      removeClippedSubviews={false}
       renderItem={[Function]}
       scrollEventThrottle={50}
       stickyHeaderIndices={Array []}
@@ -110,7 +133,7 @@ exports[`Storyshots Login Login Button 1`] = `
                     }
                   }
                 >
-                  Default
+                  Information Button
                 </Text>
               </View>
               <Text
@@ -122,7 +145,7 @@ exports[`Storyshots Login Login Button 1`] = `
                   }
                 }
               >
-                A component used to initiate a SAML authentication login process.
+                A regular information button.
               </Text>
             </View>
             <View
@@ -132,61 +155,7 @@ exports[`Storyshots Login Login Button 1`] = `
                   "padding": 10,
                 }
               }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "backgroundColor": "#414042",
-                    "flex": 1,
-                    "flexDirection": "column",
-                    "height": 1334,
-                    "justifyContent": "center",
-                    "width": 750,
-                  }
-                }
-                testID="Login"
-              >
-                <View
-                  accessible={true}
-                  focusable={true}
-                  onClick={[Function]}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "backgroundColor": "#D73F09",
-                      "borderColor": "black",
-                      "borderRadius": 4,
-                      "borderStyle": "solid",
-                      "borderWidth": 0,
-                      "opacity": 1,
-                      "paddingBottom": 10,
-                      "paddingLeft": 20,
-                      "paddingRight": 20,
-                      "paddingTop": 10,
-                    }
-                  }
-                >
-                  <Text
-                    style={
-                      Object {
-                        "color": "#000000",
-                        "fontFamily": "OpenSans",
-                        "fontSize": 15,
-                      }
-                    }
-                  >
-                    Login
-                  </Text>
-                </View>
-              </View>
-            </View>
+            />
           </View>
         </View>
       </View>
