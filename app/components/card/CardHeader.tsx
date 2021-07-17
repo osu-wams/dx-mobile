@@ -33,6 +33,7 @@ export const CardHeaderSimple = styled.View({
 
 const HeaderTitle = styled(Text)({
   flex: 1,
+  fontSize: 16,
 });
 
 const CardHeader: FC<{ title?: string; badge?: any }> = ({ title, badge, ...props }) => {
