@@ -296,10 +296,10 @@ exports[`Storyshots Icon Names 1`] = `
                   source={1}
                   style={
                     Object {
-                      "height": 16,
+                      "height": 24,
                       "margin": 5,
                       "resizeMode": "contain",
-                      "width": 16,
+                      "width": 24,
                     }
                   }
                 />
@@ -316,10 +316,10 @@ exports[`Storyshots Icon Names 1`] = `
                   source={1}
                   style={
                     Object {
-                      "height": 16,
+                      "height": 24,
                       "margin": 5,
                       "resizeMode": "contain",
-                      "width": 16,
+                      "width": 24,
                     }
                   }
                 />
@@ -416,10 +416,10 @@ exports[`Storyshots Icon Names 1`] = `
                   source={1}
                   style={
                     Object {
-                      "height": 16,
+                      "height": 24,
                       "margin": 5,
                       "resizeMode": "contain",
-                      "width": 16,
+                      "width": 24,
                     }
                   }
                 />
@@ -436,10 +436,10 @@ exports[`Storyshots Icon Names 1`] = `
                   source={1}
                   style={
                     Object {
-                      "height": 16,
+                      "height": 24,
                       "margin": 5,
                       "resizeMode": "contain",
-                      "width": 16,
+                      "width": 24,
                     }
                   }
                 />
@@ -456,10 +456,10 @@ exports[`Storyshots Icon Names 1`] = `
                   source={1}
                   style={
                     Object {
-                      "height": 16,
+                      "height": 24,
                       "margin": 5,
                       "resizeMode": "contain",
-                      "width": 16,
+                      "width": 24,
                     }
                   }
                 />
@@ -476,10 +476,10 @@ exports[`Storyshots Icon Names 1`] = `
                   source={1}
                   style={
                     Object {
-                      "height": 16,
+                      "height": 24,
                       "margin": 5,
                       "resizeMode": "contain",
-                      "width": 16,
+                      "width": 24,
                     }
                   }
                 />
@@ -496,10 +496,10 @@ exports[`Storyshots Icon Names 1`] = `
                   source={1}
                   style={
                     Object {
-                      "height": 16,
+                      "height": 24,
                       "margin": 5,
                       "resizeMode": "contain",
-                      "width": 16,
+                      "width": 24,
                     }
                   }
                 />
@@ -612,10 +612,14 @@ exports[`Storyshots Icon Names 1`] = `
                       },
                       Object {
                         "backgroundColor": "transparent",
-                        "height": 16,
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "fontSize": 32,
+                        "height": 24,
                         "margin": 5,
                         "resizeMode": "contain",
-                        "width": 16,
+                        "width": 24,
                       },
                       Object {
                         "flex": 0,
@@ -630,6 +634,11 @@ exports[`Storyshots Icon Names 1`] = `
                 >
                   <RNSVGGroup
                     fill={4278190080}
+                    font={
+                      Object {
+                        "fontSize": 32,
+                      }
+                    }
                     propList={
                       Array [
                         "fill",
@@ -678,10 +687,14 @@ exports[`Storyshots Icon Names 1`] = `
                       },
                       Object {
                         "backgroundColor": "transparent",
-                        "height": 16,
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "fontSize": 32,
+                        "height": 24,
                         "margin": 5,
                         "resizeMode": "contain",
-                        "width": 16,
+                        "width": 24,
                       },
                       Object {
                         "flex": 0,
@@ -696,6 +709,11 @@ exports[`Storyshots Icon Names 1`] = `
                 >
                   <RNSVGGroup
                     fill={4278190080}
+                    font={
+                      Object {
+                        "fontSize": 32,
+                      }
+                    }
                     propList={
                       Array [
                         "fill",
@@ -831,10 +849,14 @@ exports[`Storyshots Icon Names 1`] = `
                         },
                         Object {
                           "backgroundColor": "transparent",
-                          "height": 16,
+                          "flexBasis": 0,
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "fontSize": 32,
+                          "height": 24,
                           "margin": 5,
                           "resizeMode": "contain",
-                          "width": 16,
+                          "width": 24,
                         },
                         Object {
                           "flex": 0,
@@ -849,6 +871,11 @@ exports[`Storyshots Icon Names 1`] = `
                   >
                     <RNSVGGroup
                       fill={4278190080}
+                      font={
+                        Object {
+                          "fontSize": 32,
+                        }
+                      }
                       propList={
                         Array [
                           "fill",
@@ -937,10 +964,14 @@ exports[`Storyshots Icon Names 1`] = `
                         },
                         Object {
                           "backgroundColor": "transparent",
-                          "height": 16,
+                          "flexBasis": 0,
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "fontSize": 32,
+                          "height": 24,
                           "margin": 5,
                           "resizeMode": "contain",
-                          "width": 16,
+                          "width": 24,
                         },
                         Object {
                           "flex": 0,
@@ -955,6 +986,11 @@ exports[`Storyshots Icon Names 1`] = `
                   >
                     <RNSVGGroup
                       fill={4278190080}
+                      font={
+                        Object {
+                          "fontSize": 32,
+                        }
+                      }
                       propList={
                         Array [
                           "fill",

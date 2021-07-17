@@ -382,9 +382,9 @@ exports[`Storyshots Header Behavior 1`] = `
                         source={1}
                         style={
                           Object {
-                            "height": 16,
+                            "height": 24,
                             "resizeMode": "contain",
-                            "width": 16,
+                            "width": 24,
                           }
                         }
                       />
@@ -586,9 +586,9 @@ exports[`Storyshots Header Behavior 1`] = `
                         source={1}
                         style={
                           Object {
-                            "height": 16,
+                            "height": 24,
                             "resizeMode": "contain",
-                            "width": 16,
+                            "width": 24,
                           }
                         }
                       />

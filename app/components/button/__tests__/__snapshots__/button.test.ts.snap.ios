@@ -593,16 +593,17 @@ exports[`Storyshots Button Basic Usage 1`] = `
                 >
                   <RNSVGSvgView
                     align="xMidYMid"
-                    bbHeight={16}
-                    bbWidth={16}
+                    bbHeight={24}
+                    bbWidth={24}
                     fill="#7B746F"
                     focusable={false}
-                    height={16}
+                    height={24}
                     meetOrSlice={0}
                     minX={0}
                     minY={0}
                     secondaryFill={null}
                     secondaryOpacity={0.4}
+                    size={24}
                     style={
                       Array [
                         Object {
@@ -611,23 +612,31 @@ exports[`Storyshots Button Basic Usage 1`] = `
                         },
                         Object {
                           "backgroundColor": "transparent",
-                          "height": 16,
-                          "resizeMode": "contain",
-                          "width": 16,
+                          "flexBasis": 0,
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "fontSize": 32,
+                          "height": 32,
+                          "width": 32,
                         },
                         Object {
                           "flex": 0,
-                          "height": 16,
-                          "width": 16,
+                          "height": 24,
+                          "width": 24,
                         },
                       ]
                     }
                     vbHeight={512}
                     vbWidth={320}
-                    width={16}
+                    width={24}
                   >
                     <RNSVGGroup
                       fill={4286280815}
+                      font={
+                        Object {
+                          "fontSize": 32,
+                        }
+                      }
                       propList={
                         Array [
                           "fill",
@@ -780,16 +789,17 @@ exports[`Storyshots Button Basic Usage 1`] = `
                 >
                   <RNSVGSvgView
                     align="xMidYMid"
-                    bbHeight={16}
-                    bbWidth={16}
+                    bbHeight={24}
+                    bbWidth={24}
                     fill="#7B746F"
                     focusable={false}
-                    height={16}
+                    height={24}
                     meetOrSlice={0}
                     minX={0}
                     minY={0}
                     secondaryFill={null}
                     secondaryOpacity={0.4}
+                    size={24}
                     style={
                       Array [
                         Object {
@@ -797,28 +807,32 @@ exports[`Storyshots Button Basic Usage 1`] = `
                           "borderWidth": 0,
                         },
                         Object {
-                          "0": Object {
-                            "color": "white",
-                            "marginLeft": 5,
-                          },
                           "backgroundColor": "transparent",
-                          "height": 16,
-                          "resizeMode": "contain",
-                          "width": 16,
+                          "flexBasis": 0,
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "fontSize": 32,
+                          "height": 32,
+                          "width": 32,
                         },
                         Object {
                           "flex": 0,
-                          "height": 16,
-                          "width": 16,
+                          "height": 24,
+                          "width": 24,
                         },
                       ]
                     }
                     vbHeight={512}
                     vbWidth={512}
-                    width={16}
+                    width={24}
                   >
                     <RNSVGGroup
                       fill={4286280815}
+                      font={
+                        Object {
+                          "fontSize": 32,
+                        }
+                      }
                       propList={
                         Array [
                           "fill",
