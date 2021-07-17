@@ -1,51 +1,38 @@
-import React, { useState, useEffect } from 'react';
-import { View, StyleSheet } from 'react-native';
+import React, { FC, useState, useEffect } from 'react';
 import { FlatList } from 'react-native-gesture-handler';
 import { State, User, useResourcesByQueue, useStatus } from '@osu-wams/hooks';
 import { Types } from '@osu-wams/lib';
 import { useRecoilValue } from 'recoil';
-import { palette } from '../../theme/palette';
 import { ResourceListItem } from '../../components/resource-list-item/resource-list-item';
-import { Text } from '../../components';
+import { Card } from '../../components/card/Card';
+import CardHeader from '../../components/card/CardHeader';
+import { Icon, Text } from '../../components';
+import CardFooter from '../../components/card/CardFooter';
+import CardContent from '../../components/card/CardContent';
+import { IconDefinition } from '@fortawesome/pro-light-svg-icons';
 
 const { hasAudience } = User;
 
-const styles = StyleSheet.create({
-  card: {
-    backgroundColor: palette.white,
-    borderColor: palette.white,
-    borderRadius: 10,
-    borderWidth: 6,
-    marginBottom: 10,
-  },
-  cardHeader: {
-    borderBottomWidth: 1,
-    flexDirection: 'row',
-    padding: 10,
-  },
-  cardHeaderTitle: {
-    fontSize: 18,
-    marginLeft: 5,
-  },
-});
-
-function CardHeader(props) {
-  const { title, icon } = props;
-  return (
-    <View style={styles.cardHeader}>
-      {icon}
-      <Text style={styles.cardHeaderTitle}>{title}</Text>
-    </View>
-  );
-}
-
-export const ResourceCard = ({ collapsing = true, ...props }) => {
+export const ResourceCard: FC<{ categ: string; icon: IconDefinition; collapsing: boolean }> = ({
+  categ,
+  icon,
+  collapsing = true,
+}) => {
+  // TODO: Remove this when it's replaced higher in the component tree
   const status = useStatus();
-  const res = useResourcesByQueue(props.categ);
+  const res = useResourcesByQueue(categ);
   const user = useRecoilValue(State.userState);
 
   const [resources, setResources] = useState<Types.Resource[]>([]);
-  const [cardTitle, setCardTitle] = useState('');
+  const [cardTitle, setCardTitle] = useState(' ');
+
+  // TODO: Depends on InternalLink for in-app navigation
+  // const dashboardLink = `/${User.getAffiliation(user.data).toLowerCase()}`;
+
+  // For employee_featured, we don't want the employee part...
+  if (categ.split('_')[1]) {
+    categ = categ.split('_')[1];
+  }
 
   useEffect(() => {
     if (Object.keys(user.data).length && res.data && res.data.items.length) {
@@ -59,26 +46,39 @@ export const ResourceCard = ({ collapsing = true, ...props }) => {
   }, [res.data, res.isSuccess]);
 
   return (
-    <View style={styles.card}>
-      {/** Header Component */}
-      <CardHeader title={cardTitle} icon={props.icon} />
+    <Card collapsing={collapsing}>
+      <CardHeader title={cardTitle} badge={icon ? <Icon icon={icon} /> : null} />
 
-      {status.isSuccess && resources.length > 0 && (
-        <FlatList
-          data={resources}
-          renderItem={({ item }) => (
-            <ResourceListItem
-              resource={item}
-              itStatus={status}
-              eventAction="resources"
-              eventCategory="resources"
-            />
-          )}
-          keyExtractor={(item) => item.id.toString()}
-          extraData={status}
-          listKey={props.categ}
-        />
+      <CardContent>
+        {status.isSuccess && resources.length > 0 && (
+          <FlatList
+            data={resources}
+            renderItem={({ item }) => (
+              <ResourceListItem
+                resource={item}
+                itStatus={status}
+                eventAction="resources"
+                eventCategory="resources"
+              />
+            )}
+            keyExtractor={(item) => item.id.toString()}
+            extraData={status}
+            listKey={categ}
+          />
+        )}
+      </CardContent>
+      {resources?.length > 0 && (
+        <CardFooter infoButtonId={`${categ}-resources`}>
+          <Text>View more {categ} resources</Text>
+          {/*  TODO: Create component and use react-navigation for linking internally in the app
+          <InternalLink
+            to={`${dashboardLink}/resources?category=${categ.toLowerCase()}`}
+            onTap={() => Event('resources-card', `view all ${categ} link`)}
+          >
+            View more {categ} resources
+          </InternalLink> */}
+        </CardFooter>
       )}
-    </View>
+    </Card>
   );
 };
