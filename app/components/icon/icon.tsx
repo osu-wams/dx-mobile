@@ -9,6 +9,7 @@ import { FontAwesomeIcon, FontAwesomeIconStyle } from '@fortawesome/react-native
 import { merge } from 'ramda';
 import styled from 'styled-components/native';
 import { Text } from '../text/text';
+import { fontSize } from '@osu-wams/theme';
 
 library.add(fal, fab);
 
@@ -48,24 +49,24 @@ const ContainerRootStyle: ViewStyle = {
 type IconStyle = ImageStyle | FontAwesomeIconStyle;
 
 const IconRootStyle: ImageStyle = {
-  height: 16,
+  height: 24,
   resizeMode: 'contain',
-  width: 16,
+  width: 24,
 };
 
 export const StyledIcon = styled(FontAwesomeIcon)<IconProps>(
-  ({ theme, color, bg }) => ({
+  ({ theme, color, bg, fontSize = 32 }) => ({
+    flex: 1,
     color: color || theme.ui.icon.color,
     backgroundColor: bg || theme.ui.icon.background,
+    fontSize,
+    width: 32,
+    height: 32,
   }),
   ({ bg }) =>
     bg && {
       padding: 8,
       borderRadius: '50%',
-    },
-  ({ fontSize }) =>
-    fontSize && {
-      fontSize: fontSize,
     },
 );
 
@@ -76,9 +77,9 @@ const renderIcon = (props: {
   style: IconStyle;
   size: number;
 }) => {
-  const { iconName, icon, ...others } = props;
-  if (icon) return <StyledIcon icon={icon} {...others} />;
-  if (!iconName) return <StyledIcon icon={fal.faCube} {...others} />;
+  const { iconName, icon, size, ...others } = props;
+  if (icon) return <StyledIcon icon={icon} size={size ?? 24} />;
+  if (!iconName) return <StyledIcon icon={fal.faCube} size={size ?? 24} {...others} />;
 
   const iconSplit = iconName.split('.');
   if (iconSplit.length === 1) {
@@ -105,11 +106,11 @@ const renderIcon = (props: {
         prefix: iconSplit[0] as IconPrefix,
         iconName: iconSplit[1] as IconName,
       });
-      return <StyledIcon icon={lookupIconDefinition} {...others} />;
+      return <StyledIcon icon={lookupIconDefinition} size={size ?? 24} {...others} />;
     }
 
     default:
-      return <StyledIcon icon={fal.faCube} {...others} />;
+      return <StyledIcon icon={fal.faCube} size={size ?? 24} {...others} />;
   }
 };
 
