@@ -39,7 +39,7 @@ const HeaderTitle = styled(Text)({
 const CardHeader: FC<{ title?: string; badge?: any }> = ({ title, badge, ...props }) => {
   const { collapsed, toggleCollapsed, collapsible } = useContext(CardContext);
   return (
-    <TouchableOpacity onPress={collapsible ? toggleCollapsed : undefined}>
+    <TouchableOpacity onPress={collapsible ? toggleCollapsed : undefined} disabled={!collapsible}>
       <CardHeaderWrapper collapsible={collapsible} collapsed={collapsed} {...props}>
         {badge && badge}
         {title && <HeaderTitle>{title}</HeaderTitle>}
