@@ -15,14 +15,14 @@ library.add(fal, fab);
 
 const IconCounter = styled.View<CounterProps>(
   ({ theme }) => ({
-    position: 'absolute',
     backgroundColor: theme.ui.icon.counter.background,
-    paddingTop: 0,
+    borderRadius: 11,
+    height: 18,
     paddingBottom: 0,
     paddingLeft: 6,
     paddingRight: 6,
-    borderRadius: 11,
-    height: 18,
+    paddingTop: 0,
+    position: 'absolute',
   }),
   ({ top }) =>
     !top
@@ -31,15 +31,15 @@ const IconCounter = styled.View<CounterProps>(
           right: -8,
         }
       : {
-          top: -8,
           left: -8,
+          top: -8,
         },
 );
 
 const IconCounterText = styled(Text)(({ theme }) => ({
   alignSelf: 'center',
   color: theme.ui.icon.counter.color,
-  fontSize: 12,
+  fontSize: fontSize['12'],
 }));
 
 const ContainerRootStyle: ViewStyle = {
@@ -56,17 +56,17 @@ const IconRootStyle: ImageStyle = {
 
 export const StyledIcon = styled(FontAwesomeIcon)<IconProps>(
   ({ theme, color, bg, fontSize = 32 }) => ({
-    flex: 1,
-    color: color || theme.ui.icon.color,
     backgroundColor: bg || theme.ui.icon.background,
+    color: color || theme.ui.icon.color,
+    flex: 1,
     fontSize,
-    width: 32,
     height: 32,
+    width: 32,
   }),
   ({ bg }) =>
     bg && {
-      padding: 8,
       borderRadius: '50%',
+      padding: 8,
     },
 );
 
@@ -77,9 +77,9 @@ const renderIcon = (props: {
   style: IconStyle;
   size: number;
 }) => {
-  const { iconName, icon, size, ...others } = props;
-  if (icon) return <StyledIcon icon={icon} size={size ?? 24} />;
-  if (!iconName) return <StyledIcon icon={fal.faCube} size={size ?? 24} {...others} />;
+  const { iconName, icon, size, color, ...others } = props;
+  if (icon) return <StyledIcon icon={icon} size={size ?? 24} color={color} />;
+  if (!iconName) return <StyledIcon icon={fal.faCube} size={size ?? 24} color={color} />;
 
   const iconSplit = iconName.split('.');
   if (iconSplit.length === 1) {
