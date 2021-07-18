@@ -13,3 +13,4 @@ export * from '../app/components/card/card.story';
 export * from '../app/components/resource-list-item/resource-list-item.story';
 export * from '../app/features/resources/resource-card.story';
 export * from '../app/components/info-button/info-button.story';
+export * from '../app/components/link/link.story';
