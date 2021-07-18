@@ -15,7 +15,7 @@ const Body = ({ children }) => (
   <BodyBase
     data={[children]}
     renderItem={({ item }) => <>{item}</>}
-    keyExtractor={(item, index) => `body-child${index}`}
+    keyExtractor={(index) => `body-child${index}`}
   />
 );
 
