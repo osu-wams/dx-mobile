@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { storiesOf } from '../../../storybook/decorators';
 import { Story, UseCase } from '../../../storybook/views';
-import { Text } from '../text/text';
 import {
   ExternalLink,
   InternalLink,
