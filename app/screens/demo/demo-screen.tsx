@@ -1,7 +1,7 @@
 import React from 'react';
-import { ImageStyle, Platform, TextStyle, View, ViewStyle } from 'react-native';
+import { TextStyle, View, ViewStyle } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { BulletItem, Button, Header, Text, Screen } from '../../components';
+import { Button, Header, Text, Screen } from '../../components';
 import { color, spacing } from '../../theme';
 export const heart = require('./heart.png');
 
@@ -16,11 +16,6 @@ const DEMO: ViewStyle = {
   backgroundColor: '#5D2555',
 };
 const BOLD: TextStyle = { fontWeight: 'bold' };
-const DEMO_TEXT: TextStyle = {
-  ...BOLD,
-  fontSize: 13,
-  letterSpacing: 2,
-};
 const HEADER: TextStyle = {
   paddingTop: spacing[3],
   paddingBottom: spacing[5] - 1,
@@ -46,23 +41,6 @@ const TAGLINE: TextStyle = {
   lineHeight: 22,
   marginBottom: spacing[4] + spacing[1],
 };
-const HEART: ImageStyle = {
-  marginHorizontal: spacing[2],
-  width: 10,
-  height: 10,
-  resizeMode: 'contain',
-};
-const DISCLOSURE: TextStyle = {
-  color: '#BAB6C8',
-  fontSize: 12,
-  lineHeight: 15,
-  marginVertical: spacing[2],
-};
-
-const platformCommand = Platform.select({
-  ios: 'Cmd + D',
-  android: 'Cmd/Ctrl + M',
-});
 
 export const DemoScreen = () => {
   const navigation = useNavigation();
@@ -70,7 +48,7 @@ export const DemoScreen = () => {
 
   return (
     <View testID="DemoScreen" style={FULL}>
-      <Screen style={CONTAINER} preset="scroll" backgroundColor={color.transparent}>
+      <Screen style={CONTAINER} preset="scroll">
         <Header
           headerTx="demoScreen.howTo"
           leftIcon="back"
@@ -80,10 +58,6 @@ export const DemoScreen = () => {
         />
         <Text style={TITLE} preset="header" tx="demoScreen.title" />
         <Text style={TAGLINE} tx="demoScreen.tagLine" />
-        <BulletItem text="Integrated here, Navigation with State, TypeScript, Storybook, Solidarity, and i18n." />
-        <BulletItem
-          text={`To run Storybook, press ${platformCommand} or shake the device to show the developer menu, then select "Toggle Storybook"`}
-        />
         <Button style={DEMO} onPress={() => navigation.navigate('welcome')} />
       </Screen>
     </View>
