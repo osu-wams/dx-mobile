@@ -2,13 +2,14 @@ import React, { FC, useContext } from 'react';
 import { IconDefinition } from '@fortawesome/pro-light-svg-icons';
 import styled, { ThemeContext } from 'styled-components/native';
 import { Icon } from '../icon/icon';
+import { fontSize } from '@osu-wams/theme';
 
 const CardIconWrapper = styled.View({
   marginRight: 12,
 });
 
 const CardIconBase = styled(Icon)({
-  fontSize: 24,
+  fontSize: fontSize[24],
 });
 
 const CardIcon: FC<{ icon: IconDefinition; count?: number }> = ({ icon, count }) => {

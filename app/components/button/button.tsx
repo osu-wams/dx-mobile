@@ -6,6 +6,7 @@ import { Icon } from '../icon/icon';
 import { Text } from '../text/text';
 import { faTimes, faLink } from '@fortawesome/pro-light-svg-icons';
 import { borderRadius } from '@osu-wams/theme';
+import { theme } from '@storybook/react-native/dist/preview/components/Shared/theme';
 
 const btnVariants = {
   normal: {
@@ -74,8 +75,8 @@ export const CloseButton = (props) => (
   </CloseButtonBase>
 );
 
-const ButtonLinkIcon = styled(Icon)<ButtonProps>(({ fg }) => ({
-  color: fg || 'white',
+const ButtonLinkIcon = styled(Icon)<ButtonProps>(({ theme, fg }) => ({
+  color: fg || theme.ui.button.color,
   marginLeft: 5,
 }));
 

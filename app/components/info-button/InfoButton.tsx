@@ -11,6 +11,7 @@ import { State } from '@osu-wams/hooks';
 import { useRecoilValue } from 'recoil';
 import { Text } from '../text/text';
 import { InfoButonProps } from './info-button.props';
+import { fontSize } from '@osu-wams/theme';
 
 const DialogHeader = styled.View({
   display: 'flex',
@@ -23,11 +24,11 @@ const DialogClose = styled(CloseButton)({
 
 const DialogTitle = styled(Text)({
   flexGrow: 2,
-  fontSize: 20,
+  fontSize: fontSize[20],
 });
 
 const DialogContent = styled(Text)({
-  fontSize: 14,
+  fontSize: fontSize[14],
 });
 
 const InfoButton = (props: InfoButonProps) => {

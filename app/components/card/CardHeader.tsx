@@ -2,7 +2,7 @@ import React, { useContext, FC } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { faChevronDown, faChevronUp } from '@fortawesome/pro-light-svg-icons';
 import { Icon } from '../icon/icon';
-import { spacing } from '@osu-wams/theme';
+import { spacing, fontSize } from '@osu-wams/theme';
 import styled from 'styled-components/native';
 import { CardContext } from './Card';
 import { Text } from '../text/text';
@@ -16,7 +16,7 @@ const CardHeaderWrapper = styled.View<CardCollapseProps>(({ theme, collapsed, co
   display: 'flex',
   height: 64,
   flexDirection: 'row',
-  fontSize: 16,
+  fontSize: fontSize[16],
   fontWeight: 'normal',
   padding: spacing.default,
   width: '100%',
@@ -26,14 +26,14 @@ export const CardHeaderSimple = styled.View({
   alignItems: 'center',
   display: 'flex',
   flexDirection: 'row',
-  fontSize: 16,
+  fontSize: fontSize[16],
   height: 64,
   padding: spacing.default,
 });
 
 const HeaderTitle = styled(Text)({
   flex: 1,
-  fontSize: 16,
+  fontSize: fontSize[16],
 });
 
 const CardHeader: FC<{ title?: string; badge?: any }> = ({ title, badge, ...props }) => {

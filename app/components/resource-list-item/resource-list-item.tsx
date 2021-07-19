@@ -8,6 +8,9 @@ import { palette } from '../../theme/palette';
 import { ResourceListItemProps } from './resource-list-item.props';
 import { Icon, Text } from '..';
 
+/**
+ * !TODO: styled component all this to be able to use theme?
+ */
 const styles = StyleSheet.create({
   button: {
     borderRadius: 20,

@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import { CardButtonBase } from '../StyledCardComponents';
-import { spacing } from '@osu-wams/theme';
+import { spacing, fontSize } from '@osu-wams/theme';
 import { Text } from '../../text/text';
 import { WebView } from 'react-native-webview';
 import { FeaturedCardProps } from '../card.props';
@@ -25,7 +25,7 @@ const FeatureCardGrid = styled.View`
 const FeatureCardHeader = styled(Text)`
   color: ${({ theme }) => theme.ui.featuredCard.title.color};
   margin: 0;
-  font-size: 18;
+  font-size: fontSize[18];
   font-weight: normal;
   padding: ${spacing.default} ${spacing.default} 0;
 `;
@@ -33,7 +33,7 @@ const FeatureCardHeader = styled(Text)`
 const FeatureCardContent = styled(WebView)(({ theme }) => ({
   color: theme.ui.featuredCard.content.color,
   padding: `0 ${spacing.default} ${spacing.default}`,
-  fontSize: 14,
+  fontSize: fontSize[14],
   display: 'flex',
   flex: 1,
   height: 400,

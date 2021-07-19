@@ -36,7 +36,7 @@ const Badge = styled.View<CardBadgeProps>(({ theme, bg, fg }) => ({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  borderRadius: 16,
+  borderRadius: borderRadius[16],
   backgroundColor: bg || theme.ui.card.badge.background,
   color: fg || theme.ui.card.badge.color,
   marginRight: 12,
