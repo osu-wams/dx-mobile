@@ -6,10 +6,12 @@ import { useRecoilValue } from 'recoil';
 import { ResourceListItem } from '../../components/resource-list-item/resource-list-item';
 import { Card } from '../../components/card/Card';
 import CardHeader from '../../components/card/CardHeader';
-import { Icon, Text } from '../../components';
+import { Icon } from '../../components';
 import CardFooter from '../../components/card/CardFooter';
 import CardContent from '../../components/card/CardContent';
 import { IconDefinition } from '@fortawesome/pro-light-svg-icons';
+import { InternalLink } from '../../components/link/link';
+import { ScreenNames } from '../../navigators';
 
 const { hasAudience } = User;
 
@@ -26,7 +28,7 @@ export const ResourceCard: FC<{ categ: string; icon: IconDefinition; collapsing:
   const [resources, setResources] = useState<Types.Resource[]>([]);
   const [cardTitle, setCardTitle] = useState(' ');
 
-  // TODO: Depends on InternalLink for in-app navigation
+  // TODO: Might not be needed, InternalLink component below could hold state for user dashboard?
   // const dashboardLink = `/${User.getAffiliation(user.data).toLowerCase()}`;
 
   // For employee_featured, we don't want the employee part...
@@ -69,14 +71,10 @@ export const ResourceCard: FC<{ categ: string; icon: IconDefinition; collapsing:
       </CardContent>
       {resources?.length > 0 && (
         <CardFooter infoButtonId={`${categ}-resources`}>
-          <Text>View more {categ} resources</Text>
-          {/*  TODO: Create component and use react-navigation for linking internally in the app
           <InternalLink
-            to={`${dashboardLink}/resources?category=${categ.toLowerCase()}`}
-            onTap={() => Event('resources-card', `view all ${categ} link`)}
-          >
-            View more {categ} resources
-          </InternalLink> */}
+            to={{ name: ScreenNames.Resources, params: { category: categ.toLowerCase() } }}
+            text={`View more ${categ} resources`}
+          />
         </CardFooter>
       )}
     </Card>
