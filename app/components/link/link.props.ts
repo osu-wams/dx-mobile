@@ -1,6 +1,9 @@
+import { Screens } from '../../navigators';
+
 export interface LinkProps {
   children?: any;
-  to?: string;
+  to?: { name: Screens; params: any };
+  url?: string;
   fg?: string;
   hideIcon?: boolean;
   text: string;

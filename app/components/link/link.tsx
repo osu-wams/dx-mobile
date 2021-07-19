@@ -5,8 +5,10 @@ import { faLongArrowRight, faExternalLink } from '@fortawesome/pro-light-svg-ico
 import { Icon } from '../icon/icon';
 import { borderRadius, spacing, fontSize, Color } from '@osu-wams/theme';
 import { LinkProps, LinkStyleProps } from './link.props';
-import { View } from 'react-native';
+import { Alert, Pressable, View } from 'react-native';
 import { Text } from '../text/text';
+import * as Linking from 'expo-linking';
+import { useNavigation } from '@react-navigation/native';
 
 export const LinkDivider = () => (
   <View>
@@ -28,7 +30,7 @@ const LinkText = styled(Text)<LinkStyleProps>(
     },
 );
 
-const LinkStyles = styled(View)<LinkStyleProps>({
+const LinkStyles = styled(Pressable)<LinkStyleProps>({
   alignItems: 'center',
   flex: 1,
   flexDirection: 'row',
@@ -42,9 +44,9 @@ const HighlightExternalLinkStyles = styled(LinkStyles)<LinkStyleProps>(() => ({
 
 const ExternalLink = (props: LinkProps) => {
   const themeContext = useContext(ThemeContext);
-  const { fg, hideIcon, text, padding, bg } = props;
+  const { fg, hideIcon, text, padding, bg, url } = props;
   return (
-    <LinkStyles {...props}>
+    <LinkStyles {...props} onPress={() => (url ? Linking.openURL(url) : null)}>
       <LinkText text={text} fg={fg} padding={padding} bg={bg} />
       {!hideIcon && (
         <Icon
@@ -59,9 +61,9 @@ const ExternalLink = (props: LinkProps) => {
 
 const HighlightExternalLink = (props: LinkProps) => {
   const themeContext = useContext(ThemeContext);
-  const { text, padding, bg, fg, hideIcon, ...rest } = props;
+  const { text, padding, bg, fg, hideIcon, url, ...rest } = props;
   return (
-    <HighlightExternalLinkStyles {...rest}>
+    <HighlightExternalLinkStyles {...rest} onPress={() => (url ? Linking.openURL(url) : null)}>
       <LinkText text={text} fg={fg} padding={padding} bg={bg} />
       {!hideIcon && (
         <Icon
@@ -75,9 +77,9 @@ const HighlightExternalLink = (props: LinkProps) => {
 };
 
 const SimpleExternalLink = (props: LinkProps) => {
-  const { text, fg, padding, bg, ...rest } = props;
+  const { text, fg, padding, bg, url, ...rest } = props;
   return (
-    <LinkStyles {...rest} padding={0}>
+    <LinkStyles {...rest} padding={0} onPress={() => (url ? Linking.openURL(url) : null)}>
       <LinkText text={text} fg={fg} padding={padding} bg={bg} />
     </LinkStyles>
   );
@@ -86,8 +88,9 @@ const SimpleExternalLink = (props: LinkProps) => {
 const InternalLink = (props: LinkProps) => {
   const { text, to, fg, padding, bg, hideIcon, ...rest } = props;
   const themeContext = useContext(ThemeContext);
+  const navigation = useNavigation();
   return (
-    <LinkStyles to={to} fg={fg} {...rest}>
+    <LinkStyles fg={fg} {...rest} onPress={() => (to ? navigation.navigate({ ...to }) : null)}>
       <LinkText text={text} fg={fg} padding={padding} bg={bg} />
       {!hideIcon && (
         <Icon
@@ -102,9 +105,10 @@ const InternalLink = (props: LinkProps) => {
 
 const SimpleInternalLink = (props: LinkProps) => {
   useContext(ThemeContext);
+  const navigation = useNavigation();
   const { to, text, fg, padding, bg, ...rest } = props;
   return (
-    <LinkStyles {...rest} to={to} padding={0}>
+    <LinkStyles {...rest} padding={0} onPress={() => (to ? navigation.navigate({ ...to }) : null)}>
       <LinkText text={text} fg={fg} padding={padding} bg={bg} />
     </LinkStyles>
   );
@@ -114,7 +118,7 @@ const SimpleModalLink = (props: LinkProps) => {
   useContext(ThemeContext);
   const { text, fg, bg, padding, ...rest } = props;
   return (
-    <LinkStyles {...rest} padding={0}>
+    <LinkStyles {...rest} padding={0} onPress={() => Alert.alert('here')}>
       <LinkText text={text} fg={fg} padding={padding} bg={bg} />
     </LinkStyles>
   );
