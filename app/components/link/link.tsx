@@ -8,7 +8,7 @@ import { LinkProps, LinkStyleProps } from './link.props';
 import { Alert, Pressable, View } from 'react-native';
 import { Text } from '../text/text';
 import * as Linking from 'expo-linking';
-import { useNavigation } from '@react-navigation/native';
+import { NavigationContext } from '@react-navigation/native';
 
 export const LinkDivider = () => (
   <View>
@@ -88,7 +88,7 @@ const SimpleExternalLink = (props: LinkProps) => {
 const InternalLink = (props: LinkProps) => {
   const { text, to, fg, padding, bg, hideIcon, ...rest } = props;
   const themeContext = useContext(ThemeContext);
-  const navigation = useNavigation();
+  const navigation = useContext(NavigationContext);
   return (
     <LinkStyles fg={fg} {...rest} onPress={() => (to ? navigation.navigate({ ...to }) : null)}>
       <LinkText text={text} fg={fg} padding={padding} bg={bg} />
@@ -105,7 +105,7 @@ const InternalLink = (props: LinkProps) => {
 
 const SimpleInternalLink = (props: LinkProps) => {
   useContext(ThemeContext);
-  const navigation = useNavigation();
+  const navigation = useContext(NavigationContext);
   const { to, text, fg, padding, bg, ...rest } = props;
   return (
     <LinkStyles {...rest} padding={0} onPress={() => (to ? navigation.navigate({ ...to }) : null)}>
