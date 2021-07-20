@@ -1,11 +1,15 @@
 import React from 'react';
+import { EdgeInsets, useSafeAreaInsets } from 'react-native-safe-area-context';
 import styled from 'styled-components/native';
 import { LogoWhite } from '../components/logos/logo-white';
 import { HeaderNav } from './HeaderNav';
 
+export const HEADER_NAV_HEIGHT = 85;
+
 export const Header = () => {
+  const insets = useSafeAreaInsets();
   return (
-    <LogoNavWrapper>
+    <LogoNavWrapper insets={insets}>
       <LogoSize>
         <LogoWhite />
       </LogoSize>
@@ -14,18 +18,22 @@ export const Header = () => {
   );
 };
 
-const LogoSize = styled.View`
-  width: 188px;
-  height: 60px;
-`;
+const LogoSize = styled.View({
+  height: 60,
+  width: 188,
+});
 
-const LogoNavWrapper = styled.View`
-  background-color: ${({ theme }) => theme.header.background};
-  height: 85px;
-  padding: 2px 10px 0 10px;
-  z-index: 10;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-flow: row wrap;
-`;
+const LogoNavWrapper = styled.View<{ insets: EdgeInsets }>(({ theme, insets }) => ({
+  backgroundColor: theme.header.background,
+  display: 'flex',
+  flexDirection: 'row',
+  flexFlow: 'row wrap',
+  height: HEADER_NAV_HEIGHT,
+  justifyContent: 'space-between',
+  marginTop: insets.top,
+  paddingBottom: 0,
+  paddingLeft: 10,
+  paddingRight: 10,
+  paddingTop: 2,
+  zIndex: 10,
+}));

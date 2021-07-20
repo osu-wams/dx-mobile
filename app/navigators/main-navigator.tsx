@@ -7,6 +7,9 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { WelcomeScreen, DemoScreen } from '../screens';
+import { ResourcesScreen } from '../screens/resources/resources-screen';
+import { Header, HEADER_NAV_HEIGHT } from '../ui/Header';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
@@ -23,20 +26,37 @@ import { WelcomeScreen, DemoScreen } from '../screens';
 export type PrimaryParamList = {
   welcome: undefined;
   demo: undefined;
+  resources: { category: string } | undefined;
 };
+
+export enum ScreenNames {
+  Welcome = 'welcome',
+  Demo = 'demo',
+  Resources = 'resources',
+}
+export type Screens = ScreenNames.Demo | ScreenNames.Resources | ScreenNames.Resources;
 
 // Documentation: https://reactnavigation.org/docs/stack-navigator/
 const Stack = createStackNavigator<PrimaryParamList>();
 
 export function MainNavigator() {
+  const insets = useSafeAreaInsets();
+
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: false,
+        headerShown: true,
+        // eslint-disable-next-line react/display-name
+        header: () => <Header />,
+        headerTransparent: true,
+        headerStyle: { height: insets.top + HEADER_NAV_HEIGHT },
       }}
+      headerMode="float"
+      initialRouteName="welcome"
     >
-      <Stack.Screen name="welcome" component={WelcomeScreen} />
-      <Stack.Screen name="demo" component={DemoScreen} />
+      <Stack.Screen name={ScreenNames.Welcome} component={WelcomeScreen} />
+      <Stack.Screen name={ScreenNames.Demo} component={DemoScreen} />
+      <Stack.Screen name={ScreenNames.Resources} component={ResourcesScreen} />
     </Stack.Navigator>
   );
 }
@@ -50,5 +70,5 @@ export function MainNavigator() {
  *
  * `canExit` is used in ./app/app.tsx in the `useBackButtonHandler` hook.
  */
-const exitRoutes = ['welcome'];
-export const canExit = (routeName: string) => exitRoutes.includes(routeName);
+const exitRoutes = [ScreenNames.Welcome];
+export const canExit = (routeName: Screens) => exitRoutes.includes(routeName);

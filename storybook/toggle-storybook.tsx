@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import Constants from 'expo-constants'
+import { useState, useEffect } from 'react';
+import Constants from 'expo-constants';
+import { StorybookUIRoot as Root } from '.';
+import { initFonts } from '../app/theme/fonts';
 
 /**
  * Toggle Storybook mode, in __DEV__ mode only.
@@ -9,19 +11,21 @@ import Constants from 'expo-constants'
  *
  */
 export function ToggleStorybook(props) {
-  const [StorybookUIRoot, setStorybookUIRoot] = useState(null)
+  const [StorybookUIRoot, setStorybookUIRoot] = useState(null);
+  const [fontsLoaded] = initFonts();
 
   useEffect(() => {
-    console.log(Constants.manifest.extra)
-    if (__DEV__ && Constants.manifest.extra.USE_STORYBOOK) {
+    if (__DEV__ && Constants.manifest.extra.USE_STORYBOOK && fontsLoaded) {
       // Load the storybook UI once
-      setStorybookUIRoot(() => require('./storybook').StorybookUIRoot)
+      setStorybookUIRoot(Root);
     }
-  }, [])
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) return null;
 
   if (StorybookUIRoot) {
-    return StorybookUIRoot ? <StorybookUIRoot /> : null
+    return StorybookUIRoot;
   } else {
-    return props.children
+    return props.children;
   }
 }

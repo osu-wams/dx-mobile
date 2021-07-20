@@ -329,7 +329,7 @@ exports[`Storyshots Text Passing Content 1`] = `
                     }
                   }
                 >
-                  OK!
+                  common.ok.test
                 </Text>
                 <Text
                   style={
@@ -340,7 +340,7 @@ exports[`Storyshots Text Passing Content 1`] = `
                     }
                   }
                 >
-                  Cancel
+                  common.cancel.test
                 </Text>
               </View>
             </View>

@@ -165,24 +165,25 @@ exports[`Storyshots Login Login Button 1`] = `
                   style={
                     Object {
                       "alignItems": "center",
-                      "backgroundColor": "#f58238",
+                      "backgroundColor": "#D73F09",
+                      "borderColor": "black",
                       "borderRadius": 4,
-                      "justifyContent": "center",
+                      "borderStyle": "solid",
+                      "borderWidth": 0,
                       "opacity": 1,
-                      "paddingHorizontal": 8,
-                      "paddingVertical": 8,
+                      "paddingBottom": 10,
+                      "paddingLeft": 20,
+                      "paddingRight": 20,
+                      "paddingTop": 10,
                     }
                   }
                 >
                   <Text
                     style={
                       Object {
-                        "color": "#ffffff",
+                        "color": "#000000",
                         "fontFamily": "OpenSans",
-                        "fontSize": 32,
-                        "fontWeight": "bold",
-                        "letterSpacing": 1,
-                        "paddingHorizontal": 12,
+                        "fontSize": 15,
                       }
                     }
                   >

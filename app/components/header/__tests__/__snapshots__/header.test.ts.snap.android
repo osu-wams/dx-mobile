@@ -226,13 +226,13 @@ exports[`Storyshots Header Behavior 1`] = `
                       style={
                         Object {
                           "color": "#000000",
-                          "fontFamily": "OpenSans-Regular",
+                          "fontFamily": "OpenSans",
                           "fontSize": 15,
                           "textAlign": "center",
                         }
                       }
                     >
-                      HOW TO
+                      demoScreen.howTo.test
                     </Text>
                   </View>
                   <View
@@ -356,24 +356,35 @@ exports[`Storyshots Header Behavior 1`] = `
                     onStartShouldSetResponder={[Function]}
                     style={
                       Object {
-                        "alignItems": "flex-start",
+                        "alignItems": "center",
+                        "backgroundColor": "#D73F09",
+                        "borderColor": "black",
                         "borderRadius": 4,
-                        "justifyContent": "center",
+                        "borderStyle": "solid",
+                        "borderWidth": 0,
                         "opacity": 1,
-                        "paddingHorizontal": 0,
-                        "paddingVertical": 0,
+                        "paddingBottom": 10,
+                        "paddingLeft": 20,
+                        "paddingRight": 20,
+                        "paddingTop": 10,
                       }
                     }
                   >
-                    <View>
+                    <View
+                      style={
+                        Object {
+                          "marginRight": 10,
+                        }
+                      }
+                    >
                       <Image
                         accessibilityLabel="back"
                         source={1}
                         style={
                           Object {
-                            "height": 26,
+                            "height": 24,
                             "resizeMode": "contain",
-                            "width": 26,
+                            "width": 24,
                           }
                         }
                       />
@@ -391,13 +402,13 @@ exports[`Storyshots Header Behavior 1`] = `
                       style={
                         Object {
                           "color": "#000000",
-                          "fontFamily": "OpenSans-Regular",
+                          "fontFamily": "OpenSans",
                           "fontSize": 15,
                           "textAlign": "center",
                         }
                       }
                     >
-                      HOW TO
+                      demoScreen.howTo.test
                     </Text>
                   </View>
                   <View
@@ -528,13 +539,13 @@ exports[`Storyshots Header Behavior 1`] = `
                       style={
                         Object {
                           "color": "#000000",
-                          "fontFamily": "OpenSans-Regular",
+                          "fontFamily": "OpenSans",
                           "fontSize": 15,
                           "textAlign": "center",
                         }
                       }
                     >
-                      HOW TO
+                      demoScreen.howTo.test
                     </Text>
                   </View>
                   <View
@@ -549,24 +560,35 @@ exports[`Storyshots Header Behavior 1`] = `
                     onStartShouldSetResponder={[Function]}
                     style={
                       Object {
-                        "alignItems": "flex-start",
+                        "alignItems": "center",
+                        "backgroundColor": "#D73F09",
+                        "borderColor": "black",
                         "borderRadius": 4,
-                        "justifyContent": "center",
+                        "borderStyle": "solid",
+                        "borderWidth": 0,
                         "opacity": 1,
-                        "paddingHorizontal": 0,
-                        "paddingVertical": 0,
+                        "paddingBottom": 10,
+                        "paddingLeft": 20,
+                        "paddingRight": 20,
+                        "paddingTop": 10,
                       }
                     }
                   >
-                    <View>
+                    <View
+                      style={
+                        Object {
+                          "marginRight": 10,
+                        }
+                      }
+                    >
                       <Image
                         accessibilityLabel="bullet"
                         source={1}
                         style={
                           Object {
-                            "height": 26,
+                            "height": 24,
                             "resizeMode": "contain",
-                            "width": 26,
+                            "width": 24,
                           }
                         }
                       />

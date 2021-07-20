@@ -17,15 +17,15 @@ export const typography = {
   /**
    * The primary font.  Used in most places.
    */
-  primary: Platform.select({ ios: 'OpenSans', android: 'OpenSans-Regular' }),
+  primary: Platform.select({ ios: 'OpenSans', android: 'OpenSans' }),
 
   /**
    * An alternate font used for perhaps titles and stuff.
    */
-  secondary: Platform.select({ ios: 'OpenSans', android: 'OpenSans-Regular' }),
+  secondary: Platform.select({ ios: 'OpenSans', android: 'OpenSans' }),
 
   /**
    * Lets get fancy with a monospace font!
    */
-  code: Platform.select({ ios: 'OpenSans', android: 'OpenSans-Regular' }),
+  code: Platform.select({ ios: 'OpenSans', android: 'OpenSans' }),
 };

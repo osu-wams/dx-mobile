@@ -219,7 +219,7 @@ exports[`Storyshots Text Passing Content 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 15,
                     }
                   }
@@ -319,23 +319,23 @@ exports[`Storyshots Text Passing Content 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 15,
                     }
                   }
                 >
-                  OK!
+                  common.ok.test
                 </Text>
                 <Text
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 15,
                     }
                   }
                 >
-                  Cancel
+                  common.cancel.test
                 </Text>
               </View>
             </View>
@@ -430,7 +430,7 @@ exports[`Storyshots Text Passing Content 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 15,
                     }
                   }
@@ -530,7 +530,7 @@ exports[`Storyshots Text Passing Content 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 15,
                     }
                   }
@@ -541,7 +541,7 @@ exports[`Storyshots Text Passing Content 1`] = `
                     style={
                       Object {
                         "color": "#000000",
-                        "fontFamily": "OpenSans-Regular",
+                        "fontFamily": "OpenSans",
                         "fontSize": 15,
                         "fontWeight": "bold",
                       }
@@ -784,7 +784,7 @@ exports[`Storyshots Text Style Presets 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 15,
                     }
                   }
@@ -795,7 +795,7 @@ exports[`Storyshots Text Style Presets 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 15,
                       "paddingTop": 10,
                     }
@@ -813,7 +813,7 @@ exports[`Storyshots Text Style Presets 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 15,
                       "paddingTop": 10,
                     }
@@ -825,7 +825,7 @@ exports[`Storyshots Text Style Presets 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 15,
                     }
                   }
@@ -925,7 +925,7 @@ exports[`Storyshots Text Style Presets 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 15,
                       "fontWeight": "bold",
                     }
@@ -1026,7 +1026,7 @@ exports[`Storyshots Text Style Presets 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 24,
                       "fontWeight": "bold",
                     }
@@ -1217,7 +1217,7 @@ exports[`Storyshots Text Styling 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 15,
                     }
                   }
@@ -1228,7 +1228,7 @@ exports[`Storyshots Text Styling 1`] = `
                     style={
                       Object {
                         "color": "#000000",
-                        "fontFamily": "OpenSans-Regular",
+                        "fontFamily": "OpenSans",
                         "fontSize": 15,
                         "fontWeight": "bold",
                       }

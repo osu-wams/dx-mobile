@@ -1,0 +1,2449 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Card Basic 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <RCTScrollView
+      data={
+        Array [
+          Array [
+            <UseCase
+              noBackground={true}
+              text="Collapsible Card"
+              usage="A basic card that collapse or expand content."
+            >
+              <Card>
+                <CardHeader
+                  badge={
+                    <Icon
+                      icon={
+                        Object {
+                          "icon": Array [
+                            496,
+                            512,
+                            Array [],
+                            "f2bd",
+                            "M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm128 421.6c-35.9 26.5-80.1 42.4-128 42.4s-92.1-15.9-128-42.4V416c0-35.3 28.7-64 64-64 11.1 0 27.5 11.4 64 11.4 36.6 0 52.8-11.4 64-11.4 35.3 0 64 28.7 64 64v13.6zm30.6-27.5c-6.8-46.4-46.3-82.1-94.6-82.1-20.5 0-30.4 11.4-64 11.4S204.6 320 184 320c-48.3 0-87.8 35.7-94.6 82.1C53.9 363.6 32 312.4 32 256c0-119.1 96.9-216 216-216s216 96.9 216 216c0 56.4-21.9 107.6-57.4 146.1zM248 120c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 144c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z",
+                          ],
+                          "iconName": "user-circle",
+                          "prefix": "fal",
+                        }
+                      }
+                      size={24}
+                    />
+                  }
+                  title="Card Title: Collapsible"
+                />
+                <CardContent>
+                  <Text>
+                    Test
+                  </Text>
+                </CardContent>
+                <CardFooter>
+                  <Text>
+                    Footer
+                  </Text>
+                </CardFooter>
+              </Card>
+            </UseCase>,
+            <UseCase
+              noBackground={true}
+              text="Non-Collapsible Card"
+              usage="A basic card that does not collapse or expand content."
+            >
+              <Card
+                collapsing={false}
+              >
+                <CardHeader
+                  badge={
+                    <Icon
+                      icon={
+                        Object {
+                          "icon": Array [
+                            496,
+                            512,
+                            Array [],
+                            "f2bd",
+                            "M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm128 421.6c-35.9 26.5-80.1 42.4-128 42.4s-92.1-15.9-128-42.4V416c0-35.3 28.7-64 64-64 11.1 0 27.5 11.4 64 11.4 36.6 0 52.8-11.4 64-11.4 35.3 0 64 28.7 64 64v13.6zm30.6-27.5c-6.8-46.4-46.3-82.1-94.6-82.1-20.5 0-30.4 11.4-64 11.4S204.6 320 184 320c-48.3 0-87.8 35.7-94.6 82.1C53.9 363.6 32 312.4 32 256c0-119.1 96.9-216 216-216s216 96.9 216 216c0 56.4-21.9 107.6-57.4 146.1zM248 120c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 144c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z",
+                          ],
+                          "iconName": "user-circle",
+                          "prefix": "fal",
+                        }
+                      }
+                      size={24}
+                    />
+                  }
+                  title="Card Title: Non-Collapsible"
+                />
+                <CardContent>
+                  <Text>
+                    Test
+                  </Text>
+                </CardContent>
+                <CardFooter>
+                  <Text>
+                    Footer
+                  </Text>
+                </CardFooter>
+              </Card>
+            </UseCase>,
+            <UseCase
+              noBackground={true}
+              text="Collapsible Card with a Badge or Icon"
+              usage="A basic card that collapse or expand content with a badge."
+            >
+              <Card
+                collapsing={true}
+              >
+                <CardHeader
+                  badge={
+                    <Icon
+                      icon={
+                        Object {
+                          "icon": Array [
+                            496,
+                            512,
+                            Array [],
+                            "f2bd",
+                            "M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm128 421.6c-35.9 26.5-80.1 42.4-128 42.4s-92.1-15.9-128-42.4V416c0-35.3 28.7-64 64-64 11.1 0 27.5 11.4 64 11.4 36.6 0 52.8-11.4 64-11.4 35.3 0 64 28.7 64 64v13.6zm30.6-27.5c-6.8-46.4-46.3-82.1-94.6-82.1-20.5 0-30.4 11.4-64 11.4S204.6 320 184 320c-48.3 0-87.8 35.7-94.6 82.1C53.9 363.6 32 312.4 32 256c0-119.1 96.9-216 216-216s216 96.9 216 216c0 56.4-21.9 107.6-57.4 146.1zM248 120c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 144c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z",
+                          ],
+                          "iconName": "user-circle",
+                          "prefix": "fal",
+                        }
+                      }
+                      size={24}
+                    />
+                  }
+                  title="Card Title: Icon"
+                />
+                <CardContent>
+                  <Text>
+                    Test
+                  </Text>
+                </CardContent>
+                <CardFooter>
+                  <Text>
+                    Footer
+                  </Text>
+                </CardFooter>
+              </Card>
+              <Card>
+                <CardHeader
+                  badge={
+                    <Styled(View)
+                      bg="#D73F09"
+                      fg="#ffffff"
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#ffffff",
+                          }
+                        }
+                      >
+                        4
+                      </Text>
+                    </Styled(View)>
+                  }
+                  title="Card Title: Badge"
+                />
+                <CardContent>
+                  <Text>
+                    Test
+                  </Text>
+                </CardContent>
+                <CardFooter>
+                  <Text>
+                    Footer
+                  </Text>
+                </CardFooter>
+              </Card>
+            </UseCase>,
+            <UseCase
+              noBackground={true}
+              text="Collapsible Card with an Icon and Counter"
+              usage="A basic card that collapse or expand content with an icon and counter."
+            >
+              <Card>
+                <CardHeader
+                  badge={
+                    <Icon
+                      count={3}
+                      icon={
+                        Object {
+                          "icon": Array [
+                            496,
+                            512,
+                            Array [],
+                            "f2bd",
+                            "M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm128 421.6c-35.9 26.5-80.1 42.4-128 42.4s-92.1-15.9-128-42.4V416c0-35.3 28.7-64 64-64 11.1 0 27.5 11.4 64 11.4 36.6 0 52.8-11.4 64-11.4 35.3 0 64 28.7 64 64v13.6zm30.6-27.5c-6.8-46.4-46.3-82.1-94.6-82.1-20.5 0-30.4 11.4-64 11.4S204.6 320 184 320c-48.3 0-87.8 35.7-94.6 82.1C53.9 363.6 32 312.4 32 256c0-119.1 96.9-216 216-216s216 96.9 216 216c0 56.4-21.9 107.6-57.4 146.1zM248 120c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 144c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z",
+                          ],
+                          "iconName": "user-circle",
+                          "prefix": "fal",
+                        }
+                      }
+                      size={24}
+                    />
+                  }
+                  title="Card Title: Icon with Counter"
+                />
+                <CardContent>
+                  <Text>
+                    Test
+                  </Text>
+                </CardContent>
+                <CardFooter>
+                  <Text>
+                    Footer
+                  </Text>
+                </CardFooter>
+              </Card>
+              <Card>
+                <CardHeader
+                  badge={
+                    <Icon
+                      count={3}
+                      icon={
+                        Object {
+                          "icon": Array [
+                            496,
+                            512,
+                            Array [],
+                            "f2bd",
+                            "M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm128 421.6c-35.9 26.5-80.1 42.4-128 42.4s-92.1-15.9-128-42.4V416c0-35.3 28.7-64 64-64 11.1 0 27.5 11.4 64 11.4 36.6 0 52.8-11.4 64-11.4 35.3 0 64 28.7 64 64v13.6zm30.6-27.5c-6.8-46.4-46.3-82.1-94.6-82.1-20.5 0-30.4 11.4-64 11.4S204.6 320 184 320c-48.3 0-87.8 35.7-94.6 82.1C53.9 363.6 32 312.4 32 256c0-119.1 96.9-216 216-216s216 96.9 216 216c0 56.4-21.9 107.6-57.4 146.1zM248 120c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 144c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z",
+                          ],
+                          "iconName": "user-circle",
+                          "prefix": "fal",
+                        }
+                      }
+                      size={24}
+                      top={true}
+                    />
+                  }
+                  title="Card Title: Icon with Counter"
+                />
+                <CardContent>
+                  <Text>
+                    Test
+                  </Text>
+                </CardContent>
+                <CardFooter>
+                  <Text>
+                    Footer
+                  </Text>
+                </CardFooter>
+              </Card>
+            </UseCase>,
+            <UseCase
+              noBackground={true}
+              text="Simple Card Header"
+              usage="A card with only a simple header and no content, see ITSystemStatus"
+            >
+              <Card>
+                <Styled(View)>
+                  <Text>
+                    Non-Content Simple Card
+                  </Text>
+                </Styled(View)>
+              </Card>
+            </UseCase>,
+          ],
+        ]
+      }
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={true}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
+    >
+      <View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#eee",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  Collapsible Card
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#666",
+                    "fontSize": 10,
+                    "paddingTop": 0,
+                  }
+                }
+              >
+                A basic card that collapse or expand content.
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "rgba(0,0,0,0)",
+                  "padding": 10,
+                }
+              }
+            >
+              <View
+                css={
+                  Object {
+                    "padding": 0,
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#ffffff",
+                      "borderRadius": 16,
+                      "display": "flex",
+                      "elevation": 3,
+                      "flexDirection": "column",
+                      "marginBottom": 16,
+                      "shadowColor": "rgba(66, 62, 60, 1)",
+                      "shadowOpacity": 0.15,
+                      "shadowRadius": 8,
+                    },
+                  ]
+                }
+              >
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    collapsed={true}
+                    collapsible={true}
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                          "borderBottomColor": "#E9E5E4",
+                          "borderBottomWidth": 0,
+                          "borderColor": "black",
+                          "borderStyle": "solid",
+                          "borderWidth": 0,
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "height": 64,
+                          "paddingBottom": 16,
+                          "paddingLeft": 16,
+                          "paddingRight": 16,
+                          "paddingTop": 16,
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "marginRight": 10,
+                        }
+                      }
+                    >
+                      <RNSVGSvgView
+                        align="xMidYMid"
+                        bbHeight={24}
+                        bbWidth={24}
+                        fill="#7B746F"
+                        focusable={false}
+                        height={24}
+                        meetOrSlice={0}
+                        minX={0}
+                        minY={0}
+                        secondaryFill={null}
+                        secondaryOpacity={0.4}
+                        size={24}
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                            },
+                            Object {
+                              "backgroundColor": "transparent",
+                              "flexBasis": 0,
+                              "flexGrow": 1,
+                              "flexShrink": 1,
+                              "fontSize": 32,
+                              "height": 32,
+                              "width": 32,
+                            },
+                            Object {
+                              "flex": 0,
+                              "height": 24,
+                              "width": 24,
+                            },
+                          ]
+                        }
+                        vbHeight={512}
+                        vbWidth={496}
+                        width={24}
+                      >
+                        <RNSVGGroup
+                          fill={-8686481}
+                          font={
+                            Object {
+                              "fontSize": 32,
+                            }
+                          }
+                          propList={
+                            Array [
+                              "fill",
+                            ]
+                          }
+                        >
+                          <RNSVGPath
+                            d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm128 421.6c-35.9 26.5-80.1 42.4-128 42.4s-92.1-15.9-128-42.4V416c0-35.3 28.7-64 64-64 11.1 0 27.5 11.4 64 11.4 36.6 0 52.8-11.4 64-11.4 35.3 0 64 28.7 64 64v13.6zm30.6-27.5c-6.8-46.4-46.3-82.1-94.6-82.1-20.5 0-30.4 11.4-64 11.4S204.6 320 184 320c-48.3 0-87.8 35.7-94.6 82.1C53.9 363.6 32 312.4 32 256c0-119.1 96.9-216 216-216s216 96.9 216 216c0 56.4-21.9 107.6-57.4 146.1zM248 120c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 144c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z"
+                            fill={-8686481}
+                            fillOpacity={1}
+                            propList={
+                              Array [
+                                "fill",
+                                "fillOpacity",
+                              ]
+                            }
+                          />
+                        </RNSVGGroup>
+                      </RNSVGSvgView>
+                    </View>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#000000",
+                          "flexBasis": 0,
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "fontFamily": "OpenSans",
+                          "fontSize": 16,
+                        }
+                      }
+                    >
+                      Card Title: Collapsible
+                    </Text>
+                    <View
+                      style={
+                        Object {
+                          "marginRight": 10,
+                        }
+                      }
+                    >
+                      <RNSVGSvgView
+                        align="xMidYMid"
+                        bbHeight={24}
+                        bbWidth={24}
+                        fill="#7B746F"
+                        focusable={false}
+                        height={24}
+                        meetOrSlice={0}
+                        minX={0}
+                        minY={0}
+                        secondaryFill={null}
+                        secondaryOpacity={0.4}
+                        size={24}
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                            },
+                            Object {
+                              "backgroundColor": "transparent",
+                              "flexBasis": 0,
+                              "flexGrow": 1,
+                              "flexShrink": 1,
+                              "fontSize": 32,
+                              "height": 32,
+                              "width": 32,
+                            },
+                            Object {
+                              "flex": 0,
+                              "height": 24,
+                              "width": 24,
+                            },
+                          ]
+                        }
+                        vbHeight={512}
+                        vbWidth={448}
+                        width={24}
+                      >
+                        <RNSVGGroup
+                          fill={-8686481}
+                          font={
+                            Object {
+                              "fontSize": 32,
+                            }
+                          }
+                          propList={
+                            Array [
+                              "fill",
+                            ]
+                          }
+                        >
+                          <RNSVGPath
+                            d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"
+                            fill={-8686481}
+                            fillOpacity={1}
+                            propList={
+                              Array [
+                                "fill",
+                                "fillOpacity",
+                              ]
+                            }
+                          />
+                        </RNSVGGroup>
+                      </RNSVGSvgView>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  collapsed={true}
+                  collapsible={true}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "height": 0,
+                        "overflow": "hidden",
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Test
+                  </Text>
+                </View>
+                <View
+                  collapsed={true}
+                  collapsible={true}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "flex-end",
+                        "display": "none",
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "height": 0,
+                        "justifyContent": "space-between",
+                        "marginTop": "auto",
+                        "overflow": "hidden",
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Footer
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "#eee",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  Non-Collapsible Card
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#666",
+                    "fontSize": 10,
+                    "paddingTop": 0,
+                  }
+                }
+              >
+                A basic card that does not collapse or expand content.
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "rgba(0,0,0,0)",
+                  "padding": 10,
+                }
+              }
+            >
+              <View
+                css={
+                  Object {
+                    "padding": 0,
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#ffffff",
+                      "borderRadius": 16,
+                      "display": "flex",
+                      "elevation": 3,
+                      "flexDirection": "column",
+                      "marginBottom": 16,
+                      "shadowColor": "rgba(66, 62, 60, 1)",
+                      "shadowOpacity": 0.15,
+                      "shadowRadius": 8,
+                    },
+                  ]
+                }
+              >
+                <View
+                  accessible={true}
+                  focusable={false}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    collapsed={true}
+                    collapsible={false}
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                          "borderBottomColor": "#E9E5E4",
+                          "borderBottomWidth": 1,
+                          "borderColor": "black",
+                          "borderStyle": "solid",
+                          "borderWidth": 0,
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "height": 64,
+                          "paddingBottom": 16,
+                          "paddingLeft": 16,
+                          "paddingRight": 16,
+                          "paddingTop": 16,
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "marginRight": 10,
+                        }
+                      }
+                    >
+                      <RNSVGSvgView
+                        align="xMidYMid"
+                        bbHeight={24}
+                        bbWidth={24}
+                        fill="#7B746F"
+                        focusable={false}
+                        height={24}
+                        meetOrSlice={0}
+                        minX={0}
+                        minY={0}
+                        secondaryFill={null}
+                        secondaryOpacity={0.4}
+                        size={24}
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                            },
+                            Object {
+                              "backgroundColor": "transparent",
+                              "flexBasis": 0,
+                              "flexGrow": 1,
+                              "flexShrink": 1,
+                              "fontSize": 32,
+                              "height": 32,
+                              "width": 32,
+                            },
+                            Object {
+                              "flex": 0,
+                              "height": 24,
+                              "width": 24,
+                            },
+                          ]
+                        }
+                        vbHeight={512}
+                        vbWidth={496}
+                        width={24}
+                      >
+                        <RNSVGGroup
+                          fill={-8686481}
+                          font={
+                            Object {
+                              "fontSize": 32,
+                            }
+                          }
+                          propList={
+                            Array [
+                              "fill",
+                            ]
+                          }
+                        >
+                          <RNSVGPath
+                            d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm128 421.6c-35.9 26.5-80.1 42.4-128 42.4s-92.1-15.9-128-42.4V416c0-35.3 28.7-64 64-64 11.1 0 27.5 11.4 64 11.4 36.6 0 52.8-11.4 64-11.4 35.3 0 64 28.7 64 64v13.6zm30.6-27.5c-6.8-46.4-46.3-82.1-94.6-82.1-20.5 0-30.4 11.4-64 11.4S204.6 320 184 320c-48.3 0-87.8 35.7-94.6 82.1C53.9 363.6 32 312.4 32 256c0-119.1 96.9-216 216-216s216 96.9 216 216c0 56.4-21.9 107.6-57.4 146.1zM248 120c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 144c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z"
+                            fill={-8686481}
+                            fillOpacity={1}
+                            propList={
+                              Array [
+                                "fill",
+                                "fillOpacity",
+                              ]
+                            }
+                          />
+                        </RNSVGGroup>
+                      </RNSVGSvgView>
+                    </View>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#000000",
+                          "flexBasis": 0,
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "fontFamily": "OpenSans",
+                          "fontSize": 16,
+                        }
+                      }
+                    >
+                      Card Title: Non-Collapsible
+                    </Text>
+                  </View>
+                </View>
+                <View
+                  collapsed={true}
+                  collapsible={false}
+                  style={
+                    Array [
+                      Object {
+                        "overflow": "hidden",
+                        "paddingBottom": 0,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Test
+                  </Text>
+                </View>
+                <View
+                  collapsed={true}
+                  collapsible={false}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "flex-end",
+                        "display": "flex",
+                        "justifyContent": "space-between",
+                        "marginTop": "auto",
+                        "overflow": "hidden",
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Footer
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "#eee",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  Collapsible Card with a Badge or Icon
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#666",
+                    "fontSize": 10,
+                    "paddingTop": 0,
+                  }
+                }
+              >
+                A basic card that collapse or expand content with a badge.
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "rgba(0,0,0,0)",
+                  "padding": 10,
+                }
+              }
+            >
+              <View
+                css={
+                  Object {
+                    "padding": 0,
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#ffffff",
+                      "borderRadius": 16,
+                      "display": "flex",
+                      "elevation": 3,
+                      "flexDirection": "column",
+                      "marginBottom": 16,
+                      "shadowColor": "rgba(66, 62, 60, 1)",
+                      "shadowOpacity": 0.15,
+                      "shadowRadius": 8,
+                    },
+                  ]
+                }
+              >
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    collapsed={true}
+                    collapsible={true}
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                          "borderBottomColor": "#E9E5E4",
+                          "borderBottomWidth": 0,
+                          "borderColor": "black",
+                          "borderStyle": "solid",
+                          "borderWidth": 0,
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "height": 64,
+                          "paddingBottom": 16,
+                          "paddingLeft": 16,
+                          "paddingRight": 16,
+                          "paddingTop": 16,
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "marginRight": 10,
+                        }
+                      }
+                    >
+                      <RNSVGSvgView
+                        align="xMidYMid"
+                        bbHeight={24}
+                        bbWidth={24}
+                        fill="#7B746F"
+                        focusable={false}
+                        height={24}
+                        meetOrSlice={0}
+                        minX={0}
+                        minY={0}
+                        secondaryFill={null}
+                        secondaryOpacity={0.4}
+                        size={24}
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                            },
+                            Object {
+                              "backgroundColor": "transparent",
+                              "flexBasis": 0,
+                              "flexGrow": 1,
+                              "flexShrink": 1,
+                              "fontSize": 32,
+                              "height": 32,
+                              "width": 32,
+                            },
+                            Object {
+                              "flex": 0,
+                              "height": 24,
+                              "width": 24,
+                            },
+                          ]
+                        }
+                        vbHeight={512}
+                        vbWidth={496}
+                        width={24}
+                      >
+                        <RNSVGGroup
+                          fill={-8686481}
+                          font={
+                            Object {
+                              "fontSize": 32,
+                            }
+                          }
+                          propList={
+                            Array [
+                              "fill",
+                            ]
+                          }
+                        >
+                          <RNSVGPath
+                            d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm128 421.6c-35.9 26.5-80.1 42.4-128 42.4s-92.1-15.9-128-42.4V416c0-35.3 28.7-64 64-64 11.1 0 27.5 11.4 64 11.4 36.6 0 52.8-11.4 64-11.4 35.3 0 64 28.7 64 64v13.6zm30.6-27.5c-6.8-46.4-46.3-82.1-94.6-82.1-20.5 0-30.4 11.4-64 11.4S204.6 320 184 320c-48.3 0-87.8 35.7-94.6 82.1C53.9 363.6 32 312.4 32 256c0-119.1 96.9-216 216-216s216 96.9 216 216c0 56.4-21.9 107.6-57.4 146.1zM248 120c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 144c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z"
+                            fill={-8686481}
+                            fillOpacity={1}
+                            propList={
+                              Array [
+                                "fill",
+                                "fillOpacity",
+                              ]
+                            }
+                          />
+                        </RNSVGGroup>
+                      </RNSVGSvgView>
+                    </View>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#000000",
+                          "flexBasis": 0,
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "fontFamily": "OpenSans",
+                          "fontSize": 16,
+                        }
+                      }
+                    >
+                      Card Title: Icon
+                    </Text>
+                    <View
+                      style={
+                        Object {
+                          "marginRight": 10,
+                        }
+                      }
+                    >
+                      <RNSVGSvgView
+                        align="xMidYMid"
+                        bbHeight={24}
+                        bbWidth={24}
+                        fill="#7B746F"
+                        focusable={false}
+                        height={24}
+                        meetOrSlice={0}
+                        minX={0}
+                        minY={0}
+                        secondaryFill={null}
+                        secondaryOpacity={0.4}
+                        size={24}
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                            },
+                            Object {
+                              "backgroundColor": "transparent",
+                              "flexBasis": 0,
+                              "flexGrow": 1,
+                              "flexShrink": 1,
+                              "fontSize": 32,
+                              "height": 32,
+                              "width": 32,
+                            },
+                            Object {
+                              "flex": 0,
+                              "height": 24,
+                              "width": 24,
+                            },
+                          ]
+                        }
+                        vbHeight={512}
+                        vbWidth={448}
+                        width={24}
+                      >
+                        <RNSVGGroup
+                          fill={-8686481}
+                          font={
+                            Object {
+                              "fontSize": 32,
+                            }
+                          }
+                          propList={
+                            Array [
+                              "fill",
+                            ]
+                          }
+                        >
+                          <RNSVGPath
+                            d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"
+                            fill={-8686481}
+                            fillOpacity={1}
+                            propList={
+                              Array [
+                                "fill",
+                                "fillOpacity",
+                              ]
+                            }
+                          />
+                        </RNSVGGroup>
+                      </RNSVGSvgView>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  collapsed={true}
+                  collapsible={true}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "height": 0,
+                        "overflow": "hidden",
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Test
+                  </Text>
+                </View>
+                <View
+                  collapsed={true}
+                  collapsible={true}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "flex-end",
+                        "display": "none",
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "height": 0,
+                        "justifyContent": "space-between",
+                        "marginTop": "auto",
+                        "overflow": "hidden",
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Footer
+                  </Text>
+                </View>
+              </View>
+              <View
+                css={
+                  Object {
+                    "padding": 0,
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#ffffff",
+                      "borderRadius": 16,
+                      "display": "flex",
+                      "elevation": 3,
+                      "flexDirection": "column",
+                      "marginBottom": 16,
+                      "shadowColor": "rgba(66, 62, 60, 1)",
+                      "shadowOpacity": 0.15,
+                      "shadowRadius": 8,
+                    },
+                  ]
+                }
+              >
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    collapsed={true}
+                    collapsible={true}
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                          "borderBottomColor": "#E9E5E4",
+                          "borderBottomWidth": 0,
+                          "borderColor": "black",
+                          "borderStyle": "solid",
+                          "borderWidth": 0,
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "height": 64,
+                          "paddingBottom": 16,
+                          "paddingLeft": 16,
+                          "paddingRight": 16,
+                          "paddingTop": 16,
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      bg="#D73F09"
+                      fg="#ffffff"
+                      style={
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "#D73F09",
+                            "borderRadius": 16,
+                            "color": "#ffffff",
+                            "display": "flex",
+                            "height": 32,
+                            "justifyContent": "center",
+                            "marginRight": 12,
+                            "width": 32,
+                          },
+                        ]
+                      }
+                    >
+                      <Text
+                        style={
+                          Object {
+                            "color": "#ffffff",
+                            "fontFamily": "OpenSans",
+                            "fontSize": 15,
+                          }
+                        }
+                      >
+                        4
+                      </Text>
+                    </View>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#000000",
+                          "flexBasis": 0,
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "fontFamily": "OpenSans",
+                          "fontSize": 16,
+                        }
+                      }
+                    >
+                      Card Title: Badge
+                    </Text>
+                    <View
+                      style={
+                        Object {
+                          "marginRight": 10,
+                        }
+                      }
+                    >
+                      <RNSVGSvgView
+                        align="xMidYMid"
+                        bbHeight={24}
+                        bbWidth={24}
+                        fill="#7B746F"
+                        focusable={false}
+                        height={24}
+                        meetOrSlice={0}
+                        minX={0}
+                        minY={0}
+                        secondaryFill={null}
+                        secondaryOpacity={0.4}
+                        size={24}
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                            },
+                            Object {
+                              "backgroundColor": "transparent",
+                              "flexBasis": 0,
+                              "flexGrow": 1,
+                              "flexShrink": 1,
+                              "fontSize": 32,
+                              "height": 32,
+                              "width": 32,
+                            },
+                            Object {
+                              "flex": 0,
+                              "height": 24,
+                              "width": 24,
+                            },
+                          ]
+                        }
+                        vbHeight={512}
+                        vbWidth={448}
+                        width={24}
+                      >
+                        <RNSVGGroup
+                          fill={-8686481}
+                          font={
+                            Object {
+                              "fontSize": 32,
+                            }
+                          }
+                          propList={
+                            Array [
+                              "fill",
+                            ]
+                          }
+                        >
+                          <RNSVGPath
+                            d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"
+                            fill={-8686481}
+                            fillOpacity={1}
+                            propList={
+                              Array [
+                                "fill",
+                                "fillOpacity",
+                              ]
+                            }
+                          />
+                        </RNSVGGroup>
+                      </RNSVGSvgView>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  collapsed={true}
+                  collapsible={true}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "height": 0,
+                        "overflow": "hidden",
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Test
+                  </Text>
+                </View>
+                <View
+                  collapsed={true}
+                  collapsible={true}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "flex-end",
+                        "display": "none",
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "height": 0,
+                        "justifyContent": "space-between",
+                        "marginTop": "auto",
+                        "overflow": "hidden",
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Footer
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "#eee",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  Collapsible Card with an Icon and Counter
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#666",
+                    "fontSize": 10,
+                    "paddingTop": 0,
+                  }
+                }
+              >
+                A basic card that collapse or expand content with an icon and counter.
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "rgba(0,0,0,0)",
+                  "padding": 10,
+                }
+              }
+            >
+              <View
+                css={
+                  Object {
+                    "padding": 0,
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#ffffff",
+                      "borderRadius": 16,
+                      "display": "flex",
+                      "elevation": 3,
+                      "flexDirection": "column",
+                      "marginBottom": 16,
+                      "shadowColor": "rgba(66, 62, 60, 1)",
+                      "shadowOpacity": 0.15,
+                      "shadowRadius": 8,
+                    },
+                  ]
+                }
+              >
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    collapsed={true}
+                    collapsible={true}
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                          "borderBottomColor": "#E9E5E4",
+                          "borderBottomWidth": 0,
+                          "borderColor": "black",
+                          "borderStyle": "solid",
+                          "borderWidth": 0,
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "height": 64,
+                          "paddingBottom": 16,
+                          "paddingLeft": 16,
+                          "paddingRight": 16,
+                          "paddingTop": 16,
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "marginRight": 10,
+                        }
+                      }
+                    >
+                      <RNSVGSvgView
+                        align="xMidYMid"
+                        bbHeight={24}
+                        bbWidth={24}
+                        fill="#7B746F"
+                        focusable={false}
+                        height={24}
+                        meetOrSlice={0}
+                        minX={0}
+                        minY={0}
+                        secondaryFill={null}
+                        secondaryOpacity={0.4}
+                        size={24}
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                            },
+                            Object {
+                              "backgroundColor": "transparent",
+                              "flexBasis": 0,
+                              "flexGrow": 1,
+                              "flexShrink": 1,
+                              "fontSize": 32,
+                              "height": 32,
+                              "width": 32,
+                            },
+                            Object {
+                              "flex": 0,
+                              "height": 24,
+                              "width": 24,
+                            },
+                          ]
+                        }
+                        vbHeight={512}
+                        vbWidth={496}
+                        width={24}
+                      >
+                        <RNSVGGroup
+                          fill={-8686481}
+                          font={
+                            Object {
+                              "fontSize": 32,
+                            }
+                          }
+                          propList={
+                            Array [
+                              "fill",
+                            ]
+                          }
+                        >
+                          <RNSVGPath
+                            d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm128 421.6c-35.9 26.5-80.1 42.4-128 42.4s-92.1-15.9-128-42.4V416c0-35.3 28.7-64 64-64 11.1 0 27.5 11.4 64 11.4 36.6 0 52.8-11.4 64-11.4 35.3 0 64 28.7 64 64v13.6zm30.6-27.5c-6.8-46.4-46.3-82.1-94.6-82.1-20.5 0-30.4 11.4-64 11.4S204.6 320 184 320c-48.3 0-87.8 35.7-94.6 82.1C53.9 363.6 32 312.4 32 256c0-119.1 96.9-216 216-216s216 96.9 216 216c0 56.4-21.9 107.6-57.4 146.1zM248 120c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 144c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z"
+                            fill={-8686481}
+                            fillOpacity={1}
+                            propList={
+                              Array [
+                                "fill",
+                                "fillOpacity",
+                              ]
+                            }
+                          />
+                        </RNSVGGroup>
+                      </RNSVGSvgView>
+                      <View
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "#D73F09",
+                              "borderRadius": 11,
+                              "bottom": -8,
+                              "height": 18,
+                              "paddingBottom": 0,
+                              "paddingLeft": 6,
+                              "paddingRight": 6,
+                              "paddingTop": 0,
+                              "position": "absolute",
+                              "right": -8,
+                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          style={
+                            Object {
+                              "alignSelf": "center",
+                              "color": "#ffffff",
+                              "fontFamily": "OpenSans",
+                              "fontSize": 12,
+                            }
+                          }
+                        >
+                          3
+                        </Text>
+                      </View>
+                    </View>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#000000",
+                          "flexBasis": 0,
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "fontFamily": "OpenSans",
+                          "fontSize": 16,
+                        }
+                      }
+                    >
+                      Card Title: Icon with Counter
+                    </Text>
+                    <View
+                      style={
+                        Object {
+                          "marginRight": 10,
+                        }
+                      }
+                    >
+                      <RNSVGSvgView
+                        align="xMidYMid"
+                        bbHeight={24}
+                        bbWidth={24}
+                        fill="#7B746F"
+                        focusable={false}
+                        height={24}
+                        meetOrSlice={0}
+                        minX={0}
+                        minY={0}
+                        secondaryFill={null}
+                        secondaryOpacity={0.4}
+                        size={24}
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                            },
+                            Object {
+                              "backgroundColor": "transparent",
+                              "flexBasis": 0,
+                              "flexGrow": 1,
+                              "flexShrink": 1,
+                              "fontSize": 32,
+                              "height": 32,
+                              "width": 32,
+                            },
+                            Object {
+                              "flex": 0,
+                              "height": 24,
+                              "width": 24,
+                            },
+                          ]
+                        }
+                        vbHeight={512}
+                        vbWidth={448}
+                        width={24}
+                      >
+                        <RNSVGGroup
+                          fill={-8686481}
+                          font={
+                            Object {
+                              "fontSize": 32,
+                            }
+                          }
+                          propList={
+                            Array [
+                              "fill",
+                            ]
+                          }
+                        >
+                          <RNSVGPath
+                            d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"
+                            fill={-8686481}
+                            fillOpacity={1}
+                            propList={
+                              Array [
+                                "fill",
+                                "fillOpacity",
+                              ]
+                            }
+                          />
+                        </RNSVGGroup>
+                      </RNSVGSvgView>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  collapsed={true}
+                  collapsible={true}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "height": 0,
+                        "overflow": "hidden",
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Test
+                  </Text>
+                </View>
+                <View
+                  collapsed={true}
+                  collapsible={true}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "flex-end",
+                        "display": "none",
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "height": 0,
+                        "justifyContent": "space-between",
+                        "marginTop": "auto",
+                        "overflow": "hidden",
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Footer
+                  </Text>
+                </View>
+              </View>
+              <View
+                css={
+                  Object {
+                    "padding": 0,
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#ffffff",
+                      "borderRadius": 16,
+                      "display": "flex",
+                      "elevation": 3,
+                      "flexDirection": "column",
+                      "marginBottom": 16,
+                      "shadowColor": "rgba(66, 62, 60, 1)",
+                      "shadowOpacity": 0.15,
+                      "shadowRadius": 8,
+                    },
+                  ]
+                }
+              >
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    collapsed={true}
+                    collapsible={true}
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                          "borderBottomColor": "#E9E5E4",
+                          "borderBottomWidth": 0,
+                          "borderColor": "black",
+                          "borderStyle": "solid",
+                          "borderWidth": 0,
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "height": 64,
+                          "paddingBottom": 16,
+                          "paddingLeft": 16,
+                          "paddingRight": 16,
+                          "paddingTop": 16,
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "marginRight": 10,
+                        }
+                      }
+                    >
+                      <RNSVGSvgView
+                        align="xMidYMid"
+                        bbHeight={24}
+                        bbWidth={24}
+                        fill="#7B746F"
+                        focusable={false}
+                        height={24}
+                        meetOrSlice={0}
+                        minX={0}
+                        minY={0}
+                        secondaryFill={null}
+                        secondaryOpacity={0.4}
+                        size={24}
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                            },
+                            Object {
+                              "backgroundColor": "transparent",
+                              "flexBasis": 0,
+                              "flexGrow": 1,
+                              "flexShrink": 1,
+                              "fontSize": 32,
+                              "height": 32,
+                              "width": 32,
+                            },
+                            Object {
+                              "flex": 0,
+                              "height": 24,
+                              "width": 24,
+                            },
+                          ]
+                        }
+                        vbHeight={512}
+                        vbWidth={496}
+                        width={24}
+                      >
+                        <RNSVGGroup
+                          fill={-8686481}
+                          font={
+                            Object {
+                              "fontSize": 32,
+                            }
+                          }
+                          propList={
+                            Array [
+                              "fill",
+                            ]
+                          }
+                        >
+                          <RNSVGPath
+                            d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm128 421.6c-35.9 26.5-80.1 42.4-128 42.4s-92.1-15.9-128-42.4V416c0-35.3 28.7-64 64-64 11.1 0 27.5 11.4 64 11.4 36.6 0 52.8-11.4 64-11.4 35.3 0 64 28.7 64 64v13.6zm30.6-27.5c-6.8-46.4-46.3-82.1-94.6-82.1-20.5 0-30.4 11.4-64 11.4S204.6 320 184 320c-48.3 0-87.8 35.7-94.6 82.1C53.9 363.6 32 312.4 32 256c0-119.1 96.9-216 216-216s216 96.9 216 216c0 56.4-21.9 107.6-57.4 146.1zM248 120c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 144c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z"
+                            fill={-8686481}
+                            fillOpacity={1}
+                            propList={
+                              Array [
+                                "fill",
+                                "fillOpacity",
+                              ]
+                            }
+                          />
+                        </RNSVGGroup>
+                      </RNSVGSvgView>
+                      <View
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "#D73F09",
+                              "borderRadius": 11,
+                              "height": 18,
+                              "left": -8,
+                              "paddingBottom": 0,
+                              "paddingLeft": 6,
+                              "paddingRight": 6,
+                              "paddingTop": 0,
+                              "position": "absolute",
+                              "top": -8,
+                            },
+                          ]
+                        }
+                        top={true}
+                      >
+                        <Text
+                          style={
+                            Object {
+                              "alignSelf": "center",
+                              "color": "#ffffff",
+                              "fontFamily": "OpenSans",
+                              "fontSize": 12,
+                            }
+                          }
+                        >
+                          3
+                        </Text>
+                      </View>
+                    </View>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#000000",
+                          "flexBasis": 0,
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "fontFamily": "OpenSans",
+                          "fontSize": 16,
+                        }
+                      }
+                    >
+                      Card Title: Icon with Counter
+                    </Text>
+                    <View
+                      style={
+                        Object {
+                          "marginRight": 10,
+                        }
+                      }
+                    >
+                      <RNSVGSvgView
+                        align="xMidYMid"
+                        bbHeight={24}
+                        bbWidth={24}
+                        fill="#7B746F"
+                        focusable={false}
+                        height={24}
+                        meetOrSlice={0}
+                        minX={0}
+                        minY={0}
+                        secondaryFill={null}
+                        secondaryOpacity={0.4}
+                        size={24}
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                            },
+                            Object {
+                              "backgroundColor": "transparent",
+                              "flexBasis": 0,
+                              "flexGrow": 1,
+                              "flexShrink": 1,
+                              "fontSize": 32,
+                              "height": 32,
+                              "width": 32,
+                            },
+                            Object {
+                              "flex": 0,
+                              "height": 24,
+                              "width": 24,
+                            },
+                          ]
+                        }
+                        vbHeight={512}
+                        vbWidth={448}
+                        width={24}
+                      >
+                        <RNSVGGroup
+                          fill={-8686481}
+                          font={
+                            Object {
+                              "fontSize": 32,
+                            }
+                          }
+                          propList={
+                            Array [
+                              "fill",
+                            ]
+                          }
+                        >
+                          <RNSVGPath
+                            d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"
+                            fill={-8686481}
+                            fillOpacity={1}
+                            propList={
+                              Array [
+                                "fill",
+                                "fillOpacity",
+                              ]
+                            }
+                          />
+                        </RNSVGGroup>
+                      </RNSVGSvgView>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  collapsed={true}
+                  collapsible={true}
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "height": 0,
+                        "overflow": "hidden",
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Test
+                  </Text>
+                </View>
+                <View
+                  collapsed={true}
+                  collapsible={true}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "flex-end",
+                        "display": "none",
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "height": 0,
+                        "justifyContent": "space-between",
+                        "marginTop": "auto",
+                        "overflow": "hidden",
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Footer
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "#eee",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderBottomColor": "#e6e6e6",
+                  "borderBottomWidth": 1,
+                  "paddingBottom": 10,
+                  "paddingHorizontal": 10,
+                  "paddingTop": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderTopColor": "#e6e6e6",
+                    "borderTopWidth": 1,
+                    "flexDirection": "row",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#666",
+                      "fontSize": 10,
+                      "paddingBottom": 2,
+                      "paddingHorizontal": 4,
+                    }
+                  }
+                >
+                  Use Case
+                </Text>
+              </View>
+              <View
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#3d3d3d",
+                      "fontWeight": "600",
+                    }
+                  }
+                >
+                  Simple Card Header
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#666",
+                    "fontSize": 10,
+                    "paddingTop": 0,
+                  }
+                }
+              >
+                A card with only a simple header and no content, see ITSystemStatus
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "rgba(0,0,0,0)",
+                  "padding": 10,
+                }
+              }
+            >
+              <View
+                css={
+                  Object {
+                    "padding": 0,
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#ffffff",
+                      "borderRadius": 16,
+                      "display": "flex",
+                      "elevation": 3,
+                      "flexDirection": "column",
+                      "marginBottom": 16,
+                      "shadowColor": "rgba(66, 62, 60, 1)",
+                      "shadowOpacity": 0.15,
+                      "shadowRadius": 8,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexDirection": "row",
+                        "fontSize": 16,
+                        "height": 64,
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "OpenSans",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Non-Content Simple Card
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;

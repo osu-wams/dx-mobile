@@ -3,6 +3,7 @@ import { Screen } from '../../components';
 import { ResourceCard } from '../../features';
 import { usePerson, useResources } from '@osu-wams/hooks';
 import { Body } from '../../ui/Body';
+import { faGraduationCap, faStars } from '@fortawesome/pro-light-svg-icons';
 
 export const WelcomeScreen = function WelcomeScreen() {
   const resources = useResources();
@@ -13,8 +14,8 @@ export const WelcomeScreen = function WelcomeScreen() {
       <Body>
         {resources.isSuccess && (
           <>
-            <ResourceCard categ="Featured"></ResourceCard>
-            <ResourceCard categ="Academic"></ResourceCard>
+            <ResourceCard categ="Featured" icon={faStars} collapsing={false} />
+            <ResourceCard categ="Academic" icon={faGraduationCap} collapsing={false} />
           </>
         )}
       </Body>

@@ -195,7 +195,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 15,
                       "paddingLeft": 8,
                     }
@@ -332,7 +332,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 15,
                       "paddingLeft": 8,
                     }
@@ -459,7 +459,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans-Regular",
+                      "fontFamily": "OpenSans",
                       "fontSize": 15,
                       "paddingLeft": 8,
                     }
@@ -695,7 +695,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                     style={
                       Object {
                         "color": "#000000",
-                        "fontFamily": "OpenSans-Regular",
+                        "fontFamily": "OpenSans",
                         "fontSize": 15,
                         "paddingLeft": 8,
                       }
@@ -827,7 +827,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                     style={
                       Object {
                         "color": "#000000",
-                        "fontFamily": "OpenSans-Regular",
+                        "fontFamily": "OpenSans",
                         "fontSize": 15,
                         "paddingLeft": 8,
                       }
@@ -956,7 +956,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                     style={
                       Object {
                         "color": "#000000",
-                        "fontFamily": "OpenSans-Regular",
+                        "fontFamily": "OpenSans",
                         "fontSize": 15,
                         "paddingLeft": 8,
                       }
@@ -1085,7 +1085,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                     style={
                       Object {
                         "color": "#000000",
-                        "fontFamily": "OpenSans-Regular",
+                        "fontFamily": "OpenSans",
                         "fontSize": 15,
                         "paddingLeft": 8,
                       }
@@ -1214,7 +1214,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                     style={
                       Object {
                         "color": "#000000",
-                        "fontFamily": "OpenSans-Regular",
+                        "fontFamily": "OpenSans",
                         "fontSize": 15,
                         "paddingLeft": 8,
                       }

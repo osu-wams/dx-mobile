@@ -55,9 +55,11 @@ function Main() {
   const auth = useAuth();
   const resetAuthState = useResetRecoilState(authState);
   const [fontsLoaded] = initFonts();
-  const user = useRecoilValue<Types.UserState>(userState);
-  const [theme, setTheme] = useRecoilState<string>(themeState);
+  const [theme, setTheme] = useRecoilState<string>(State.themeState);
+  const user = useRecoilValue<Types.UserState>(State.userState);
 
+  // TODO: This depends on a browser, see ticket MMA-8 for work to be done
+  // useUserState(() => ({}));
   setRootNavigation(navigationRef);
   useBackButtonHandler(navigationRef, canExit);
   const { initialNavigationState, onNavigationStateChange } = useNavigationPersistence(
@@ -80,26 +82,29 @@ function Main() {
     setTheme(user.data?.theme || theme);
   }, [theme, user.data.theme]);
 
-  if ((auth.isAuthenticated && appState.STATE !== 'LOADED') || !fontsLoaded) return <Loading />;
+  if (!fontsLoaded) return null;
+  if (auth.isAuthenticated && appState.STATE !== 'LOADED') return <Loading />;
   if (appState.STATE === 'BOOT' || (!auth.isAuthenticated && appState.STATE === 'LOADED')) {
-    return <Login />;
+    return (
+      <ThemeProvider theme={themesLookup[theme]}>
+        <Login />
+      </ThemeProvider>
+    );
   }
 
   // otherwise, we're ready to render the app
   return (
-    <QueryClientProvider client={queryClient} contextSharing={true}>
-      <ThemeProvider theme={themesLookup[theme]}>
-        <ToggleStorybook>
-          <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-            <RootNavigator
-              ref={navigationRef}
-              initialState={initialNavigationState}
-              onStateChange={onNavigationStateChange}
-            />
-          </SafeAreaProvider>
-        </ToggleStorybook>
-      </ThemeProvider>
-    </QueryClientProvider>
+    <ThemeProvider theme={themesLookup[theme]}>
+      <ToggleStorybook>
+        <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+          <RootNavigator
+            ref={navigationRef}
+            initialState={initialNavigationState}
+            onStateChange={onNavigationStateChange}
+          />
+        </SafeAreaProvider>
+      </ToggleStorybook>
+    </ThemeProvider>
   );
 }
 
@@ -108,7 +113,9 @@ function Main() {
 export function App() {
   return (
     <RecoilRoot>
-      <Main />
+      <QueryClientProvider client={queryClient} contextSharing={true}>
+        <Main />
+      </QueryClientProvider>
     </RecoilRoot>
   );
 }

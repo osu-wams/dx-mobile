@@ -8,6 +8,9 @@ import { palette } from '../../theme/palette';
 import { ResourceListItemProps } from './resource-list-item.props';
 import { Icon, Text } from '..';
 
+/**
+ * !TODO: styled component all this to be able to use theme?
+ */
 const styles = StyleSheet.create({
   button: {
     borderRadius: 20,
@@ -52,13 +55,9 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 14,
   },
-  resourceIcon: {
-    marginLeft: 5,
-    marginTop: 2,
-  },
   resourceTitle: {
     fontSize: 18,
-    marginLeft: 12,
+    marginLeft: 4,
   },
   textStyle: {
     color: Color.white,
@@ -113,12 +112,7 @@ export const ResourceListItem = (props: ResourceListItemProps) => {
         <Icon iconName={iconName} color={palette.black} />
         <Text style={styles.resourceTitle}>{title}</Text>
         {itSystemStatus.details && itSystemStatus.details.status !== 1 && (
-          <Icon
-            icon={faExclamationCircleSolid}
-            color="#ffdd54"
-            style={styles.resourceIcon}
-            size={18}
-          />
+          <Icon icon={faExclamationCircleSolid} color="#ffdd54" size={18} />
         )}
         <Modal
           animationType="slide"
@@ -132,12 +126,7 @@ export const ResourceListItem = (props: ResourceListItemProps) => {
           <View style={styles.centeredView}>
             <View style={styles.modalView}>
               {itSystemStatus.details && itSystemStatus.details.status !== 1 && (
-                <Icon
-                  icon={faExclamationCircleSolid}
-                  color="#ffdd54"
-                  style={styles.resourceIcon}
-                  size={18}
-                />
+                <Icon icon={faExclamationCircleSolid} color="#ffdd54" size={18} />
               )}
               <Text style={styles.modalTitleText}>This resource may be unavailable.</Text>
               <Text style={styles.modalText}>
