@@ -19,6 +19,7 @@ const DialogHeader = styled.View({
 });
 
 const DialogClose = styled(CloseButton)({
+  height: 32,
   padding: 0,
 });
 

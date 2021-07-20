@@ -33,14 +33,10 @@ const ModalContent = styled(View)(({ theme }) => ({
   alignItems: 'center',
   backgroundColor: theme.ui.myDialog.background,
   borderRadius: spacing.unit,
-  elevation: 15,
+  elevation: '15',
   padding: spacing.large,
   shadowColor: Color.black,
-  shadowOffset: {
-    width: 0,
-    height: 2,
-  },
-  shadowOpacity: 0.25,
+  shadowOpacity: '0.8',
   shadowRadius: 14,
 }));
 
@@ -56,7 +52,7 @@ const ModalText = styled(CenteredText)({
 const ModalCloseButton = styled(Pressable)({
   backgroundColor: Color['roguewave-400'],
   borderRadius: 10,
-  elevation: 2,
+  elevation: '2',
   marginBottom: spacing.unit + 2,
   padding: spacing.unit,
 });

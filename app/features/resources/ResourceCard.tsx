@@ -24,6 +24,7 @@ export const ResourceCard: FC<{ categ: string; icon: IconDefinition; collapsing:
   const status = useStatus();
   const res = useResourcesByQueue(categ);
   const user = useRecoilValue(State.userState);
+  const listKey = categ;
 
   const [resources, setResources] = useState<Types.Resource[]>([]);
   const [cardTitle, setCardTitle] = useState(' ');
@@ -64,7 +65,7 @@ export const ResourceCard: FC<{ categ: string; icon: IconDefinition; collapsing:
             )}
             keyExtractor={(item: Types.Resource) => `${categ}-${item.id}`}
             extraData={status}
-            listKey={categ}
+            listKey={listKey}
             ListFooterComponent={
               <CardFooter infoButtonId={`${categ}-resources`}>
                 <InternalLink
