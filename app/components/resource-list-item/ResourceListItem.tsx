@@ -1,74 +1,68 @@
-import React, { useState, useEffect } from 'react';
-import { View, StyleSheet, Linking, Modal, Alert, Pressable } from 'react-native';
+import React, { useState, useEffect, useContext } from 'react';
+import { View, Linking, Pressable } from 'react-native';
 import { faExclamationCircle as faExclamationCircleSolid } from '@fortawesome/pro-solid-svg-icons';
 import { TouchableHighlight } from 'react-native-gesture-handler';
 import { Helpers } from '@osu-wams/utils';
-import { Color } from '@osu-wams/theme';
-import { palette } from '../../theme/palette';
+import { Color, fontSize } from '@osu-wams/theme';
 import { ResourceListItemProps } from './resource-list-item.props';
 import { Icon, Text } from '..';
+import styled, { ThemeContext } from 'styled-components/native';
+import { spacing } from '../../theme';
+import Dialog from '../dialog/Dialog';
+import { HEADER_NAV_HEIGHT } from '../../ui/Header';
 
-/**
- * !TODO: styled component all this to be able to use theme?
- */
-const styles = StyleSheet.create({
-  button: {
-    borderRadius: 20,
-    elevation: 2,
-    marginBottom: 10,
-    padding: 10,
+const ResourceListItemBase = styled(View)({
+  flexDirection: 'row',
+  padding: spacing.medium + 2,
+  paddingLeft: spacing.large,
+  paddingRight: spacing.large,
+});
+
+const ResourceTitle = styled(Text)({
+  fontSize: fontSize[18],
+  marginLeft: spacing.small,
+});
+
+const Centered = styled(View)({
+  alignItems: 'center',
+  justifyContent: 'center',
+  marginTop: HEADER_NAV_HEIGHT,
+});
+
+const ModalContent = styled(View)(({ theme }) => ({
+  alignItems: 'center',
+  backgroundColor: theme.ui.myDialog.background,
+  borderRadius: spacing.unit,
+  elevation: 15,
+  padding: spacing.large,
+  shadowColor: Color.black,
+  shadowOffset: {
+    width: 0,
+    height: 2,
   },
-  buttonClose: {
-    backgroundColor: Color['roguewave-400'],
-  },
-  cardListItem: {
-    flexDirection: 'row',
-    padding: 10,
-    paddingLeft: 26,
-    paddingRight: 26,
-  },
-  centeredView: {
-    alignItems: 'center',
-    flex: 1,
-    justifyContent: 'center',
-    marginTop: 22,
-  },
-  modalText: {
-    marginBottom: 15,
-    textAlign: 'center',
-  },
-  modalTitleText: {
-    fontWeight: 'bold',
-    marginBottom: 15,
-    textAlign: 'center',
-  },
-  modalView: {
-    alignItems: 'center',
-    backgroundColor: Color.white,
-    borderRadius: 20,
-    elevation: 15,
-    margin: 20,
-    padding: 35,
-    shadowColor: Color.black,
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 14,
-  },
-  resourceTitle: {
-    fontSize: 18,
-    marginLeft: 4,
-  },
-  textStyle: {
-    color: Color.white,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
+  shadowOpacity: 0.25,
+  shadowRadius: 14,
+}));
+
+const CenteredText = styled(Text)<{ fg?: string }>(({ fg, theme }) => ({
+  color: fg ?? theme.ui.myDialog.details.color,
+  textAlign: 'center',
+}));
+
+const ModalText = styled(CenteredText)({
+  marginBottom: spacing.unit,
+});
+
+const ModalCloseButton = styled(Pressable)({
+  backgroundColor: Color['roguewave-400'],
+  borderRadius: 10,
+  elevation: 2,
+  marginBottom: spacing.unit + 2,
+  padding: spacing.unit,
 });
 
 export const ResourceListItem = (props: ResourceListItemProps) => {
+  const theme = useContext(ThemeContext);
   const { title, link, itSystem, iconName } = props.resource;
   const { data, isSuccess } = props.itStatus;
 
@@ -100,8 +94,8 @@ export const ResourceListItem = (props: ResourceListItemProps) => {
 
   return (
     <TouchableHighlight
-      activeOpacity={0.6}
-      underlayColor={Color['neutral-800']}
+      activeOpacity={0.9}
+      underlayColor={Color['neutral-100']}
       onPress={() => {
         if (itSystemStatus.details && itSystemStatus.details.status !== 1) {
           setModalVisible(true);
@@ -110,61 +104,57 @@ export const ResourceListItem = (props: ResourceListItemProps) => {
         }
       }}
     >
-      <View style={styles.cardListItem}>
-        <Icon iconName={iconName} color={palette.black} />
-        <Text style={styles.resourceTitle}>{title}</Text>
+      <ResourceListItemBase>
+        <Icon iconName={iconName} />
+        <ResourceTitle>{title}</ResourceTitle>
         {itSystemStatus.details && itSystemStatus.details.status !== 1 && (
-          <Icon icon={faExclamationCircleSolid} color="#ffdd54" size={18} />
+          <Icon
+            icon={faExclamationCircleSolid}
+            color="#ffdd54"
+            size={18}
+            // eslint-disable-next-line react-native/no-inline-styles
+            containerStyle={{ paddingLeft: 5 }}
+          />
         )}
-        <Modal
-          animationType="slide"
+        <Dialog
+          animationType="fade"
+          solidBackground={false}
           transparent={true}
           visible={modalVisible}
           onRequestClose={() => {
-            Alert.alert('Modal has been closed.');
             setModalVisible(!modalVisible);
           }}
         >
-          <View style={styles.centeredView}>
-            <View style={styles.modalView}>
-              {itSystemStatus.details && itSystemStatus.details.status !== 1 && (
-                <Icon icon={faExclamationCircleSolid} color="#ffdd54" size={18} />
-              )}
-              <Text style={styles.modalTitleText}>This resource may be unavailable.</Text>
-              <Text style={styles.modalText}>
+          <Centered>
+            <ModalContent>
+              <ModalText preset="bold" text="This resource may be unavailable." />
+              <ModalText>
                 {title ?? 'Resource'} •{' '}
-                {itSystemStatus.timeChecked?.toLocaleString('en-US', {
+                {(itSystemStatus.timeChecked ?? new Date()).toLocaleString('en-US', {
                   hour: 'numeric',
                   minute: 'numeric',
                   hour12: true,
                 }) +
                   ' on ' +
                   Helpers.format(itSystemStatus.timeChecked ?? new Date())}
-              </Text>
-              {itSystemStatus.details && (
-                <Text style={styles.modalText}>{itSystemStatus.details.statusText}</Text>
-              )}
+              </ModalText>
+              {itSystemStatus.details && <ModalText text={itSystemStatus.details.statusText} />}
 
-              <Pressable
-                style={[styles.button, styles.buttonClose]}
+              <ModalCloseButton
                 onPress={() => {
                   setModalVisible(!modalVisible);
                   Linking.openURL(link);
                 }}
               >
-                <Text style={styles.textStyle}>Continue to link</Text>
-              </Pressable>
-
-              <Pressable
-                style={[styles.button, styles.buttonClose]}
-                onPress={() => setModalVisible(!modalVisible)}
-              >
-                <Text style={styles.textStyle}>Dismiss</Text>
-              </Pressable>
-            </View>
-          </View>
-        </Modal>
-      </View>
+                <CenteredText text="Continue to link" fg={theme.ui.myDialog.background} />
+              </ModalCloseButton>
+              <ModalCloseButton onPress={() => setModalVisible(!modalVisible)}>
+                <CenteredText text="Dismiss" fg={theme.ui.myDialog.background} />
+              </ModalCloseButton>
+            </ModalContent>
+          </Centered>
+        </Dialog>
+      </ResourceListItemBase>
     </TouchableHighlight>
   );
 };
