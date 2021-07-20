@@ -172,7 +172,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                     "alignSelf": "flex-start",
                     "flexDirection": "row",
                     "opacity": 1,
-                    "paddingVertical": 4,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -197,7 +197,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                       "color": "#000000",
                       "fontFamily": "OpenSans",
                       "fontSize": 15,
-                      "paddingLeft": 8,
+                      "paddingLeft": undefined,
                     }
                   }
                 >
@@ -299,7 +299,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                     "alignSelf": "flex-start",
                     "flexDirection": "row",
                     "opacity": 1,
-                    "paddingVertical": 4,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -334,7 +334,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                       "color": "#000000",
                       "fontFamily": "OpenSans",
                       "fontSize": 15,
-                      "paddingLeft": 8,
+                      "paddingLeft": undefined,
                     }
                   }
                 >
@@ -436,7 +436,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                     "alignSelf": "flex-start",
                     "flexDirection": "row",
                     "opacity": 1,
-                    "paddingVertical": 4,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -461,7 +461,7 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                       "color": "#000000",
                       "fontFamily": "OpenSans",
                       "fontSize": 15,
-                      "paddingLeft": 8,
+                      "paddingLeft": undefined,
                     }
                   }
                 >
@@ -672,7 +672,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                       "alignSelf": "flex-start",
                       "flexDirection": "row",
                       "opacity": 1,
-                      "paddingVertical": 4,
+                      "paddingVertical": undefined,
                     }
                   }
                 >
@@ -697,7 +697,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                         "color": "#000000",
                         "fontFamily": "OpenSans",
                         "fontSize": 15,
-                        "paddingLeft": 8,
+                        "paddingLeft": undefined,
                       }
                     }
                   >
@@ -829,7 +829,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                         "color": "#000000",
                         "fontFamily": "OpenSans",
                         "fontSize": 15,
-                        "paddingLeft": 8,
+                        "paddingLeft": undefined,
                       }
                     }
                   >
@@ -933,7 +933,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                       "alignSelf": "flex-start",
                       "flexDirection": "row",
                       "opacity": 1,
-                      "paddingVertical": 4,
+                      "paddingVertical": undefined,
                     }
                   }
                 >
@@ -958,7 +958,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                         "color": "#000000",
                         "fontFamily": "OpenSans",
                         "fontSize": 15,
-                        "paddingLeft": 8,
+                        "paddingLeft": undefined,
                       }
                     }
                   >
@@ -1062,7 +1062,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                       "alignSelf": "flex-start",
                       "flexDirection": "row",
                       "opacity": 1,
-                      "paddingVertical": 4,
+                      "paddingVertical": undefined,
                     }
                   }
                 >
@@ -1087,7 +1087,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                         "color": "#000000",
                         "fontFamily": "OpenSans",
                         "fontSize": 15,
-                        "paddingLeft": 8,
+                        "paddingLeft": undefined,
                       }
                     }
                   >
@@ -1216,7 +1216,7 @@ exports[`Storyshots Checkbox Styling 1`] = `
                         "color": "#000000",
                         "fontFamily": "OpenSans",
                         "fontSize": 15,
-                        "paddingLeft": 8,
+                        "paddingLeft": undefined,
                       }
                     }
                   >

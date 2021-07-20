@@ -160,7 +160,7 @@ exports[`Storyshots TextField Labelling 1`] = `
               <View
                 style={
                   Object {
-                    "paddingVertical": 12,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -276,7 +276,7 @@ exports[`Storyshots TextField Labelling 1`] = `
               <View
                 style={
                   Object {
-                    "paddingVertical": 12,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -455,7 +455,7 @@ exports[`Storyshots TextField Ref Forwarding 1`] = `
               <View
                 style={
                   Object {
-                    "paddingVertical": 12,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -706,7 +706,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
                   Object {
                     "paddingHorizontal": 40,
                     "paddingTop": 0,
-                    "paddingVertical": 12,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -742,7 +742,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
                 style={
                   Object {
                     "paddingBottom": 0,
-                    "paddingVertical": 12,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -857,7 +857,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
               <View
                 style={
                   Object {
-                    "paddingVertical": 12,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -989,7 +989,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
                   Object {
                     "borderWidth": 30,
                     "paddingHorizontal": 30,
-                    "paddingVertical": 12,
+                    "paddingVertical": undefined,
                   }
                 }
               >

@@ -206,9 +206,9 @@ exports[`Storyshots Header Behavior 1`] = `
                       "alignItems": "center",
                       "flexDirection": "row",
                       "justifyContent": "flex-start",
-                      "paddingBottom": 24,
-                      "paddingHorizontal": 16,
-                      "paddingTop": 24,
+                      "paddingBottom": undefined,
+                      "paddingHorizontal": undefined,
+                      "paddingTop": undefined,
                     }
                   }
                 >
@@ -343,9 +343,9 @@ exports[`Storyshots Header Behavior 1`] = `
                       "alignItems": "center",
                       "flexDirection": "row",
                       "justifyContent": "flex-start",
-                      "paddingBottom": 24,
-                      "paddingHorizontal": 16,
-                      "paddingTop": 24,
+                      "paddingBottom": undefined,
+                      "paddingHorizontal": undefined,
+                      "paddingTop": undefined,
                     }
                   }
                 >
@@ -519,9 +519,9 @@ exports[`Storyshots Header Behavior 1`] = `
                       "alignItems": "center",
                       "flexDirection": "row",
                       "justifyContent": "flex-start",
-                      "paddingBottom": 24,
-                      "paddingHorizontal": 16,
-                      "paddingTop": 24,
+                      "paddingBottom": undefined,
+                      "paddingHorizontal": undefined,
+                      "paddingTop": undefined,
                     }
                   }
                 >

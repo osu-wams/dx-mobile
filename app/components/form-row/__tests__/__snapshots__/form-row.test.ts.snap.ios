@@ -251,7 +251,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                     "borderTopLeftRadius": 8,
                     "borderTopRightRadius": 8,
                     "borderWidth": 1,
-                    "padding": 8,
+                    "padding": undefined,
                   }
                 }
               >
@@ -273,7 +273,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                     "borderBottomWidth": 0,
                     "borderColor": "#f8e4d2",
                     "borderWidth": 1,
-                    "padding": 8,
+                    "padding": undefined,
                   }
                 }
               >
@@ -295,7 +295,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                     "borderBottomWidth": 0,
                     "borderColor": "#f8e4d2",
                     "borderWidth": 1,
-                    "padding": 8,
+                    "padding": undefined,
                   }
                 }
               >
@@ -318,7 +318,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                     "borderBottomRightRadius": 8,
                     "borderColor": "#f8e4d2",
                     "borderWidth": 1,
-                    "padding": 8,
+                    "padding": undefined,
                   }
                 }
               >
@@ -419,7 +419,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                   Object {
                     "borderColor": "rgba(0, 0, 0, 0)",
                     "borderWidth": 1,
-                    "padding": 8,
+                    "padding": undefined,
                   }
                 }
               >
@@ -441,7 +441,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                     "borderColor": "#f8e4d2",
                     "borderRadius": 8,
                     "borderWidth": 1,
-                    "padding": 8,
+                    "padding": undefined,
                   }
                 }
               >
@@ -464,7 +464,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
                     "borderColor": "#f8e4d2",
                     "borderWidth": 1,
                     "marginTop": 10,
-                    "padding": 8,
+                    "padding": undefined,
                   }
                 }
               >
@@ -757,7 +757,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                     "borderTopLeftRadius": 8,
                     "borderTopRightRadius": 8,
                     "borderWidth": 1,
-                    "padding": 8,
+                    "padding": undefined,
                   }
                 }
               >
@@ -870,7 +870,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                     "borderBottomWidth": 0,
                     "borderColor": "#f8e4d2",
                     "borderWidth": 1,
-                    "padding": 8,
+                    "padding": undefined,
                   }
                 }
               >
@@ -973,7 +973,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                     "borderBottomRightRadius": 8,
                     "borderColor": "#f8e4d2",
                     "borderWidth": 1,
-                    "padding": 8,
+                    "padding": undefined,
                   }
                 }
               >
@@ -1086,7 +1086,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                     "borderColor": "#f8e4d2",
                     "borderRadius": 8,
                     "borderWidth": 1,
-                    "padding": 8,
+                    "padding": undefined,
                   }
                 }
               >
@@ -1187,7 +1187,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                   Object {
                     "borderColor": "#f8e4d2",
                     "borderWidth": 1,
-                    "padding": 8,
+                    "padding": undefined,
                   }
                 }
               >
@@ -1288,7 +1288,7 @@ exports[`Storyshots FormRow Presets 1`] = `
                   Object {
                     "borderColor": "rgba(0, 0, 0, 0)",
                     "borderWidth": 1,
-                    "padding": 8,
+                    "padding": undefined,
                   }
                 }
               >
@@ -1478,7 +1478,7 @@ exports[`Storyshots FormRow Styling 1`] = `
                   Object {
                     "borderColor": "#32cd32",
                     "borderWidth": 5,
-                    "padding": 8,
+                    "padding": undefined,
                   }
                 }
               >
