@@ -38,4 +38,18 @@
  * 7 = huge    - ?
  * 8 = massive - an uncomfortable amount of whitespace
  */
-export const spacing = [0, 4, 8, 12, 16, 24, 32, 48, 64]
+const unit = 8;
+
+export const spacing = {
+  unit, // keep unit for the rare math need
+  xs: unit / 4,
+  small: unit / 2,
+  medium: unit,
+  xm: unit * 1.5,
+  default: unit * 2,
+  large: unit * 3,
+  xl: unit * 4,
+  // Convenience methods for phone and desktop. Identical to 'default' and 'xl'
+  mobile: unit * 2,
+  desktop: unit * 4,
+};
