@@ -1,9 +1,8 @@
 import React, { FC, useState, useEffect } from 'react';
-import { FlatList } from 'react-native-gesture-handler';
 import { State, User, useResourcesByQueue, useStatus } from '@osu-wams/hooks';
 import { Types } from '@osu-wams/lib';
 import { useRecoilValue } from 'recoil';
-import { ResourceListItem } from '../../components/resource-list-item/resource-list-item';
+import { ResourceListItem } from '../../components/resource-list-item/ResourceListItem';
 import { Card } from '../../components/card/Card';
 import CardHeader from '../../components/card/CardHeader';
 import { Icon } from '../../components';
@@ -12,6 +11,7 @@ import CardContent from '../../components/card/CardContent';
 import { IconDefinition } from '@fortawesome/pro-light-svg-icons';
 import { InternalLink } from '../../components/link/link';
 import { ScreenNames } from '../../navigators';
+import { ResourceList } from '../../components/resource-list/ResourceList';
 
 const { hasAudience } = User;
 
@@ -50,12 +50,11 @@ export const ResourceCard: FC<{ categ: string; icon: IconDefinition; collapsing:
   return (
     <Card collapsing={collapsing}>
       <CardHeader title={cardTitle} badge={icon ? <Icon icon={icon} /> : null} />
-
-      <CardContent>
+      <CardContent flush>
         {status.isSuccess && resources.length > 0 && (
-          <FlatList
+          <ResourceList<React.ElementType>
             data={resources}
-            renderItem={({ item }) => (
+            renderItem={({ item }: { item: Types.Resource }) => (
               <ResourceListItem
                 resource={item}
                 itStatus={status}
@@ -63,20 +62,20 @@ export const ResourceCard: FC<{ categ: string; icon: IconDefinition; collapsing:
                 eventCategory="resources"
               />
             )}
-            keyExtractor={(item) => item.id.toString()}
+            keyExtractor={(item: Types.Resource) => `${categ}-${item.id}`}
             extraData={status}
             listKey={categ}
+            ListFooterComponent={
+              <CardFooter infoButtonId={`${categ}-resources`}>
+                <InternalLink
+                  to={{ name: ScreenNames.Resources, params: { category: categ.toLowerCase() } }}
+                  text={`View more ${categ.toLowerCase()} resources`}
+                />
+              </CardFooter>
+            }
           />
         )}
       </CardContent>
-      {resources?.length > 0 && (
-        <CardFooter infoButtonId={`${categ}-resources`}>
-          <InternalLink
-            to={{ name: ScreenNames.Resources, params: { category: categ.toLowerCase() } }}
-            text={`View more ${categ} resources`}
-          />
-        </CardFooter>
-      )}
     </Card>
   );
 };

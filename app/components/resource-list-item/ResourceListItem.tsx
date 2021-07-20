@@ -24,6 +24,8 @@ const styles = StyleSheet.create({
   cardListItem: {
     flexDirection: 'row',
     padding: 10,
+    paddingLeft: 26,
+    paddingRight: 26,
   },
   centeredView: {
     alignItems: 'center',
