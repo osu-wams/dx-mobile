@@ -4,7 +4,7 @@
 import * as React from 'react';
 import { storiesOf } from '../../../storybook/decorators';
 import { Story, UseCase } from '../../../storybook/views';
-import { ResourceListItem } from './resource-list-item';
+import { ResourceListItem } from './ResourceListItem';
 import { Resources } from '@osu-wams/hooks';
 
 const testResource = Resources.mockResources.resourcesData.data[0];

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faDollarSign, faGraduationCap, faStars } from '@fortawesome/pro-light-svg-icons';
 import { storiesOf } from '@storybook/react-native';
 import { StoryScreen, Story, UseCase } from '../../../storybook/views';
-import { ResourceCard } from './resource-card';
+import { ResourceCard } from './ResourceCard';
 import { rest } from 'msw';
 
 declare let module;
