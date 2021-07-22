@@ -602,9 +602,9 @@ exports[`Storyshots Card Basic 1`] = `
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
                       },
                     ]
                   }
@@ -1257,9 +1257,9 @@ exports[`Storyshots Card Basic 1`] = `
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
                       },
                     ]
                   }
@@ -1508,9 +1508,9 @@ exports[`Storyshots Card Basic 1`] = `
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
                       },
                     ]
                   }
@@ -1907,9 +1907,9 @@ exports[`Storyshots Card Basic 1`] = `
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
                       },
                     ]
                   }
@@ -2232,9 +2232,9 @@ exports[`Storyshots Card Basic 1`] = `
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
                       },
                     ]
                   }

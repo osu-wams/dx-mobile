@@ -154,8 +154,11 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
             >
               <View
                 accessible={true}
+                activeOpacity={1}
                 focusable={true}
+                onBlur={[Function]}
                 onClick={[Function]}
+                onFocus={[Function]}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -163,42 +166,17 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 style={
-                  Object {
-                    "alignSelf": "flex-start",
-                    "flexDirection": "row",
-                    "opacity": 1,
-                    "paddingVertical": undefined,
-                  }
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexDirection": "row",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "justifyContent": "flex-end",
+                    },
+                  ]
                 }
-              >
-                <View
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "borderColor": "#f37121",
-                      "borderRadius": 1,
-                      "borderWidth": 1,
-                      "height": 16,
-                      "justifyContent": "center",
-                      "marginTop": 2,
-                      "width": 16,
-                    }
-                  }
-                />
-                <Text
-                  numberOfLines={1}
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "OpenSans",
-                      "fontSize": 15,
-                      "paddingLeft": undefined,
-                    }
-                  }
-                >
-                  Toggle me
-                </Text>
-              </View>
+              />
             </View>
           </View>
           <View
@@ -276,8 +254,11 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
             >
               <View
                 accessible={true}
+                activeOpacity={1}
                 focusable={true}
+                onBlur={[Function]}
                 onClick={[Function]}
+                onFocus={[Function]}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -285,52 +266,17 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 style={
-                  Object {
-                    "alignSelf": "flex-start",
-                    "flexDirection": "row",
-                    "opacity": 1,
-                    "paddingVertical": undefined,
-                  }
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexDirection": "row",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "justifyContent": "flex-end",
+                    },
+                  ]
                 }
-              >
-                <View
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "borderColor": "#f37121",
-                      "borderRadius": 1,
-                      "borderWidth": 1,
-                      "height": 16,
-                      "justifyContent": "center",
-                      "marginTop": 2,
-                      "width": 16,
-                    }
-                  }
-                >
-                  <View
-                    style={
-                      Object {
-                        "backgroundColor": "#f37121",
-                        "height": 12,
-                        "width": 12,
-                      }
-                    }
-                  />
-                </View>
-                <Text
-                  numberOfLines={1}
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "OpenSans",
-                      "fontSize": 15,
-                      "paddingLeft": undefined,
-                    }
-                  }
-                >
-                  Always on
-                </Text>
-              </View>
+              />
             </View>
           </View>
           <View
@@ -408,8 +354,11 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
             >
               <View
                 accessible={true}
+                activeOpacity={1}
                 focusable={true}
+                onBlur={[Function]}
                 onClick={[Function]}
+                onFocus={[Function]}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
                 onResponderRelease={[Function]}
@@ -417,42 +366,17 @@ exports[`Storyshots Checkbox Behaviour 1`] = `
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 style={
-                  Object {
-                    "alignSelf": "flex-start",
-                    "flexDirection": "row",
-                    "opacity": 1,
-                    "paddingVertical": undefined,
-                  }
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexDirection": "row",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "justifyContent": "flex-end",
+                    },
+                  ]
                 }
-              >
-                <View
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "borderColor": "#f37121",
-                      "borderRadius": 1,
-                      "borderWidth": 1,
-                      "height": 16,
-                      "justifyContent": "center",
-                      "marginTop": 2,
-                      "width": 16,
-                    }
-                  }
-                />
-                <Text
-                  numberOfLines={1}
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "OpenSans",
-                      "fontSize": 15,
-                      "paddingLeft": undefined,
-                    }
-                  }
-                >
-                  Always off
-                </Text>
-              </View>
+              />
             </View>
           </View>
         </View>
@@ -639,8 +563,11 @@ exports[`Storyshots Checkbox Styling 1`] = `
               <View>
                 <View
                   accessible={true}
+                  activeOpacity={1}
                   focusable={true}
+                  onBlur={[Function]}
                   onClick={[Function]}
+                  onFocus={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -648,42 +575,17 @@ exports[`Storyshots Checkbox Styling 1`] = `
                   onResponderTerminationRequest={[Function]}
                   onStartShouldSetResponder={[Function]}
                   style={
-                    Object {
-                      "alignSelf": "flex-start",
-                      "flexDirection": "row",
-                      "opacity": 1,
-                      "paddingVertical": undefined,
-                    }
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexDirection": "row",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "justifyContent": "flex-end",
+                      },
+                    ]
                   }
-                >
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "borderColor": "#f37121",
-                        "borderRadius": 1,
-                        "borderWidth": 1,
-                        "height": 16,
-                        "justifyContent": "center",
-                        "marginTop": 2,
-                        "width": 16,
-                      }
-                    }
-                  />
-                  <Text
-                    numberOfLines={0}
-                    style={
-                      Object {
-                        "color": "#000000",
-                        "fontFamily": "OpenSans",
-                        "fontSize": 15,
-                        "paddingLeft": undefined,
-                      }
-                    }
-                  >
-                    We’re an App Design & Development Team. Experts in mobile & web technologies. We create beautiful, functional mobile apps and websites.
-                  </Text>
-                </View>
+                />
               </View>
             </View>
           </View>
@@ -763,8 +665,11 @@ exports[`Storyshots Checkbox Styling 1`] = `
               <View>
                 <View
                   accessible={true}
+                  activeOpacity={1}
                   focusable={true}
+                  onBlur={[Function]}
                   onClick={[Function]}
+                  onFocus={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -772,45 +677,23 @@ exports[`Storyshots Checkbox Styling 1`] = `
                   onResponderTerminationRequest={[Function]}
                   onStartShouldSetResponder={[Function]}
                   style={
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "purple",
-                      "flexDirection": "row",
-                      "marginLeft": 40,
-                      "opacity": 1,
-                      "paddingLeft": 60,
-                      "paddingVertical": 30,
-                    }
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexDirection": "row",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "justifyContent": "flex-end",
+                      },
+                      Object {
+                        "backgroundColor": "purple",
+                        "marginLeft": 40,
+                        "paddingLeft": 60,
+                        "paddingVertical": 30,
+                      },
+                    ]
                   }
-                >
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "borderColor": "#f37121",
-                        "borderRadius": 1,
-                        "borderWidth": 1,
-                        "height": 16,
-                        "justifyContent": "center",
-                        "marginTop": 2,
-                        "width": 16,
-                      }
-                    }
-                  />
-                  <Text
-                    numberOfLines={1}
-                    style={
-                      Object {
-                        "color": "#000000",
-                        "fontFamily": "OpenSans",
-                        "fontSize": 15,
-                        "paddingLeft": undefined,
-                      }
-                    }
-                  >
-                    Hello there!
-                  </Text>
-                </View>
+                />
               </View>
             </View>
           </View>
@@ -890,8 +773,11 @@ exports[`Storyshots Checkbox Styling 1`] = `
               <View>
                 <View
                   accessible={true}
+                  activeOpacity={1}
                   focusable={true}
+                  onBlur={[Function]}
                   onClick={[Function]}
+                  onFocus={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -899,42 +785,17 @@ exports[`Storyshots Checkbox Styling 1`] = `
                   onResponderTerminationRequest={[Function]}
                   onStartShouldSetResponder={[Function]}
                   style={
-                    Object {
-                      "alignSelf": "flex-start",
-                      "flexDirection": "row",
-                      "opacity": 1,
-                      "paddingVertical": undefined,
-                    }
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexDirection": "row",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "justifyContent": "flex-end",
+                      },
+                    ]
                   }
-                >
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "borderColor": "green",
-                        "borderRadius": 10,
-                        "borderWidth": 4,
-                        "height": 20,
-                        "justifyContent": "center",
-                        "marginTop": 2,
-                        "width": 60,
-                      }
-                    }
-                  />
-                  <Text
-                    numberOfLines={1}
-                    style={
-                      Object {
-                        "color": "#000000",
-                        "fontFamily": "OpenSans",
-                        "fontSize": 15,
-                        "paddingLeft": undefined,
-                      }
-                    }
-                  >
-                    Outline is the box frame
-                  </Text>
-                </View>
+                />
               </View>
             </View>
           </View>
@@ -1014,8 +875,11 @@ exports[`Storyshots Checkbox Styling 1`] = `
               <View>
                 <View
                   accessible={true}
+                  activeOpacity={1}
                   focusable={true}
+                  onBlur={[Function]}
                   onClick={[Function]}
+                  onFocus={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -1023,42 +887,17 @@ exports[`Storyshots Checkbox Styling 1`] = `
                   onResponderTerminationRequest={[Function]}
                   onStartShouldSetResponder={[Function]}
                   style={
-                    Object {
-                      "alignSelf": "flex-start",
-                      "flexDirection": "row",
-                      "opacity": 1,
-                      "paddingVertical": undefined,
-                    }
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexDirection": "row",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "justifyContent": "flex-end",
+                      },
+                    ]
                   }
-                >
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "borderColor": "#f37121",
-                        "borderRadius": 1,
-                        "borderWidth": 1,
-                        "height": 16,
-                        "justifyContent": "center",
-                        "marginTop": 2,
-                        "width": 16,
-                      }
-                    }
-                  />
-                  <Text
-                    numberOfLines={1}
-                    style={
-                      Object {
-                        "color": "#000000",
-                        "fontFamily": "OpenSans",
-                        "fontSize": 15,
-                        "paddingLeft": undefined,
-                      }
-                    }
-                  >
-                    Fill er up
-                  </Text>
-                </View>
+                />
               </View>
             </View>
           </View>
@@ -1138,8 +977,11 @@ exports[`Storyshots Checkbox Styling 1`] = `
               <View>
                 <View
                   accessible={true}
+                  activeOpacity={1}
                   focusable={true}
+                  onBlur={[Function]}
                   onClick={[Function]}
+                  onFocus={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
                   onResponderRelease={[Function]}
@@ -1147,42 +989,23 @@ exports[`Storyshots Checkbox Styling 1`] = `
                   onResponderTerminationRequest={[Function]}
                   onStartShouldSetResponder={[Function]}
                   style={
-                    Object {
-                      "alignSelf": "flex-end",
-                      "flexDirection": "row",
-                      "opacity": 1,
-                      "paddingVertical": 40,
-                    }
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexDirection": "row",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "justifyContent": "flex-end",
+                      },
+                      Object {
+                        "paddingVertical": 40,
+                      },
+                      Object {
+                        "alignSelf": "flex-end",
+                      },
+                    ]
                   }
-                >
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "borderColor": "#b443c9",
-                        "borderRadius": 1,
-                        "borderWidth": 25,
-                        "height": 16,
-                        "justifyContent": "center",
-                        "marginTop": 2,
-                        "width": 16,
-                      }
-                    }
-                  />
-                  <Text
-                    numberOfLines={1}
-                    style={
-                      Object {
-                        "color": "#000000",
-                        "fontFamily": "OpenSans",
-                        "fontSize": 15,
-                        "paddingLeft": undefined,
-                      }
-                    }
-                  >
-                    Check it twice
-                  </Text>
-                </View>
+                />
               </View>
             </View>
           </View>
