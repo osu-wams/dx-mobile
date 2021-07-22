@@ -231,12 +231,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -402,12 +397,7 @@ exports[`Storyshots FormRow Assembled 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -732,12 +722,7 @@ exports[`Storyshots FormRow Presets 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -847,12 +832,7 @@ exports[`Storyshots FormRow Presets 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -949,12 +929,7 @@ exports[`Storyshots FormRow Presets 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -1063,12 +1038,7 @@ exports[`Storyshots FormRow Presets 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -1165,12 +1135,7 @@ exports[`Storyshots FormRow Presets 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -1266,12 +1231,7 @@ exports[`Storyshots FormRow Presets 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -1451,12 +1411,7 @@ exports[`Storyshots FormRow Styling 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={

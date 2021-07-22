@@ -153,12 +153,7 @@ exports[`Storyshots Switch Behaviour 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 accessible={true}
@@ -281,12 +276,7 @@ exports[`Storyshots Switch Behaviour 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 accessible={true}
@@ -409,12 +399,7 @@ exports[`Storyshots Switch Behaviour 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 accessible={true}
@@ -620,12 +605,7 @@ exports[`Storyshots Switch Styling 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View>
                 <View
@@ -750,12 +730,7 @@ exports[`Storyshots Switch Styling 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View>
                 <View

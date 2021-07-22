@@ -180,12 +180,7 @@ exports[`Storyshots Header Behavior 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 0,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -317,12 +312,7 @@ exports[`Storyshots Header Behavior 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 0,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -493,12 +483,7 @@ exports[`Storyshots Header Behavior 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 0,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={

@@ -205,12 +205,7 @@ exports[`Storyshots Text Passing Content 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -305,12 +300,7 @@ exports[`Storyshots Text Passing Content 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -416,12 +406,7 @@ exports[`Storyshots Text Passing Content 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -516,12 +501,7 @@ exports[`Storyshots Text Passing Content 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -775,12 +755,7 @@ exports[`Storyshots Text Style Presets 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -916,12 +891,7 @@ exports[`Storyshots Text Style Presets 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -1017,12 +987,7 @@ exports[`Storyshots Text Style Presets 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -1208,12 +1173,7 @@ exports[`Storyshots Text Styling 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={

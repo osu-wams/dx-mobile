@@ -193,12 +193,7 @@ exports[`Storyshots Button Basic Usage 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 accessible={true}
@@ -311,12 +306,7 @@ exports[`Storyshots Button Basic Usage 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 accessible={true}
@@ -429,12 +419,7 @@ exports[`Storyshots Button Basic Usage 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 accessible={true}
@@ -549,12 +534,7 @@ exports[`Storyshots Button Basic Usage 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 accessible={true}
@@ -731,12 +711,7 @@ exports[`Storyshots Button Basic Usage 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 accessible={true}
