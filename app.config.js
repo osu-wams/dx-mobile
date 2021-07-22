@@ -23,6 +23,7 @@ export default {
   },
   extra: {
     USE_STORYBOOK: process.env.USE_STORYBOOK === '1',
+    __TEST__: process.env.__TEST__ === '1',
   },
   packagerOpts: {
     config: 'metro.config.js',

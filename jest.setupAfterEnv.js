@@ -2,8 +2,6 @@ import { server } from './mocks/server';
 import './mocks/mock-async-storage';
 import './mocks/mock-i18n';
 
-global.__TEST__ = true;
-
 beforeAll(() => {
   server.listen();
 });
