@@ -4,7 +4,7 @@ import {
   faExclamationCircle as faExclamationCircleSolid,
   faHeart as faSolidHeart,
 } from '@fortawesome/pro-solid-svg-icons';
-import { faHeart, faGripLines } from '@fortawesome/pro-light-svg-icons';
+import { faHeart } from '@fortawesome/pro-light-svg-icons';
 import { TouchableHighlight } from 'react-native-gesture-handler';
 import { Types } from '@osu-wams/lib';
 import { Helpers } from '@osu-wams/utils';
@@ -83,7 +83,7 @@ const updateFavorites = async (
   favs: boolean,
   index?: number,
 ) => {
-  await Resources.postFavorite([{ resourceId: resource.id, active: !favs, order: index ?? 999 }]);
+  await Resources.postFavorite([{ resourceId: resource.id, active: favs, order: index ?? 999 }]);
   if (user.refreshFavorites) await user.refreshFavorites();
   // TODO: Add GA Event
   // Event('favorite-resource', resource.id, favoriteLabelText(favs));
