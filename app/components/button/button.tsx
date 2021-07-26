@@ -6,6 +6,7 @@ import { Icon } from '../icon/icon';
 import { Text } from '../text/text';
 import { faTimes, faLink } from '@fortawesome/pro-light-svg-icons';
 import { borderRadius, fontSize } from '@osu-wams/theme';
+import { spacing } from '../../theme';
 
 const btnVariants = {
   normal: {
@@ -19,14 +20,14 @@ const btnVariants = {
     paddingBottom: 4,
     paddingLeft: 6,
     paddingRight: 6,
-    fontSize: 14,
+    fontSize: fontSize['14'],
   },
   large: {
     paddingTop: 16,
     paddingBottom: 16,
     paddingLeft: 28,
     paddingRight: 28,
-    fontSize: 18,
+    fontSize: fontSize['18'],
   },
 };
 
@@ -62,10 +63,10 @@ const CloseButtonBase = styled(Button)(({ theme }) => ({
   background: theme.ui.button.close.background,
   color: theme.ui.button.close.color,
   fontSize: fontSize['24'],
-  paddingBottom: 16,
-  paddingLeft: 32,
-  paddingRight: 32,
-  paddingTop: 16,
+  paddingBottom: spacing.default,
+  paddingLeft: spacing.xl,
+  paddingRight: spacing.xl,
+  paddingTop: spacing.default,
 }));
 
 export const CloseButton = (props) => (

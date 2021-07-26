@@ -3,6 +3,7 @@ import { Modal } from 'react-native';
 import styled from 'styled-components/native';
 import { borderRadius } from '@osu-wams/theme';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { spacing } from '../../theme';
 
 const ModalView = styled(SafeAreaView)<{ hasPadding?: string; solidBackground: boolean }>(
   ({ theme, hasPadding, solidBackground }) => ({
@@ -11,7 +12,7 @@ const ModalView = styled(SafeAreaView)<{ hasPadding?: string; solidBackground: b
     borderRadius: borderRadius[16],
     height: '100%',
     width: '100%',
-    padding: 16,
+    padding: spacing.default,
     paddingBottom: hasPadding === 'false' ? 20 : 0,
   }),
 );
