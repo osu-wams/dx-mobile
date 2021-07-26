@@ -155,17 +155,12 @@ exports[`Storyshots TextField Labelling 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
                   Object {
-                    "paddingVertical": 12,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -271,17 +266,12 @@ exports[`Storyshots TextField Labelling 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
                   Object {
-                    "paddingVertical": 12,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -455,17 +445,12 @@ exports[`Storyshots TextField Ref Forwarding 1`] = `
               </View>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
                   Object {
-                    "paddingVertical": 12,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -709,19 +694,14 @@ exports[`Storyshots TextField Style Overrides 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 0,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
                   Object {
                     "paddingHorizontal": 40,
                     "paddingTop": 0,
-                    "paddingVertical": 12,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -757,7 +737,7 @@ exports[`Storyshots TextField Style Overrides 1`] = `
                 style={
                   Object {
                     "paddingBottom": 0,
-                    "paddingVertical": 12,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -862,17 +842,12 @@ exports[`Storyshots TextField Style Overrides 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
                   Object {
-                    "paddingVertical": 12,
+                    "paddingVertical": undefined,
                   }
                 }
               >
@@ -992,19 +967,14 @@ exports[`Storyshots TextField Style Overrides 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
                   Object {
                     "borderWidth": 30,
                     "paddingHorizontal": 30,
-                    "paddingVertical": 12,
+                    "paddingVertical": undefined,
                   }
                 }
               >

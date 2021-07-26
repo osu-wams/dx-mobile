@@ -213,12 +213,7 @@ exports[`Storyshots Link Behaviour 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View>
                 <Text
@@ -306,12 +301,7 @@ exports[`Storyshots Link Behaviour 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 accessible={true}
@@ -663,12 +653,7 @@ exports[`Storyshots Link Behaviour 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 accessible={true}
@@ -1016,12 +1001,7 @@ exports[`Storyshots Link Behaviour 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 accessible={true}
@@ -1181,12 +1161,7 @@ exports[`Storyshots Link Behaviour 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 accessible={true}
@@ -1346,12 +1321,7 @@ exports[`Storyshots Link Behaviour 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 accessible={true}
@@ -1468,12 +1438,7 @@ exports[`Storyshots Link Behaviour 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 accessible={true}

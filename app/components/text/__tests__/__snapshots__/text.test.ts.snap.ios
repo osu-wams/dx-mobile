@@ -205,12 +205,7 @@ exports[`Storyshots Text Passing Content 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -305,12 +300,7 @@ exports[`Storyshots Text Passing Content 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -416,12 +406,7 @@ exports[`Storyshots Text Passing Content 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -516,12 +501,7 @@ exports[`Storyshots Text Passing Content 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -546,7 +526,7 @@ exports[`Storyshots Text Passing Content 1`] = `
                     style={
                       Object {
                         "color": "#000000",
-                        "fontFamily": "OpenSans",
+                        "fontFamily": "OpenSansBold",
                         "fontSize": 15,
                         "fontWeight": "bold",
                       }
@@ -775,12 +755,7 @@ exports[`Storyshots Text Style Presets 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -916,12 +891,7 @@ exports[`Storyshots Text Style Presets 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -935,7 +905,7 @@ exports[`Storyshots Text Style Presets 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans",
+                      "fontFamily": "OpenSansBold",
                       "fontSize": 15,
                       "fontWeight": "bold",
                     }
@@ -1017,12 +987,7 @@ exports[`Storyshots Text Style Presets 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -1036,7 +1001,7 @@ exports[`Storyshots Text Style Presets 1`] = `
                   style={
                     Object {
                       "color": "#000000",
-                      "fontFamily": "OpenSans",
+                      "fontFamily": "OpenSansBold",
                       "fontSize": 24,
                       "fontWeight": "bold",
                     }
@@ -1208,12 +1173,7 @@ exports[`Storyshots Text Styling 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 style={
@@ -1243,7 +1203,7 @@ exports[`Storyshots Text Styling 1`] = `
                     style={
                       Object {
                         "color": "#000000",
-                        "fontFamily": "OpenSans",
+                        "fontFamily": "OpenSansBold",
                         "fontSize": 15,
                         "fontWeight": "bold",
                       }

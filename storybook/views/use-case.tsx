@@ -46,7 +46,22 @@ export interface UseCaseProps {
   initialState?: { atom: RecoilState<any>; state: any }[];
 }
 
-export function UseCase(props: UseCaseProps) {
+const RenderView = (props: UseCaseProps, style: ViewStyle) => (
+  <View style={ROOT}>
+    <View style={HEADER}>
+      <View style={USE_CASE_WRAPPER}>
+        <Text style={USE_CASE}>Use Case</Text>
+      </View>
+      <View style={TITLE_WRAPPER}>
+        <Text style={TITLE}>{props.text}</Text>
+      </View>
+      {props.usage ? <Text style={USAGE}>{props.usage}</Text> : null}
+    </View>
+    <View style={style}>{props.children}</View>
+  </View>
+);
+
+export const UseCase = (props: UseCaseProps) => {
   const style: ViewStyle = {
     ...COMPONENT,
     ...{ padding: props.noPad ? 0 : 10 },
@@ -54,24 +69,23 @@ export function UseCase(props: UseCaseProps) {
     ...props.style,
   };
 
-  return (
-    <View style={ROOT}>
-      <View style={HEADER}>
-        <View style={USE_CASE_WRAPPER}>
-          <Text style={USE_CASE}>Use Case</Text>
-        </View>
-        <View style={TITLE_WRAPPER}>
-          <Text style={TITLE}>{props.text}</Text>
-        </View>
-        {props.usage ? <Text style={USAGE}>{props.usage}</Text> : null}
-      </View>
-      <RecoilRoot
-        initializeState={({ set }) => {
-          (props.initialState ?? []).forEach(({ atom, state }) => set(atom, state));
-        }}
-      >
-        <View style={style}>{props.children}</View>
-      </RecoilRoot>
-    </View>
+  const { usage, text, children } = props;
+
+  // Storybook Jest tests require RecoilRoot parent, while Storybook for development does not work
+  // with an added RecoilRoot (see decorators.tsx)
+  return __DEV__ ? (
+    <RecoilRoot
+      initializeState={({ set }) => {
+        (props.initialState ?? []).forEach(({ atom, state }) => set(atom, state));
+      }}
+    >
+      <RenderView style={style} usage={usage} text={text}>
+        {children}
+      </RenderView>
+    </RecoilRoot>
+  ) : (
+    <RenderView style={style} usage={usage} text={text}>
+      {children}
+    </RenderView>
   );
-}
+};

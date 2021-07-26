@@ -131,12 +131,7 @@ exports[`Storyshots Wallpaper Style Presets 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <Image
                 source={1}

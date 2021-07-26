@@ -10,16 +10,16 @@ const CardContent = ({ ...props }) => {
 };
 
 const CardContentWrapper = styled.View<CardCollapseProps>(
-  ({ flush }) => ({
-    overflow: 'hidden',
-    padding: flush ? 0 : `${spacing.default} ${spacing.default} 0 ${spacing.default}`,
-  }),
   ({ collapsed, collapsible }) =>
     collapsible && {
       flex: collapsed ? 1 : 1,
       height: collapsed ? 0 : 'auto',
       padding: collapsed ? 0 : spacing.default,
     },
+  ({ flush }) => ({
+    overflow: 'hidden',
+    padding: flush ? 0 : `${spacing.default} ${spacing.default} 0 ${spacing.default}`,
+  }),
 );
 
 export default CardContent;

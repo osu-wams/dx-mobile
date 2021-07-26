@@ -1,5 +1,9 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import { FlatList, View, ViewStyle } from 'react-native';
+import { useResetRecoilState } from 'recoil';
+import { useAuth } from '../../app/hooks/useAuth';
+import queryClient, { updateQueryClientOptions } from '../../app/utils/queryClient';
+import { authState } from '../../app/state';
 
 export interface StoryProps {
   children?: React.ReactNode;
@@ -7,13 +11,22 @@ export interface StoryProps {
 
 const ROOT: ViewStyle = { flex: 1 };
 
-export function Story(props: StoryProps) {
+export function Story({ children }: StoryProps) {
+  const auth = useAuth();
+  const resetAuthState = useResetRecoilState(authState);
+
+  useEffect(() => {
+    if (auth?.jwt) {
+      updateQueryClientOptions(queryClient, auth, resetAuthState);
+      queryClient.clear();
+    }
+  }, [auth]);
   return (
     <View style={ROOT}>
       <FlatList
-        data={[props.children]}
+        data={[children]}
         renderItem={({ item }) => <>{item}</>}
-        keyExtractor={(item, index) => `item-${index}`}
+        keyExtractor={(item, index) => `story-item-${index}`}
       />
     </View>
   );

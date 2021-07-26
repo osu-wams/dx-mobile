@@ -10,12 +10,8 @@ const CardBase = styled.View(({ theme }) => ({
   flexDirection: 'column',
   marginBottom: spacing.mobile,
   shadowColor: 'rgba(66, 62, 60, 1)',
-  shadowOffset: {
-    width: 0,
-    height: 8,
-  },
-  shadowOpacity: '0.15',
-  shadowRadius: '8px',
+  shadowOpacity: '0.2',
+  shadowRadius: 8,
 }));
 
 // Duplicates CardBase with motion to add animations

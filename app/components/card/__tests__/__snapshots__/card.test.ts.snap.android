@@ -362,12 +362,7 @@ exports[`Storyshots Card Basic 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0)",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 css={
@@ -385,7 +380,7 @@ exports[`Storyshots Card Basic 1`] = `
                       "flexDirection": "column",
                       "marginBottom": 16,
                       "shadowColor": "rgba(66, 62, 60, 1)",
-                      "shadowOpacity": 0.15,
+                      "shadowOpacity": 0.2,
                       "shadowRadius": 8,
                     },
                   ]
@@ -607,9 +602,9 @@ exports[`Storyshots Card Basic 1`] = `
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
                       },
                     ]
                   }
@@ -735,12 +730,7 @@ exports[`Storyshots Card Basic 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0)",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 css={
@@ -758,7 +748,7 @@ exports[`Storyshots Card Basic 1`] = `
                       "flexDirection": "column",
                       "marginBottom": 16,
                       "shadowColor": "rgba(66, 62, 60, 1)",
-                      "shadowOpacity": 0.15,
+                      "shadowOpacity": 0.2,
                       "shadowRadius": 8,
                     },
                   ]
@@ -1027,12 +1017,7 @@ exports[`Storyshots Card Basic 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0)",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 css={
@@ -1050,7 +1035,7 @@ exports[`Storyshots Card Basic 1`] = `
                       "flexDirection": "column",
                       "marginBottom": 16,
                       "shadowColor": "rgba(66, 62, 60, 1)",
-                      "shadowOpacity": 0.15,
+                      "shadowOpacity": 0.2,
                       "shadowRadius": 8,
                     },
                   ]
@@ -1272,9 +1257,9 @@ exports[`Storyshots Card Basic 1`] = `
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
                       },
                     ]
                   }
@@ -1343,7 +1328,7 @@ exports[`Storyshots Card Basic 1`] = `
                       "flexDirection": "column",
                       "marginBottom": 16,
                       "shadowColor": "rgba(66, 62, 60, 1)",
-                      "shadowOpacity": 0.15,
+                      "shadowOpacity": 0.2,
                       "shadowRadius": 8,
                     },
                   ]
@@ -1523,9 +1508,9 @@ exports[`Storyshots Card Basic 1`] = `
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
                       },
                     ]
                   }
@@ -1651,12 +1636,7 @@ exports[`Storyshots Card Basic 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0)",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 css={
@@ -1674,7 +1654,7 @@ exports[`Storyshots Card Basic 1`] = `
                       "flexDirection": "column",
                       "marginBottom": 16,
                       "shadowColor": "rgba(66, 62, 60, 1)",
-                      "shadowOpacity": 0.15,
+                      "shadowOpacity": 0.2,
                       "shadowRadius": 8,
                     },
                   ]
@@ -1927,9 +1907,9 @@ exports[`Storyshots Card Basic 1`] = `
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
                       },
                     ]
                   }
@@ -1998,7 +1978,7 @@ exports[`Storyshots Card Basic 1`] = `
                       "flexDirection": "column",
                       "marginBottom": 16,
                       "shadowColor": "rgba(66, 62, 60, 1)",
-                      "shadowOpacity": 0.15,
+                      "shadowOpacity": 0.2,
                       "shadowRadius": 8,
                     },
                   ]
@@ -2252,9 +2232,9 @@ exports[`Storyshots Card Basic 1`] = `
                         "height": 0,
                         "overflow": "hidden",
                         "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "paddingRight": 0,
-                        "paddingTop": 0,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
                       },
                     ]
                   }
@@ -2380,12 +2360,7 @@ exports[`Storyshots Card Basic 1`] = `
               </Text>
             </View>
             <View
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0)",
-                  "padding": 10,
-                }
-              }
+              style={Object {}}
             >
               <View
                 css={
@@ -2403,7 +2378,7 @@ exports[`Storyshots Card Basic 1`] = `
                       "flexDirection": "column",
                       "marginBottom": 16,
                       "shadowColor": "rgba(66, 62, 60, 1)",
-                      "shadowOpacity": 0.15,
+                      "shadowOpacity": 0.2,
                       "shadowRadius": 8,
                     },
                   ]

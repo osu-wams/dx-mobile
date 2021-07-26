@@ -5,8 +5,7 @@ import { ButtonProps } from './button.props';
 import { Icon } from '../icon/icon';
 import { Text } from '../text/text';
 import { faTimes, faLink } from '@fortawesome/pro-light-svg-icons';
-import { borderRadius } from '@osu-wams/theme';
-import { theme } from '@storybook/react-native/dist/preview/components/Shared/theme';
+import { borderRadius, fontSize } from '@osu-wams/theme';
 
 const btnVariants = {
   normal: {
@@ -62,7 +61,7 @@ export const Button = (props: ButtonProps) => {
 const CloseButtonBase = styled(Button)(({ theme }) => ({
   background: theme.ui.button.close.background,
   color: theme.ui.button.close.color,
-  fontSize: 24,
+  fontSize: fontSize['24'],
   paddingBottom: 16,
   paddingLeft: 32,
   paddingRight: 32,

@@ -4,21 +4,24 @@ import styled from 'styled-components/native';
 import { borderRadius } from '@osu-wams/theme';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-const ModalBase = styled(Modal)(({ theme }) => ({
-  background: theme.ui.myDialog.background,
-  borderRadius: borderRadius[16],
-  border: theme.ui.myDialog.border,
-}));
+const ModalView = styled(SafeAreaView)<{ hasPadding?: string; solidBackground: boolean }>(
+  ({ theme, hasPadding, solidBackground }) => ({
+    backgroundColor: solidBackground ? theme.ui.myDialog.background : 'rgba(0,0,0,0.6)',
+    border: theme.ui.myDialog.border,
+    borderRadius: borderRadius[16],
+    height: '100%',
+    width: '100%',
+    padding: 16,
+    paddingBottom: hasPadding === 'false' ? 20 : 0,
+  }),
+);
 
-const ModalView = styled(SafeAreaView)<{ hasPadding?: string }>(({ hasPadding }) => ({
-  padding: 16,
-  paddingBottom: hasPadding === 'false' ? 20 : 0,
-}));
-
-const Dialog = ({ children, padding = 'true', ...props }) => (
-  <ModalBase {...props}>
-    <ModalView hasPadding={padding}>{children}</ModalView>
-  </ModalBase>
+const Dialog = ({ children, padding = 'true', solidBackground = true, ...props }) => (
+  <Modal {...props}>
+    <ModalView hasPadding={padding} solidBackground={solidBackground}>
+      {children}
+    </ModalView>
+  </Modal>
 );
 /*
   .closeButton {
