@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
+import { KeyboardAvoidingViewProps, Platform, ScrollView, ViewStyle } from 'react-native';
 import styled from 'styled-components/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ScreenProps } from './screen.props';
@@ -9,6 +9,11 @@ interface InsetInterface {
   inset: number;
   scroll?: boolean;
 }
+const KeyboardAvoidingViewWrapper = styled.KeyboardAvoidingView<KeyboardAvoidingViewProps>(
+  ({ theme }) => ({
+    backgroundColor: theme.body.background,
+  }),
+);
 
 const ViewWrapper = styled.View<InsetInterface>(
   ({ inset, theme }) => ({
@@ -38,13 +43,13 @@ function ScreenWithoutScrolling(props: ScreenProps) {
   const insetStyle = props.unsafe ? 0 : insets.top + HEADER_NAV_HEIGHT;
 
   return (
-    <KeyboardAvoidingView
+    <KeyboardAvoidingViewWrapper
       style={preset.outer}
       behavior={isIos ? 'padding' : null}
       keyboardVerticalOffset={offsets[props.keyboardOffset || 'none']}
     >
       <ViewWrapper inset={insetStyle}>{props.children}</ViewWrapper>
-    </KeyboardAvoidingView>
+    </KeyboardAvoidingViewWrapper>
   );
 }
 
@@ -55,17 +60,21 @@ function ScreenWithScrolling(props: ScreenProps) {
   const insetStyle = props.unsafe ? 0 : insets.top + HEADER_NAV_HEIGHT;
 
   return (
-    <KeyboardAvoidingView
+    <KeyboardAvoidingViewWrapper
       style={preset.outer}
       behavior={isIos ? 'padding' : null}
       keyboardVerticalOffset={offsets[props.keyboardOffset || 'none']}
     >
       <ViewWrapper inset={insetStyle} scroll>
-        <ScrollView style={preset.outer} contentContainerStyle={[preset.inner, style]}>
+        <ScrollView
+          style={preset.outer}
+          contentContainerStyle={[preset.inner as ViewStyle, style]}
+          bounces={false}
+        >
           {props.children}
         </ScrollView>
       </ViewWrapper>
-    </KeyboardAvoidingView>
+    </KeyboardAvoidingViewWrapper>
   );
 }
 
