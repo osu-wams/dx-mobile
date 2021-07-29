@@ -30,11 +30,15 @@ const LinkText = styled(Text)<LinkStyleProps>(
     },
 );
 
-const LinkStyles = styled(Pressable)<LinkStyleProps>({
-  alignItems: 'center',
-  flex: 1,
-  flexDirection: 'row',
-});
+const LinkStyles = styled(Pressable)<LinkStyleProps>(
+  ({ noFlex = false, flexDirection = 'row' }) => ({
+    alignItems: 'center',
+    flex: noFlex ? undefined : 1,
+    flexBasis: noFlex ? undefined : 1,
+    flexGrow: noFlex ? undefined : 1,
+    flexDirection,
+  }),
+);
 
 const HighlightExternalLinkStyles = styled(LinkStyles)<LinkStyleProps>(() => ({
   fontSize: fontSize[24],
@@ -77,10 +81,10 @@ const HighlightExternalLink = (props: LinkProps) => {
 };
 
 const SimpleExternalLink = (props: LinkProps) => {
-  const { text, fg, padding, bg, url, ...rest } = props;
+  const { text, fg, padding, bg, url, textStyle, ...rest } = props;
   return (
     <LinkStyles {...rest} padding={0} onPress={() => (url ? Linking.openURL(url) : null)}>
-      <LinkText text={text} fg={fg} padding={padding} bg={bg} />
+      <LinkText style={textStyle} text={text} fg={fg} padding={padding} bg={bg} />
     </LinkStyles>
   );
 };
