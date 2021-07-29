@@ -12,6 +12,7 @@ export interface IconProps {
   iconName?: string;
   size?: number;
   style?: ImageStyle | FontAwesomeIconStyle;
+  noFlex?: boolean;
 }
 
 export interface CounterProps {

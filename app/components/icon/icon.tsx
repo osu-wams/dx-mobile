@@ -55,10 +55,10 @@ const IconRootStyle: ImageStyle = {
 };
 
 export const StyledIcon = styled(FontAwesomeIcon)<IconProps>(
-  ({ theme, color, bg, fontSize = 32 }) => ({
+  ({ theme, color, bg, fontSize = 32, noFlex = false }) => ({
     backgroundColor: bg || theme.ui.icon.background,
     color: color || theme.ui.icon.color,
-    flex: 1,
+    flex: noFlex ? undefined : 1,
     fontSize,
     height: 32,
     width: 32,
@@ -76,10 +76,12 @@ const renderIcon = (props: {
   color: string;
   style: IconStyle;
   size: number;
+  noFlex?: boolean;
 }) => {
   const { iconName, icon, size, color, ...others } = props;
-  if (icon) return <StyledIcon icon={icon} size={size ?? 24} color={color} />;
-  if (!iconName) return <StyledIcon icon={fal.faCube} size={size ?? 24} color={color} />;
+  if (icon) return <StyledIcon {...others} icon={icon} size={size ?? 24} color={color} />;
+  if (!iconName)
+    return <StyledIcon {...others} icon={fal.faCube} size={size ?? 24} color={color} />;
 
   const iconSplit = iconName.split('.');
   if (iconSplit.length === 1) {
@@ -115,10 +117,10 @@ const renderIcon = (props: {
 };
 
 export function Icon(props: IconProps & CounterProps) {
-  const { style, iconName, containerStyle, color, icon, size, top, count } = props;
+  const { style, iconName, containerStyle, color, icon, size, top, count, noFlex } = props;
   return (
     <View style={merge(ContainerRootStyle, containerStyle)}>
-      {renderIcon({ icon, iconName, color, style: merge(IconRootStyle, style), size })}
+      {renderIcon({ icon, iconName, color, style: merge(IconRootStyle, style), size, noFlex })}
       {count !== undefined && (
         <IconCounter top={top}>
           <IconCounterText>{count}</IconCounterText>
