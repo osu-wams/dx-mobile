@@ -24,7 +24,6 @@ export const ResourceCard: FC<{ categ: string; icon: IconDefinition; collapsing:
   const status = useStatus();
   const res = useResourcesByQueue(categ);
   const user = useRecoilValue(State.userState);
-  const listKey = categ;
 
   const [resources, setResources] = useState<Types.Resource[]>([]);
   const [cardTitle, setCardTitle] = useState(' ');
