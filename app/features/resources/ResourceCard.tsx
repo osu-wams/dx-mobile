@@ -51,32 +51,27 @@ export const ResourceCard: FC<{ categ: string; icon: IconDefinition; collapsing:
   return (
     <Card collapsing={collapsing}>
       <CardHeader title={cardTitle} badge={icon ? <Icon icon={icon} /> : null} />
-      <CardContent flush>
-        {status.isSuccess && resources.length > 0 && (
-          <ResourceList<React.ElementType>
-            data={resources}
-            renderItem={({ item }: { item: Types.Resource }) => (
+      {status.isSuccess && resources.length > 0 && (
+        <CardContent flush>
+          <ResourceList>
+            {resources.map((item: Types.Resource) => (
               <ResourceListItem
+                key={`${categ}-${item.id}`}
                 resource={item}
                 itStatus={status}
                 eventAction="resources"
                 eventCategory="resources"
               />
-            )}
-            keyExtractor={(item: Types.Resource) => `${categ}-${item.id}`}
-            extraData={status}
-            listKey={listKey}
-            ListFooterComponent={
-              <CardFooter infoButtonId={`${categ}-resources`}>
-                <InternalLink
-                  to={{ name: ScreenNames.Resources, params: { category: categ.toLowerCase() } }}
-                  text={`View more ${categ.toLowerCase()} resources`}
-                />
-              </CardFooter>
-            }
-          />
-        )}
-      </CardContent>
+            ))}
+          </ResourceList>
+          <CardFooter infoButtonId={`${categ}-resources`}>
+            <InternalLink
+              to={{ name: ScreenNames.Resources, params: { category: categ.toLowerCase() } }}
+              text={`View more ${categ.toLowerCase()} resources`}
+            />
+          </CardFooter>
+        </CardContent>
+      )}
     </Card>
   );
 };
