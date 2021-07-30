@@ -1,19 +1,27 @@
 import * as React from 'react';
-import { KeyboardAvoidingViewProps, Platform, ScrollView, ViewStyle } from 'react-native';
+import { KeyboardAvoidingViewProps, Platform, ScrollViewProps } from 'react-native';
 import styled from 'styled-components/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ScreenProps } from './screen.props';
-import { isNonScrolling, offsets, presets } from './screen.presets';
 import { HEADER_NAV_HEIGHT } from '../../ui/Header';
 interface InsetInterface {
   inset: number;
   scroll?: boolean;
 }
+
 const KeyboardAvoidingViewWrapper = styled.KeyboardAvoidingView<KeyboardAvoidingViewProps>(
   ({ theme }) => ({
     backgroundColor: theme.body.background,
+    flex: 1,
+    height: '100%',
   }),
 );
+
+const ScrollViewWrapper = styled.ScrollView<ScrollViewProps>(({ theme }) => ({
+  backgroundColor: theme.body.background,
+  flex: 1,
+  height: '100%',
+}));
 
 const ViewWrapper = styled.View<InsetInterface>(
   ({ inset, theme }) => ({
@@ -39,14 +47,12 @@ const isIos = Platform.OS === 'ios';
 
 function ScreenWithoutScrolling(props: ScreenProps) {
   const insets = useSafeAreaInsets();
-  const preset = presets.fixed;
   const insetStyle = props.unsafe ? 0 : insets.top + HEADER_NAV_HEIGHT;
 
   return (
     <KeyboardAvoidingViewWrapper
-      style={preset.outer}
       behavior={isIos ? 'padding' : null}
-      keyboardVerticalOffset={offsets[props.keyboardOffset || 'none']}
+      // keyboardVerticalOffset={offsets[props.keyboardOffset || 'none']}
     >
       <ViewWrapper inset={insetStyle}>{props.children}</ViewWrapper>
     </KeyboardAvoidingViewWrapper>
@@ -55,24 +61,21 @@ function ScreenWithoutScrolling(props: ScreenProps) {
 
 function ScreenWithScrolling(props: ScreenProps) {
   const insets = useSafeAreaInsets();
-  const preset = presets.scroll;
-  const style = props.style || {};
   const insetStyle = props.unsafe ? 0 : insets.top + HEADER_NAV_HEIGHT;
 
   return (
     <KeyboardAvoidingViewWrapper
-      style={preset.outer}
       behavior={isIos ? 'padding' : null}
-      keyboardVerticalOffset={offsets[props.keyboardOffset || 'none']}
+      // keyboardVerticalOffset={offsets[props.keyboardOffset || 'none']}
     >
       <ViewWrapper inset={insetStyle} scroll>
-        <ScrollView
-          style={preset.outer}
-          contentContainerStyle={[preset.inner as ViewStyle, style]}
+        <ScrollViewWrapper
+          // eslint-disable-next-line react-native/no-inline-styles
+          contentContainerStyle={{ justifyContent: 'flex-start', alignItems: 'stretch' }}
           bounces={false}
         >
           {props.children}
-        </ScrollView>
+        </ScrollViewWrapper>
       </ViewWrapper>
     </KeyboardAvoidingViewWrapper>
   );
@@ -84,9 +87,9 @@ function ScreenWithScrolling(props: ScreenProps) {
  * @param props The screen props
  */
 export function Screen(props: ScreenProps) {
-  if (isNonScrolling(props.preset)) {
-    return <ScreenWithoutScrolling {...props} />;
-  } else {
+  if ((props.preset ?? 'scroll') === 'scroll') {
     return <ScreenWithScrolling {...props} />;
+  } else {
+    return <ScreenWithoutScrolling {...props} />;
   }
 }
