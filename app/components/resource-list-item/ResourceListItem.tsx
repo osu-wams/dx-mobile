@@ -29,7 +29,8 @@ const ResourceListItemBase = styled(View)({
   flexDirection: 'row',
 });
 
-const ResourceTitle = styled(Text)<{ narrow: boolean }>(({ narrow }) => ({
+const ResourceTitle = styled(Text)<{ narrow: boolean }>(({ theme, narrow }) => ({
+  color: theme.features.resources.name.color,
   fontSize: fontSize[18],
   marginLeft: spacing.small,
   maxWidth: narrow ? '75%' : '88%',
