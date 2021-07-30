@@ -51,3 +51,6 @@ export function MainNavigator() {
     </Tab.Navigator>
   );
 }
+
+const exitRoutes = [ScreenNames.Welcome];
+export const canExit = (routeName: ScreenNames) => exitRoutes.includes(routeName);
