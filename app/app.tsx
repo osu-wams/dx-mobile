@@ -58,8 +58,8 @@ function Main() {
   const auth = useAuth();
   const resetAuthState = useResetRecoilState(authState);
   const [fontsLoaded] = initFonts();
-  const [theme, setTheme] = useRecoilState<string>(State.themeState);
-  const user = useRecoilValue<Types.UserState>(State.userState);
+  const [theme, setTheme] = useRecoilState<string>(themeState);
+  const user = useRecoilValue<Types.UserState>(userState);
 
   // TODO: This depends on a browser, see ticket MMA-8 for work to be done
   // useUserState(() => ({}));
