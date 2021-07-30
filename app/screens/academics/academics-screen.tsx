@@ -2,7 +2,7 @@ import React from 'react';
 import { Screen, Text } from '../../components';
 import { Body } from '../../ui/Body';
 
-export const ResourcesScreen = ({ navigation }) => {
+export const AcademicsScreen = ({ navigation }) => {
   return (
     <Screen preset="scroll">
       <Body>

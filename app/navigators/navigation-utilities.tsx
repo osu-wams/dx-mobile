@@ -127,14 +127,29 @@ export function useNavigationPersistence(storage: any, persistenceKey: string) {
 }
 
 export enum ScreenNames {
-  Welcome = 'Welcome',
-  Demo = 'Demo',
+  Academics = 'Academics',
+  Finances = 'Finances',
+  Menu = 'Menu',
+  Overview = 'Overview',
   Resources = 'Resources',
+  Search = 'Search',
+  Training = 'Training',
 }
-export type Screens = ScreenNames.Demo | ScreenNames.Resources | ScreenNames.Resources;
+export type Screens =
+  | ScreenNames.Academics
+  | ScreenNames.Finances
+  | ScreenNames.Menu
+  | ScreenNames.Overview
+  | ScreenNames.Resources
+  | ScreenNames.Search
+  | ScreenNames.Training;
 
 export type PrimaryParamList = {
-  Demo: undefined;
+  Academics: { subName: string } | undefined;
+  Overview: undefined;
+  Finances: undefined;
   Resources: { category: string } | undefined;
-  Welcome: undefined;
+  Menu: undefined;
+  Search: undefined;
+  Training: undefined;
 };

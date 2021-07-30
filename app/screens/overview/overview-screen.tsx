@@ -6,7 +6,7 @@ import { Body } from '../../ui/Body';
 import { faGraduationCap, faStars } from '@fortawesome/pro-light-svg-icons';
 import Footer from '../../components/footer/footer';
 
-export const WelcomeScreen = function WelcomeScreen() {
+export const OverviewScreen = function WelcomeScreen() {
   const resources = useResources();
   const person = usePerson();
 
