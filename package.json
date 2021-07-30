@@ -42,6 +42,7 @@
     "@osu-wams/hooks": "1.0.124",
     "@react-native-async-storage/async-storage": "^1.15.4",
     "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/bottom-tabs": "^5.11.11",
     "@react-navigation/native": "5.8.10",
     "@react-navigation/stack": "5.12.8",
     "@unimodules/core": "~7.1.0",
@@ -51,7 +52,7 @@
     "expo-linking": "^2.3.1",
     "expo-localization": "^10.1.0",
     "expo-secure-store": "~10.1.0",
-    "expo-status-bar": "~1.0.4",
+    "expo-status-bar": "^1.0.4",
     "expo-web-browser": "^9.1.0",
     "i18n-js": "3.8.0",
     "ramda": "0.27.1",
@@ -151,7 +152,9 @@
           "<rootDir>/node_modules/react-native/jest/setup.js",
           "<rootDir>/jest.setup.js"
         ],
-        "setupFilesAfterEnv": ["<rootDir>/jest.setupAfterEnv.js"]
+        "setupFilesAfterEnv": [
+          "<rootDir>/jest.setupAfterEnv.js"
+        ]
       },
       {
         "preset": "jest-expo/android",
@@ -166,7 +169,9 @@
           "<rootDir>/node_modules/react-native/jest/setup.js",
           "<rootDir>/jest.setup.js"
         ],
-        "setupFilesAfterEnv": ["<rootDir>/jest.setupAfterEnv.js"]
+        "setupFilesAfterEnv": [
+          "<rootDir>/jest.setupAfterEnv.js"
+        ]
       }
     ]
   },
