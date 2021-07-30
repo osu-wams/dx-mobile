@@ -591,8 +591,9 @@ exports[`Storyshots Button Basic Usage 1`] = `
                           "flexGrow": 1,
                           "flexShrink": 1,
                           "fontSize": 32,
-                          "height": 32,
-                          "width": 32,
+                          "height": 24,
+                          "resizeMode": "contain",
+                          "width": 24,
                         },
                         Object {
                           "flex": 0,
@@ -777,13 +778,18 @@ exports[`Storyshots Button Basic Usage 1`] = `
                           "borderWidth": 0,
                         },
                         Object {
+                          "0": Object {
+                            "color": "#ffffff",
+                            "marginLeft": 5,
+                          },
                           "backgroundColor": "transparent",
                           "flexBasis": 0,
                           "flexGrow": 1,
                           "flexShrink": 1,
                           "fontSize": 32,
-                          "height": 32,
-                          "width": 32,
+                          "height": 24,
+                          "resizeMode": "contain",
+                          "width": 24,
                         },
                         Object {
                           "flex": 0,

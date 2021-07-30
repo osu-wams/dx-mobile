@@ -319,7 +319,7 @@ exports[`Storyshots Link Behaviour 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "flexBasis": 0,
+                      "flexBasis": 1,
                       "flexDirection": "row",
                       "flexGrow": 1,
                       "flexShrink": 1,
@@ -377,8 +377,9 @@ exports[`Storyshots Link Behaviour 1`] = `
                           "flexGrow": 1,
                           "flexShrink": 1,
                           "fontSize": 32,
-                          "height": 32,
-                          "width": 32,
+                          "height": 24,
+                          "resizeMode": "contain",
+                          "width": 24,
                         },
                         Object {
                           "flex": 0,
@@ -436,7 +437,7 @@ exports[`Storyshots Link Behaviour 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "flexBasis": 0,
+                      "flexBasis": 1,
                       "flexDirection": "row",
                       "flexGrow": 1,
                       "flexShrink": 1,
@@ -495,8 +496,9 @@ exports[`Storyshots Link Behaviour 1`] = `
                           "flexGrow": 1,
                           "flexShrink": 1,
                           "fontSize": 32,
-                          "height": 32,
-                          "width": 32,
+                          "height": 24,
+                          "resizeMode": "contain",
+                          "width": 24,
                         },
                         Object {
                           "flex": 0,
@@ -554,7 +556,7 @@ exports[`Storyshots Link Behaviour 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "flexBasis": 0,
+                      "flexBasis": 1,
                       "flexDirection": "row",
                       "flexGrow": 1,
                       "flexShrink": 1,
@@ -671,7 +673,7 @@ exports[`Storyshots Link Behaviour 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "flexBasis": 0,
+                      "flexBasis": 1,
                       "flexDirection": "row",
                       "flexGrow": 1,
                       "flexShrink": 1,
@@ -728,8 +730,9 @@ exports[`Storyshots Link Behaviour 1`] = `
                           "flexGrow": 1,
                           "flexShrink": 1,
                           "fontSize": 32,
-                          "height": 32,
-                          "width": 32,
+                          "height": 24,
+                          "resizeMode": "contain",
+                          "width": 24,
                         },
                         Object {
                           "flex": 0,
@@ -787,7 +790,7 @@ exports[`Storyshots Link Behaviour 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "flexBasis": 0,
+                      "flexBasis": 1,
                       "flexDirection": "row",
                       "flexGrow": 1,
                       "flexShrink": 1,
@@ -845,8 +848,9 @@ exports[`Storyshots Link Behaviour 1`] = `
                           "flexGrow": 1,
                           "flexShrink": 1,
                           "fontSize": 32,
-                          "height": 32,
-                          "width": 32,
+                          "height": 24,
+                          "resizeMode": "contain",
+                          "width": 24,
                         },
                         Object {
                           "flex": 0,
@@ -903,7 +907,7 @@ exports[`Storyshots Link Behaviour 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "flexBasis": 0,
+                      "flexBasis": 1,
                       "flexDirection": "row",
                       "flexGrow": 1,
                       "flexShrink": 1,
@@ -1020,7 +1024,7 @@ exports[`Storyshots Link Behaviour 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "flexBasis": 0,
+                      "flexBasis": 1,
                       "flexDirection": "row",
                       "flexGrow": 1,
                       "flexShrink": 1,
@@ -1062,7 +1066,7 @@ exports[`Storyshots Link Behaviour 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "flexBasis": 0,
+                      "flexBasis": 1,
                       "flexDirection": "row",
                       "flexGrow": 1,
                       "flexShrink": 1,
@@ -1180,7 +1184,7 @@ exports[`Storyshots Link Behaviour 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "flexBasis": 0,
+                      "flexBasis": 1,
                       "flexDirection": "row",
                       "flexGrow": 1,
                       "flexShrink": 1,
@@ -1222,7 +1226,7 @@ exports[`Storyshots Link Behaviour 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "flexBasis": 0,
+                      "flexBasis": 1,
                       "flexDirection": "row",
                       "flexGrow": 1,
                       "flexShrink": 1,
@@ -1340,7 +1344,7 @@ exports[`Storyshots Link Behaviour 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "flexBasis": 0,
+                      "flexBasis": 1,
                       "flexDirection": "row",
                       "flexGrow": 1,
                       "flexShrink": 1,
@@ -1456,7 +1460,7 @@ exports[`Storyshots Link Behaviour 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "flexBasis": 0,
+                      "flexBasis": 1,
                       "flexDirection": "row",
                       "flexGrow": 1,
                       "flexShrink": 1,
@@ -1519,8 +1523,9 @@ exports[`Storyshots Link Behaviour 1`] = `
                           "flexGrow": 1,
                           "flexShrink": 1,
                           "fontSize": 32,
-                          "height": 32,
-                          "width": 32,
+                          "height": 24,
+                          "resizeMode": "contain",
+                          "width": 24,
                         },
                         Object {
                           "flex": 0,
@@ -1577,7 +1582,7 @@ exports[`Storyshots Link Behaviour 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "flexBasis": 0,
+                      "flexBasis": 1,
                       "flexDirection": "row",
                       "flexGrow": 1,
                       "flexShrink": 1,
@@ -1641,8 +1646,9 @@ exports[`Storyshots Link Behaviour 1`] = `
                           "flexGrow": 1,
                           "flexShrink": 1,
                           "fontSize": 32,
-                          "height": 32,
-                          "width": 32,
+                          "height": 24,
+                          "resizeMode": "contain",
+                          "width": 24,
                         },
                         Object {
                           "flex": 0,
@@ -1699,7 +1705,7 @@ exports[`Storyshots Link Behaviour 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "flexBasis": 0,
+                      "flexBasis": 1,
                       "flexDirection": "row",
                       "flexGrow": 1,
                       "flexShrink": 1,
