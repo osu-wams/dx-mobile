@@ -41,6 +41,9 @@ import { authState, applicationState } from './state';
 import { ThemeProvider } from 'styled-components/native';
 import { themesLookup } from '@osu-wams/theme';
 import { State } from '@osu-wams/hooks';
+import { Header } from './ui/Header';
+import { StatusBar } from 'expo-status-bar';
+
 enableScreens();
 
 export const NAVIGATION_PERSISTENCE_KEY = 'NAVIGATION_STATE';
@@ -96,7 +99,12 @@ function Main() {
   return (
     <ThemeProvider theme={themesLookup[theme]}>
       <ToggleStorybook>
-        <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+        <SafeAreaProvider
+          style={{ backgroundColor: themesLookup[theme].header.background }}
+          initialMetrics={initialWindowMetrics}
+        >
+          <StatusBar style={theme === 'dark' ? 'light' : 'dark'} />
+          <Header />
           <RootNavigator
             ref={navigationRef}
             initialState={initialNavigationState}
