@@ -80,8 +80,9 @@ const renderIcon = (props: {
 }) => {
   const { iconName, icon, size, color, ...others } = props;
   if (icon) return <StyledIcon {...others} icon={icon} size={size ?? 24} color={color} />;
-  if (!iconName)
+  if (!iconName) {
     return <StyledIcon {...others} icon={fal.faCube} size={size ?? 24} color={color} />;
+  }
 
   const iconSplit = iconName.split('.');
   if (iconSplit.length === 1) {
