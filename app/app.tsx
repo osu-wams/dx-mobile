@@ -41,6 +41,9 @@ import { authState, applicationState } from './state';
 import { ThemeProvider } from 'styled-components/native';
 import { themesLookup } from '@osu-wams/theme';
 import { State } from '@osu-wams/hooks';
+import { Header } from './ui/Header';
+import { StatusBar } from 'expo-status-bar';
+
 enableScreens();
 
 export const NAVIGATION_PERSISTENCE_KEY = 'NAVIGATION_STATE';
@@ -55,8 +58,8 @@ function Main() {
   const auth = useAuth();
   const resetAuthState = useResetRecoilState(authState);
   const [fontsLoaded] = initFonts();
-  const [theme, setTheme] = useRecoilState<string>(State.themeState);
-  const user = useRecoilValue<Types.UserState>(State.userState);
+  const [theme, setTheme] = useRecoilState<string>(themeState);
+  const user = useRecoilValue<Types.UserState>(userState);
 
   // TODO: This depends on a browser, see ticket MMA-8 for work to be done
   // useUserState(() => ({}));
@@ -96,7 +99,12 @@ function Main() {
   return (
     <ThemeProvider theme={themesLookup[theme]}>
       <ToggleStorybook>
-        <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+        <SafeAreaProvider
+          style={{ backgroundColor: themesLookup[theme].header.background }}
+          initialMetrics={initialWindowMetrics}
+        >
+          <StatusBar style={theme === 'dark' ? 'light' : 'dark'} />
+          <Header />
           <RootNavigator
             ref={navigationRef}
             initialState={initialNavigationState}

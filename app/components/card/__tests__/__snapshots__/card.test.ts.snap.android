@@ -375,9 +375,11 @@ exports[`Storyshots Card Basic 1`] = `
                     Object {
                       "backgroundColor": "#ffffff",
                       "borderRadius": 16,
-                      "display": "flex",
                       "elevation": 3,
+                      "flexBasis": 0,
                       "flexDirection": "column",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
                       "marginBottom": 16,
                       "shadowColor": "rgba(66, 62, 60, 1)",
                       "shadowOpacity": 0.2,
@@ -460,8 +462,9 @@ exports[`Storyshots Card Basic 1`] = `
                               "flexGrow": 1,
                               "flexShrink": 1,
                               "fontSize": 32,
-                              "height": 32,
-                              "width": 32,
+                              "height": 24,
+                              "resizeMode": "contain",
+                              "width": 24,
                             },
                             Object {
                               "flex": 0,
@@ -504,7 +507,7 @@ exports[`Storyshots Card Basic 1`] = `
                     <Text
                       style={
                         Object {
-                          "color": "#000000",
+                          "color": "#423E3C",
                           "flexBasis": 0,
                           "flexGrow": 1,
                           "flexShrink": 1,
@@ -547,8 +550,9 @@ exports[`Storyshots Card Basic 1`] = `
                               "flexGrow": 1,
                               "flexShrink": 1,
                               "fontSize": 32,
-                              "height": 32,
-                              "width": 32,
+                              "height": 24,
+                              "resizeMode": "contain",
+                              "width": 24,
                             },
                             Object {
                               "flex": 0,
@@ -743,9 +747,11 @@ exports[`Storyshots Card Basic 1`] = `
                     Object {
                       "backgroundColor": "#ffffff",
                       "borderRadius": 16,
-                      "display": "flex",
                       "elevation": 3,
+                      "flexBasis": 0,
                       "flexDirection": "column",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
                       "marginBottom": 16,
                       "shadowColor": "rgba(66, 62, 60, 1)",
                       "shadowOpacity": 0.2,
@@ -828,8 +834,9 @@ exports[`Storyshots Card Basic 1`] = `
                               "flexGrow": 1,
                               "flexShrink": 1,
                               "fontSize": 32,
-                              "height": 32,
-                              "width": 32,
+                              "height": 24,
+                              "resizeMode": "contain",
+                              "width": 24,
                             },
                             Object {
                               "flex": 0,
@@ -872,7 +879,7 @@ exports[`Storyshots Card Basic 1`] = `
                     <Text
                       style={
                         Object {
-                          "color": "#000000",
+                          "color": "#423E3C",
                           "flexBasis": 0,
                           "flexGrow": 1,
                           "flexShrink": 1,
@@ -1030,9 +1037,11 @@ exports[`Storyshots Card Basic 1`] = `
                     Object {
                       "backgroundColor": "#ffffff",
                       "borderRadius": 16,
-                      "display": "flex",
                       "elevation": 3,
+                      "flexBasis": 0,
                       "flexDirection": "column",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
                       "marginBottom": 16,
                       "shadowColor": "rgba(66, 62, 60, 1)",
                       "shadowOpacity": 0.2,
@@ -1115,8 +1124,9 @@ exports[`Storyshots Card Basic 1`] = `
                               "flexGrow": 1,
                               "flexShrink": 1,
                               "fontSize": 32,
-                              "height": 32,
-                              "width": 32,
+                              "height": 24,
+                              "resizeMode": "contain",
+                              "width": 24,
                             },
                             Object {
                               "flex": 0,
@@ -1159,7 +1169,7 @@ exports[`Storyshots Card Basic 1`] = `
                     <Text
                       style={
                         Object {
-                          "color": "#000000",
+                          "color": "#423E3C",
                           "flexBasis": 0,
                           "flexGrow": 1,
                           "flexShrink": 1,
@@ -1202,8 +1212,9 @@ exports[`Storyshots Card Basic 1`] = `
                               "flexGrow": 1,
                               "flexShrink": 1,
                               "fontSize": 32,
-                              "height": 32,
-                              "width": 32,
+                              "height": 24,
+                              "resizeMode": "contain",
+                              "width": 24,
                             },
                             Object {
                               "flex": 0,
@@ -1323,9 +1334,11 @@ exports[`Storyshots Card Basic 1`] = `
                     Object {
                       "backgroundColor": "#ffffff",
                       "borderRadius": 16,
-                      "display": "flex",
                       "elevation": 3,
+                      "flexBasis": 0,
                       "flexDirection": "column",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
                       "marginBottom": 16,
                       "shadowColor": "rgba(66, 62, 60, 1)",
                       "shadowOpacity": 0.2,
@@ -1386,7 +1399,9 @@ exports[`Storyshots Card Basic 1`] = `
                             "backgroundColor": "#D73F09",
                             "borderRadius": 16,
                             "color": "#ffffff",
-                            "display": "flex",
+                            "flexBasis": 0,
+                            "flexGrow": 1,
+                            "flexShrink": 1,
                             "height": 32,
                             "justifyContent": "center",
                             "marginRight": 12,
@@ -1410,7 +1425,7 @@ exports[`Storyshots Card Basic 1`] = `
                     <Text
                       style={
                         Object {
-                          "color": "#000000",
+                          "color": "#423E3C",
                           "flexBasis": 0,
                           "flexGrow": 1,
                           "flexShrink": 1,
@@ -1453,8 +1468,9 @@ exports[`Storyshots Card Basic 1`] = `
                               "flexGrow": 1,
                               "flexShrink": 1,
                               "fontSize": 32,
-                              "height": 32,
-                              "width": 32,
+                              "height": 24,
+                              "resizeMode": "contain",
+                              "width": 24,
                             },
                             Object {
                               "flex": 0,
@@ -1649,9 +1665,11 @@ exports[`Storyshots Card Basic 1`] = `
                     Object {
                       "backgroundColor": "#ffffff",
                       "borderRadius": 16,
-                      "display": "flex",
                       "elevation": 3,
+                      "flexBasis": 0,
                       "flexDirection": "column",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
                       "marginBottom": 16,
                       "shadowColor": "rgba(66, 62, 60, 1)",
                       "shadowOpacity": 0.2,
@@ -1734,8 +1752,9 @@ exports[`Storyshots Card Basic 1`] = `
                               "flexGrow": 1,
                               "flexShrink": 1,
                               "fontSize": 32,
-                              "height": 32,
-                              "width": 32,
+                              "height": 24,
+                              "resizeMode": "contain",
+                              "width": 24,
                             },
                             Object {
                               "flex": 0,
@@ -1809,7 +1828,7 @@ exports[`Storyshots Card Basic 1`] = `
                     <Text
                       style={
                         Object {
-                          "color": "#000000",
+                          "color": "#423E3C",
                           "flexBasis": 0,
                           "flexGrow": 1,
                           "flexShrink": 1,
@@ -1852,8 +1871,9 @@ exports[`Storyshots Card Basic 1`] = `
                               "flexGrow": 1,
                               "flexShrink": 1,
                               "fontSize": 32,
-                              "height": 32,
-                              "width": 32,
+                              "height": 24,
+                              "resizeMode": "contain",
+                              "width": 24,
                             },
                             Object {
                               "flex": 0,
@@ -1973,9 +1993,11 @@ exports[`Storyshots Card Basic 1`] = `
                     Object {
                       "backgroundColor": "#ffffff",
                       "borderRadius": 16,
-                      "display": "flex",
                       "elevation": 3,
+                      "flexBasis": 0,
                       "flexDirection": "column",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
                       "marginBottom": 16,
                       "shadowColor": "rgba(66, 62, 60, 1)",
                       "shadowOpacity": 0.2,
@@ -2058,8 +2080,9 @@ exports[`Storyshots Card Basic 1`] = `
                               "flexGrow": 1,
                               "flexShrink": 1,
                               "fontSize": 32,
-                              "height": 32,
-                              "width": 32,
+                              "height": 24,
+                              "resizeMode": "contain",
+                              "width": 24,
                             },
                             Object {
                               "flex": 0,
@@ -2134,7 +2157,7 @@ exports[`Storyshots Card Basic 1`] = `
                     <Text
                       style={
                         Object {
-                          "color": "#000000",
+                          "color": "#423E3C",
                           "flexBasis": 0,
                           "flexGrow": 1,
                           "flexShrink": 1,
@@ -2177,8 +2200,9 @@ exports[`Storyshots Card Basic 1`] = `
                               "flexGrow": 1,
                               "flexShrink": 1,
                               "fontSize": 32,
-                              "height": 32,
-                              "width": 32,
+                              "height": 24,
+                              "resizeMode": "contain",
+                              "width": 24,
                             },
                             Object {
                               "flex": 0,
@@ -2373,9 +2397,11 @@ exports[`Storyshots Card Basic 1`] = `
                     Object {
                       "backgroundColor": "#ffffff",
                       "borderRadius": 16,
-                      "display": "flex",
                       "elevation": 3,
+                      "flexBasis": 0,
                       "flexDirection": "column",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
                       "marginBottom": 16,
                       "shadowColor": "rgba(66, 62, 60, 1)",
                       "shadowOpacity": 0.2,

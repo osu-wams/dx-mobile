@@ -31,10 +31,11 @@ export const CardHeaderSimple = styled.View({
   padding: spacing.default,
 });
 
-const HeaderTitle = styled(Text)({
+const HeaderTitle = styled(Text)(({ theme }) => ({
+  color: theme.body.color,
   flex: 1,
   fontSize: fontSize[16],
-});
+}));
 
 const CardHeader: FC<{ title?: string; badge?: any }> = ({ title, badge, ...props }) => {
   const { collapsed, toggleCollapsed, collapsible } = useContext(CardContext);

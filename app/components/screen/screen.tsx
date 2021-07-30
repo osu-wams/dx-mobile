@@ -1,11 +1,8 @@
 import * as React from 'react';
 import { KeyboardAvoidingViewProps, Platform, ScrollViewProps } from 'react-native';
 import styled from 'styled-components/native';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ScreenProps } from './screen.props';
-import { HEADER_NAV_HEIGHT } from '../../ui/Header';
 interface InsetInterface {
-  inset: number;
   scroll?: boolean;
 }
 
@@ -24,10 +21,9 @@ const ScrollViewWrapper = styled.ScrollView<ScrollViewProps>(({ theme }) => ({
 }));
 
 const ViewWrapper = styled.View<InsetInterface>(
-  ({ inset, theme }) => ({
+  ({ theme }) => ({
     backgroundColor: theme.header.background,
     height: '100%',
-    paddingTop: inset,
   }),
   ({ scroll }) =>
     scroll
@@ -46,29 +42,23 @@ const ViewWrapper = styled.View<InsetInterface>(
 const isIos = Platform.OS === 'ios';
 
 function ScreenWithoutScrolling(props: ScreenProps) {
-  const insets = useSafeAreaInsets();
-  const insetStyle = props.unsafe ? 0 : insets.top + HEADER_NAV_HEIGHT;
-
   return (
     <KeyboardAvoidingViewWrapper
       behavior={isIos ? 'padding' : null}
       // keyboardVerticalOffset={offsets[props.keyboardOffset || 'none']}
     >
-      <ViewWrapper inset={insetStyle}>{props.children}</ViewWrapper>
+      <ViewWrapper>{props.children}</ViewWrapper>
     </KeyboardAvoidingViewWrapper>
   );
 }
 
 function ScreenWithScrolling(props: ScreenProps) {
-  const insets = useSafeAreaInsets();
-  const insetStyle = props.unsafe ? 0 : insets.top + HEADER_NAV_HEIGHT;
-
   return (
     <KeyboardAvoidingViewWrapper
       behavior={isIos ? 'padding' : null}
       // keyboardVerticalOffset={offsets[props.keyboardOffset || 'none']}
     >
-      <ViewWrapper inset={insetStyle} scroll>
+      <ViewWrapper scroll>
         <ScrollViewWrapper
           // eslint-disable-next-line react-native/no-inline-styles
           contentContainerStyle={{ justifyContent: 'flex-start', alignItems: 'stretch' }}
