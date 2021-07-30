@@ -87,13 +87,13 @@ const ButtonLinkBase = styled(ButtonBase)<ButtonProps>({
 });
 
 export const ButtonLink = (props) => {
-  const { text, fg, textStyle, ...rest } = props;
+  const { text, fg, textStyle, icon, ...rest } = props;
   return (
     <ButtonLinkBase {...rest}>
       <ButtonText fg={fg} style={textStyle}>
         {text}
       </ButtonText>
-      <ButtonLinkIcon icon={faLink} />
+      {icon || <ButtonLinkIcon icon={faLink} />}
     </ButtonLinkBase>
   );
 };

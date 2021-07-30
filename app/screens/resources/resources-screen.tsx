@@ -4,7 +4,7 @@ import { Body } from '../../ui/Body';
 
 export const ResourcesScreen = ({ navigation }) => {
   return (
-    <Screen>
+    <Screen preset="scroll">
       <Body>
         <Text onPress={() => navigation.goBack()}>Go back</Text>
         <Text>This is the resources screen.</Text>
