@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components/native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faUserCircle } from '@fortawesome/pro-light-svg-icons';
+import { Icon, Text } from '../components';
 
 export const HeaderNav = () => {
   return (
@@ -16,55 +16,56 @@ const ProfileMenu = () => {
   return (
     <>
       <ToggleMenu onPress={() => setOpen(!open)}>
-        <FontAwesomeIcon icon={faUserCircle} size={24} />
+        <Icon noFlex icon={faUserCircle} size={24} />
       </ToggleMenu>
       <Menu expanded={open}>
         <MenuItem>
-          <MenuItemText>Profile</MenuItemText>
+          <MenuItemText text="Profile" />
         </MenuItem>
         <MenuItem>
-          <MenuItemText>Logout</MenuItemText>
+          <MenuItemText text="Logout" />
         </MenuItem>
       </Menu>
     </>
   );
 };
-
 interface IExpanded {
   expanded: boolean;
 }
 
-const ToggleMenu = styled.TouchableOpacity`
-  position: absolute;
-  top: 10px;
-  right: 10px;
-`;
+const ToggleMenu = styled.TouchableOpacity({
+  position: 'absolute',
+  right: 10,
+  top: 10,
+});
 
-const Menu = styled.View<IExpanded>`
-  display: ${(props) => (props.expanded ? 'flex' : 'none')};
-  flex-direction: column;
-  position: absolute;
-  right: 5px;
-  top: 38px;
-  border-radius: 10px;
-  background: ${({ theme }) => theme.header.headerNavList.background};
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  margin: 0 0 20px 0;
-  width: 140px;
-  height: ${(props) => (props.expanded ? 'auto' : 0)};
-  z-index: 100;
-`;
+const Menu = styled.View<IExpanded>(({ theme, expanded }) => ({
+  background: theme.header.headerNavList.background,
+  borderRadius: 10,
+  display: expanded ? 'flex' : 'none',
+  elevation: '3',
+  flexDirection: 'column',
+  height: expanded ? 'auto' : 0,
+  margin: '0 0 20px 0',
+  position: 'absolute',
+  right: 5,
+  shadowColor: 'rgba(66, 62, 60, 1)',
+  shadowOpacity: '0.2',
+  shadowRadius: 8,
+  top: 38,
+  width: 140,
+  zIndex: 1000,
+}));
 
-const MenuItem = styled.TouchableOpacity`
-  color: ${({ theme }) => theme.header.mainNavList.color};
-  padding: 5px;
-`;
+const MenuItem = styled.TouchableOpacity({
+  padding: 5,
+});
 
-const MenuItemText = styled.Text`
-  color: ${({ theme }) => theme.header.mainNavList.color};
-  padding: 4px 10px;
-`;
+const MenuItemText = styled(Text)(({ theme }) => ({
+  color: theme.header.mainNavList.color,
+  padding: '4px 10px',
+}));
 
-const HeaderNavWrapper = styled.View`
-  width: auto;
-`;
+const HeaderNavWrapper = styled.View({
+  flex: 1,
+});
